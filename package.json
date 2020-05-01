@@ -1,0 +1,40 @@
+{
+  "name": "fcc",
+  "version": "1.0.0",
+  "description": "n/a",
+  "main": "index.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanjamesL/FCC.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "Nathan Lardizabal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanjamesL/FCC/issues"
+  },
+  "homepage": "https://github.com/nathanjamesL/FCC#readme",
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "nodemon": "^2.0.3"
+  }
+}
