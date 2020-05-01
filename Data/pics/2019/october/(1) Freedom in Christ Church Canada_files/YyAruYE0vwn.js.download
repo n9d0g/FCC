@@ -1,0 +1,814 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Xmqpz"]); }
+
+__d("FBRTCCallConstants",[],(function(a,b,c,d,e,f){e.exports={FBRTCCallConnectionType:{MISSED_CALL:4,CONNECTED_CALL:5},FBRTCCallType:{VOICE_CALL:1,VIDEO_CALL:2,COLLAB_VIDEO_CALL:3,COLLAB_SCREEN_SHARE_CALL:4}}}),null);
+__d("FBRTCCapability",[],(function(a,b,c,d,e,f){e.exports={SUPPORT_AUDIO_DEPRECATED:0,SUPPORT_VIDEO_DEPRECATED:1,SUPPORT_EXPERIMENTS_IN_JOIN_RESPONSE:2,SUPPORT_NEW_PARTICIPANT_STATES:3,SUPPORT_SDP_RENEGOTIATION:4,SUPPORT_MWPP:5,REQUIRE_FULL_SDP_IN_SMU:6,SUPPORT_PRECONNECT:7}}),null);
+__d("FBRTCDeviceStatus",[],(function(a,b,c,d,e,f){e.exports={OK:0,NOT_SUPPORTED:1,IN_ANOTHER_CALL:10}}),null);
+__d("FBRTCDismissReason",[],(function(a,b,c,d,e,f){e.exports={CALL_ENDED:0,ANSWERED_ON_ANOTHER_DEVICE:1,IN_ANOTHER_CALL:2,CONNECTION_DROPPED:3,REJECTED_ON_ANOTHER_DEVICE:4,REMOVED_BY_PARTICIPANT:5,REJECTED_BY_CALLEE:6,INTERNAL_ERROR:7,CALL_ENDED_BY_PRODUCT:9,JOIN_APPROVAL_DENIED:10,JOIN_APPROVAL_TIMEDOUT:11}}),null);
+__d("FBRTCHangupReason",[],(function(a,b,c,d,e,f){e.exports={IGNORE_CALL:0,HANGUP_CALL:1,NO_ANSWER_TIMEOUT:2,CLIENT_ERROR:3,IN_ANOTHER_CALL:4,CLIENT_INTERRUPTED:5,SESSION_MIGRATED:6}}),null);
+__d("FBRTCMediaType",[],(function(a,b,c,d,e,f){e.exports={AUDIO:0,VIDEO:1,DATA:2}}),null);
+__d("FBRTCRtcResponseStatusCode",[],(function(a,b,c,d,e,f){e.exports={OK:200,BAD_REQUEST:400,UNAUTHORIZED:401,NOT_FOUND:404,METHOD_NOT_ALLOWED:406,CONFLICT:409,CONDITIONAL_REQUEST_FAILED:412,SERVER_INTERNAL_ERROR:500,SERVICE_UNAVAILABLE:503}}),null);
+__d("FBRTCVideoQuality",[],(function(a,b,c,d,e,f){e.exports={LOW:0,MEDIUM:1,HIGH:2,HD:3,NUM_QUALITIES:4}}),null);
+__d("LivingRoomStoreInitializerLivingRoom.graphql",[],(function(a,b,c,d,e,f){"use strict";a=function(){var a={alias:null,args:null,kind:"ScalarField",name:"id",storageKey:null},b={alias:null,args:null,kind:"ScalarField",name:"name",storageKey:null},c={alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:[b],storageKey:null},d=[{alias:null,args:null,kind:"ScalarField",name:"text",storageKey:null}],e={alias:null,args:null,kind:"ScalarField",name:"is_verified",storageKey:null},f={alias:null,args:null,kind:"ScalarField",name:"uri",storageKey:null},g=[f],h={alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:g,storageKey:null},i={alias:null,args:null,kind:"ScalarField",name:"height",storageKey:null},j={alias:null,args:null,kind:"ScalarField",name:"width",storageKey:null},k=[i,j,f],l={alias:null,args:[{kind:"Literal",name:"height",value:160},{kind:"Literal",name:"width",value:284}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:k,storageKey:"image(height:160,width:284)"};e={alias:null,args:null,concreteType:"Video",kind:"LinkedField",name:"video",plural:!1,selections:[a,b,{alias:null,args:null,concreteType:"TextWithEntities",kind:"LinkedField",name:"message",plural:!1,selections:d,storageKey:null},{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"owner",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"__typename",storageKey:null},a,b,{kind:"InlineFragment",selections:[e,{alias:null,args:null,kind:"ScalarField",name:"is_show_page",storageKey:null},{alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"logo_for_show",plural:!1,selections:g,storageKey:null},h],type:"Page"},{kind:"InlineFragment",selections:[e],type:"User"}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"broadcast_status",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_live_streaming",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_spherical",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"live_viewer_count_read_only",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"play_count",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"playable_duration",storageKey:null},l,{alias:null,args:null,concreteType:"VideoThumbnail",kind:"LinkedField",name:"preferred_thumbnail",plural:!1,selections:[l],storageKey:null},{alias:null,args:null,concreteType:"InstreamVideoAdBreak",kind:"LinkedField",name:"pre_roll_ad_break",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"index",storageKey:null}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_eligible_for_preroll_living_room",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_eligible_for_commentating",storageKey:null},{alias:"attachment_image",args:[{kind:"Literal",name:"width",value:628}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:k,storageKey:"image(width:628)"}],storageKey:null};l={alias:null,args:[{kind:"Literal",name:"height",value:260},{kind:"Literal",name:"width",value:260}],concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:[j,i,f],storageKey:"profile_picture(height:260,width:260)"};k=[{alias:null,args:null,kind:"ScalarField",name:"team_full_name",storageKey:null},{alias:null,args:[{kind:"Literal",name:"height",value:1e3},{kind:"Literal",name:"width",value:1e3}],concreteType:"Image",kind:"LinkedField",name:"official_logo_with_fallback",plural:!1,selections:g,storageKey:"official_logo_with_fallback(height:1000,width:1000)"},{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"official_page",plural:!1,selections:[l],storageKey:null}];g={alias:null,args:null,kind:"ScalarField",name:"restriction_reason",storageKey:null};d={alias:null,args:null,concreteType:"TextWithEntities",kind:"LinkedField",name:"restriction_message",plural:!1,selections:d,storageKey:null};f=[a,{alias:null,args:null,kind:"ScalarField",name:"is_auto_played",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"badge_text",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"content_item_type",storageKey:null},c,e,{alias:null,args:null,concreteType:"LivingRoomSecondScreenContent",kind:"LinkedField",name:"second_screen_content",plural:!1,selections:[{alias:null,args:null,concreteType:"SportsDataMatchData",kind:"LinkedField",name:"gametime_match_data",plural:!1,selections:[a,{alias:null,args:null,kind:"ScalarField",name:"away_team_primary_color",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"home_team_primary_color",storageKey:null},{alias:null,args:null,concreteType:"Photo",kind:"LinkedField",name:"sports_data_cover_photo",plural:!1,selections:[a,{alias:null,args:[{kind:"Literal",name:"height",value:264},{kind:"Literal",name:"sizing",value:"cover-fill-cropped"},{kind:"Literal",name:"width",value:540}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:[f,j,i],storageKey:'image(height:264,sizing:"cover-fill-cropped",width:540)'}],storageKey:null}],storageKey:null},{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"related_page",plural:!1,selections:[a,b,l],storageKey:null},{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"home_team",plural:!1,selections:k,storageKey:null},{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"away_team",plural:!1,selections:k,storageKey:null}],storageKey:null},g,d];j=[a,b,h];i=[{alias:null,args:null,kind:"ScalarField",name:"presence_badge",storageKey:null},{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"viewer",plural:!1,selections:j,storageKey:null}];l={alias:null,args:null,kind:"ScalarField",name:"count",storageKey:null};k=[l];return{argumentDefinitions:[],kind:"Fragment",metadata:null,name:"LivingRoomStoreInitializerLivingRoom",selections:[a,{alias:null,args:null,kind:"ScalarField",name:"can_viewer_add_content",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_advance_queue",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_customize",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_end_session",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_invite",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_grant_temporary_host",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_play_content",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_host_walkthrough_www",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_presence_nux_www",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_video_controls",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_welcome_nux_www",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_host_enter_nux_www",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_share",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"can_viewer_suggest_content",storageKey:null},{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:[a],storageKey:null},{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"currently_playing",plural:!1,selections:f,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"current_viewer",plural:!1,selections:i,storageKey:null},{alias:null,args:[{kind:"Literal",name:"first",value:30}],concreteType:"LivingRoomToActiveViewersConnection",kind:"LinkedField",name:"active_viewers",plural:!1,selections:[l,{alias:null,args:null,concreteType:"LivingRoomToActiveViewersEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"node",plural:!1,selections:i,storageKey:null}],storageKey:null}],storageKey:"active_viewers(first:30)"},{alias:null,args:null,kind:"ScalarField",name:"experiments",storageKey:null},{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"feed_presence_users",plural:!0,selections:i,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomToPreviousContentsConnection",kind:"LinkedField",name:"previous_content",plural:!1,selections:k,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsConnection",kind:"LinkedField",name:"queued_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"node",plural:!1,selections:f,storageKey:null}],storageKey:null}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_active",storageKey:null},{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsConnection",kind:"LinkedField",name:"suggested_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomSuggestedContentItem",kind:"LinkedField",name:"node",plural:!1,selections:[a,c,e,g,d],storageKey:null}],storageKey:null},l],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"auto_play_enabled",storageKey:null},{alias:null,args:null,concreteType:"LivingRoomVideoState",kind:"LinkedField",name:"video_state",plural:!1,selections:[{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"actor",plural:!1,selections:j,storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"action_id",storageKey:null},{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"content_item",plural:!1,selections:f,storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"video_player_state",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"video_event",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"marker_offset_seconds",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"event_logged_timestamp",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"current_server_timestamp",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"live_clock_timestamp_ms",storageKey:null}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_viewer_present",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_pending_group_admin_approval",storageKey:null},{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"profile",plural:!1,selections:[b,{kind:"InlineFragment",selections:[{alias:"groupID",args:null,kind:"ScalarField",name:"id",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"viewer_admin_type",storageKey:null},{alias:null,args:null,concreteType:"GroupLinkedPagesConnection",kind:"LinkedField",name:"linked_pages",plural:!1,selections:k,storageKey:null}],type:"Group"}],storageKey:null},{args:null,kind:"FragmentSpread",name:"LivingRoomReplayFullScreen_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomVideoPlayer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomHeaderContainer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomSidePane_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomPresenceTray_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomWelcomeCardContainer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomFeedAttachmentOverlay_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomLinkedPagesDialog_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomFeedAttachmentFooter_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomEntryPoint_livingRoom"}],type:"LivingRoom"}}();e.exports=a}),null);
+__d("LivingRoomStoreInitializerPage.graphql",[],(function(a,b,c,d,e,f){"use strict";a={argumentDefinitions:[],kind:"Fragment",metadata:null,name:"LivingRoomStoreInitializerPage",selections:[{alias:null,args:null,kind:"ScalarField",name:"id",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"name",storageKey:null},{alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"uri",storageKey:null}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"viewer_profile_permissions",storageKey:null}],type:"Page"};e.exports=a}),null);
+__d("LivingRoomStoreInitializerQuery.graphql",[],(function(a,b,c,d,e,f){"use strict";a=function(){var a=[{defaultValue:null,kind:"LocalArgument",name:"actorID",type:"ID!"},{defaultValue:null,kind:"LocalArgument",name:"livingRoomID",type:"ID!"}],b={alias:null,args:null,kind:"ScalarField",name:"id",storageKey:null},c={alias:null,args:null,kind:"ScalarField",name:"name",storageKey:null},d={alias:null,args:null,kind:"ScalarField",name:"uri",storageKey:null},e=[d],f={alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:e,storageKey:null},g={alias:null,args:[{kind:"Variable",name:"id",variableName:"actorID"}],concreteType:"Page",kind:"LinkedField",name:"page",plural:!1,selections:[b,c,f,{alias:null,args:null,kind:"ScalarField",name:"viewer_profile_permissions",storageKey:null}],storageKey:null},h=[{kind:"Variable",name:"id",variableName:"livingRoomID"}],i={alias:null,args:null,kind:"ScalarField",name:"can_viewer_add_content",storageKey:null},j={alias:null,args:null,kind:"ScalarField",name:"can_viewer_advance_queue",storageKey:null},k={alias:null,args:null,kind:"ScalarField",name:"can_viewer_customize",storageKey:null},l={alias:null,args:null,kind:"ScalarField",name:"can_viewer_end_session",storageKey:null},m={alias:null,args:null,kind:"ScalarField",name:"can_viewer_invite",storageKey:null},n={alias:null,args:null,kind:"ScalarField",name:"can_viewer_grant_temporary_host",storageKey:null},o={alias:null,args:null,kind:"ScalarField",name:"can_viewer_play_content",storageKey:null},p={alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_host_walkthrough_www",storageKey:null},q={alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_presence_nux_www",storageKey:null},r={alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_video_controls",storageKey:null},s={alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_welcome_nux_www",storageKey:null},t={alias:null,args:null,kind:"ScalarField",name:"can_viewer_see_host_enter_nux_www",storageKey:null},u={alias:null,args:null,kind:"ScalarField",name:"can_viewer_share",storageKey:null},v={alias:null,args:null,kind:"ScalarField",name:"can_viewer_suggest_content",storageKey:null},w=[b],x={alias:null,args:null,kind:"ScalarField",name:"is_auto_played",storageKey:null},y={alias:null,args:null,kind:"ScalarField",name:"badge_text",storageKey:null},z={alias:null,args:null,kind:"ScalarField",name:"content_item_type",storageKey:null},A={alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:[c],storageKey:null},B=[{alias:null,args:null,kind:"ScalarField",name:"text",storageKey:null}],C={alias:null,args:null,concreteType:"TextWithEntities",kind:"LinkedField",name:"message",plural:!1,selections:B,storageKey:null},D={alias:null,args:null,kind:"ScalarField",name:"__typename",storageKey:null},E={alias:null,args:null,kind:"ScalarField",name:"is_verified",storageKey:null},aa=[E],ba={kind:"InlineFragment",selections:aa,type:"User"};E={alias:null,args:null,concreteType:null,kind:"LinkedField",name:"owner",plural:!1,selections:[D,b,c,{kind:"InlineFragment",selections:[E,{alias:null,args:null,kind:"ScalarField",name:"is_show_page",storageKey:null},{alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"logo_for_show",plural:!1,selections:e,storageKey:null},f],type:"Page"},ba],storageKey:null};var F={alias:null,args:null,kind:"ScalarField",name:"broadcast_status",storageKey:null},G={alias:null,args:null,kind:"ScalarField",name:"is_live_streaming",storageKey:null},H={alias:null,args:null,kind:"ScalarField",name:"is_spherical",storageKey:null},I={alias:null,args:null,kind:"ScalarField",name:"live_viewer_count_read_only",storageKey:null},J={alias:null,args:null,kind:"ScalarField",name:"play_count",storageKey:null},K={alias:null,args:null,kind:"ScalarField",name:"playable_duration",storageKey:null},L={alias:null,args:null,kind:"ScalarField",name:"height",storageKey:null},M={alias:null,args:null,kind:"ScalarField",name:"width",storageKey:null},N=[L,M,d],O={alias:null,args:[{kind:"Literal",name:"height",value:160},{kind:"Literal",name:"width",value:284}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:N,storageKey:"image(height:160,width:284)"},P={alias:null,args:null,concreteType:"InstreamVideoAdBreak",kind:"LinkedField",name:"pre_roll_ad_break",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"index",storageKey:null}],storageKey:null},Q={alias:null,args:null,kind:"ScalarField",name:"is_eligible_for_preroll_living_room",storageKey:null},R={alias:null,args:null,kind:"ScalarField",name:"is_eligible_for_commentating",storageKey:null};N={alias:"attachment_image",args:[{kind:"Literal",name:"width",value:628}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:N,storageKey:"image(width:628)"};var ca={alias:null,args:null,concreteType:"Video",kind:"LinkedField",name:"video",plural:!1,selections:[b,c,C,E,F,G,H,I,J,K,O,{alias:null,args:null,concreteType:"VideoThumbnail",kind:"LinkedField",name:"preferred_thumbnail",plural:!1,selections:[O],storageKey:null},P,Q,R,N],storageKey:null},S={alias:null,args:null,concreteType:"SportsDataMatchData",kind:"LinkedField",name:"gametime_match_data",plural:!1,selections:[b,{alias:null,args:null,kind:"ScalarField",name:"away_team_primary_color",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"home_team_primary_color",storageKey:null},{alias:null,args:null,concreteType:"Photo",kind:"LinkedField",name:"sports_data_cover_photo",plural:!1,selections:[b,{alias:null,args:[{kind:"Literal",name:"height",value:264},{kind:"Literal",name:"sizing",value:"cover-fill-cropped"},{kind:"Literal",name:"width",value:540}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:[d,M,L],storageKey:'image(height:264,sizing:"cover-fill-cropped",width:540)'}],storageKey:null}],storageKey:null};M=[M,L,d];L={alias:null,args:[{kind:"Literal",name:"height",value:260},{kind:"Literal",name:"width",value:260}],concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:M,storageKey:"profile_picture(height:260,width:260)"};d={alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"related_page",plural:!1,selections:[b,c,L],storageKey:null};var T={alias:null,args:null,kind:"ScalarField",name:"team_full_name",storageKey:null},U={alias:null,args:[{kind:"Literal",name:"height",value:1e3},{kind:"Literal",name:"width",value:1e3}],concreteType:"Image",kind:"LinkedField",name:"official_logo_with_fallback",plural:!1,selections:e,storageKey:"official_logo_with_fallback(height:1000,width:1000)"},V=[T,U,{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"official_page",plural:!1,selections:[L],storageKey:null}],W={alias:null,args:null,kind:"ScalarField",name:"restriction_reason",storageKey:null};B={alias:null,args:null,concreteType:"TextWithEntities",kind:"LinkedField",name:"restriction_message",plural:!1,selections:B,storageKey:null};V=[b,x,y,z,A,ca,{alias:null,args:null,concreteType:"LivingRoomSecondScreenContent",kind:"LinkedField",name:"second_screen_content",plural:!1,selections:[S,d,{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"home_team",plural:!1,selections:V,storageKey:null},{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"away_team",plural:!1,selections:V,storageKey:null}],storageKey:null},W,B];var da={alias:null,args:null,kind:"ScalarField",name:"presence_badge",storageKey:null},X=[b,c,f],Y=[da,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"viewer",plural:!1,selections:X,storageKey:null}],ea=[{kind:"Literal",name:"first",value:30}],Z={alias:null,args:null,kind:"ScalarField",name:"count",storageKey:null},fa={alias:null,args:null,kind:"ScalarField",name:"experiments",storageKey:null},ga=[Z],ha={alias:null,args:null,concreteType:"LivingRoomToPreviousContentsConnection",kind:"LinkedField",name:"previous_content",plural:!1,selections:ga,storageKey:null},ia={alias:null,args:null,kind:"ScalarField",name:"is_active",storageKey:null},ja={alias:null,args:null,kind:"ScalarField",name:"auto_play_enabled",storageKey:null},ka={alias:null,args:null,kind:"ScalarField",name:"action_id",storageKey:null},la={alias:null,args:null,kind:"ScalarField",name:"video_player_state",storageKey:null},ma={alias:null,args:null,kind:"ScalarField",name:"video_event",storageKey:null},na={alias:null,args:null,kind:"ScalarField",name:"marker_offset_seconds",storageKey:null},oa={alias:null,args:null,kind:"ScalarField",name:"event_logged_timestamp",storageKey:null},pa={alias:null,args:null,kind:"ScalarField",name:"current_server_timestamp",storageKey:null},qa={alias:null,args:null,kind:"ScalarField",name:"live_clock_timestamp_ms",storageKey:null},ra={alias:null,args:null,kind:"ScalarField",name:"is_viewer_present",storageKey:null},sa={alias:null,args:null,kind:"ScalarField",name:"is_pending_group_admin_approval",storageKey:null},ta={alias:"groupID",args:null,kind:"ScalarField",name:"id",storageKey:null},ua={alias:null,args:null,kind:"ScalarField",name:"viewer_admin_type",storageKey:null};f=[D,b,c,f];var $={alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:[D,c,b],storageKey:null},va={alias:null,args:null,concreteType:"VideoThumbnail",kind:"LinkedField",name:"preferred_thumbnail",plural:!1,selections:[O,b],storageKey:null};T=[T,U,{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"official_page",plural:!1,selections:[L,b],storageKey:null}];U={alias:null,args:null,concreteType:"LivingRoomSecondScreenContent",kind:"LinkedField",name:"second_screen_content",plural:!1,selections:[S,d,{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"home_team",plural:!1,selections:T,storageKey:null},{alias:null,args:null,concreteType:"SportsTeamWrapper",kind:"LinkedField",name:"away_team",plural:!1,selections:T,storageKey:null}],storageKey:null};L=[da,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"viewer",plural:!1,selections:f,storageKey:null}];S={alias:null,args:null,concreteType:"Video",kind:"LinkedField",name:"video",plural:!1,selections:[b,c,C,E,F,G,H,I,J,K,O,va,P,Q,R,N],storageKey:null};d=[b,x,y,z,$,S,U,W,B];T=[{kind:"Literal",name:"first",value:10}];return{fragment:{argumentDefinitions:a,kind:"Fragment",metadata:null,name:"LivingRoomStoreInitializerQuery",selections:[g,{alias:null,args:h,concreteType:null,kind:"LinkedField",name:"living_room",plural:!1,selections:[b,i,j,k,l,m,n,o,p,q,r,s,t,u,v,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:w,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"currently_playing",plural:!1,selections:V,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"current_viewer",plural:!1,selections:Y,storageKey:null},{alias:null,args:ea,concreteType:"LivingRoomToActiveViewersConnection",kind:"LinkedField",name:"active_viewers",plural:!1,selections:[Z,{alias:null,args:null,concreteType:"LivingRoomToActiveViewersEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"node",plural:!1,selections:Y,storageKey:null}],storageKey:null}],storageKey:"active_viewers(first:30)"},fa,{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"feed_presence_users",plural:!0,selections:Y,storageKey:null},ha,{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsConnection",kind:"LinkedField",name:"queued_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"node",plural:!1,selections:V,storageKey:null}],storageKey:null}],storageKey:null},ia,{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsConnection",kind:"LinkedField",name:"suggested_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomSuggestedContentItem",kind:"LinkedField",name:"node",plural:!1,selections:[b,A,ca,W,B],storageKey:null}],storageKey:null},Z],storageKey:null},ja,{alias:null,args:null,concreteType:"LivingRoomVideoState",kind:"LinkedField",name:"video_state",plural:!1,selections:[{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"actor",plural:!1,selections:X,storageKey:null},ka,{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"content_item",plural:!1,selections:V,storageKey:null},la,ma,na,oa,pa,qa],storageKey:null},ra,sa,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"profile",plural:!1,selections:[c,{kind:"InlineFragment",selections:[ta,ua,{alias:null,args:null,concreteType:"GroupLinkedPagesConnection",kind:"LinkedField",name:"linked_pages",plural:!1,selections:ga,storageKey:null}],type:"Group"}],storageKey:null},{args:null,kind:"FragmentSpread",name:"LivingRoomReplayFullScreen_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomVideoPlayer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomHeaderContainer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomSidePane_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomPresenceTray_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomWelcomeCardContainer_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomFeedAttachmentOverlay_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomLinkedPagesDialog_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomFeedAttachmentFooter_livingRoom"},{args:null,kind:"FragmentSpread",name:"LivingRoomEntryPoint_livingRoom"}],storageKey:null}],type:"Query"},kind:"Request",operation:{argumentDefinitions:a,kind:"Operation",name:"LivingRoomStoreInitializerQuery",selections:[g,{alias:null,args:h,concreteType:null,kind:"LinkedField",name:"living_room",plural:!1,selections:[D,b,i,j,k,l,m,n,o,p,q,r,s,t,u,v,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"creator",plural:!1,selections:f,storageKey:null},{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"currently_playing",plural:!1,selections:[b,x,y,z,$,{alias:null,args:null,concreteType:"Video",kind:"LinkedField",name:"video",plural:!1,selections:[b,c,C,E,F,G,H,I,J,K,O,va,P,Q,R,N,{alias:null,args:null,concreteType:"VideoViewModel",kind:"LinkedField",name:"video_view_model",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"season_and_episode_string",storageKey:null}],storageKey:null}],storageKey:null},U,W,B],storageKey:null},{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"current_viewer",plural:!1,selections:L,storageKey:null},{alias:null,args:ea,concreteType:"LivingRoomToActiveViewersConnection",kind:"LinkedField",name:"active_viewers",plural:!1,selections:[Z,{alias:null,args:null,concreteType:"LivingRoomToActiveViewersEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"node",plural:!1,selections:L,storageKey:null}],storageKey:null}],storageKey:"active_viewers(first:30)"},fa,{alias:null,args:null,concreteType:"LivingRoomUser",kind:"LinkedField",name:"feed_presence_users",plural:!0,selections:L,storageKey:null},ha,{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsConnection",kind:"LinkedField",name:"queued_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToQueuedContentsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"node",plural:!1,selections:d,storageKey:null}],storageKey:null}],storageKey:null},ia,{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsConnection",kind:"LinkedField",name:"suggested_items",plural:!1,selections:[{alias:null,args:null,concreteType:"LivingRoomToSuggestedContentItemsEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomSuggestedContentItem",kind:"LinkedField",name:"node",plural:!1,selections:[b,$,S,W,B],storageKey:null}],storageKey:null},Z],storageKey:null},ja,{alias:null,args:null,concreteType:"LivingRoomVideoState",kind:"LinkedField",name:"video_state",plural:!1,selections:[{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"actor",plural:!1,selections:f,storageKey:null},ka,{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"content_item",plural:!1,selections:d,storageKey:null},la,ma,na,oa,pa,qa],storageKey:null},ra,{alias:null,args:null,concreteType:"Feedback",kind:"LinkedField",name:"feedback",plural:!1,selections:w,storageKey:null},{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"profile",plural:!1,selections:[D,b,c,{kind:"InlineFragment",selections:[ta,{alias:null,args:null,kind:"ScalarField",name:"is_game_group",storageKey:null},ua,{alias:null,args:null,concreteType:"GroupLinkedPagesConnection",kind:"LinkedField",name:"linked_pages",plural:!1,selections:[Z,{alias:null,args:null,concreteType:"GroupLinkedPagesEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"node",plural:!1,selections:X,storageKey:null}],storageKey:null}],storageKey:null}],type:"Group"}],storageKey:null},{alias:null,args:null,concreteType:"LivingRoomRecap",kind:"LinkedField",name:"recap",plural:!1,selections:[{alias:null,args:T,concreteType:"LivingRoomRecapToWatchedContentConnection",kind:"LinkedField",name:"watched_content",plural:!1,selections:[Z,{alias:null,args:null,concreteType:"LivingRoomRecapToWatchedContentEdge",kind:"LinkedField",name:"edges",plural:!0,selections:[{alias:null,args:null,concreteType:"LivingRoomContentItem",kind:"LinkedField",name:"node",plural:!1,selections:[b,{alias:null,args:null,concreteType:"Video",kind:"LinkedField",name:"video",plural:!1,selections:[b,G,c,C,F,K,{alias:null,args:null,concreteType:null,kind:"LinkedField",name:"owner",plural:!1,selections:[D,c,{alias:null,args:[{kind:"Literal",name:"height",value:50},{kind:"Literal",name:"width",value:50}],concreteType:"Image",kind:"LinkedField",name:"profile_picture",plural:!1,selections:e,storageKey:"profile_picture(height:50,width:50)"},b,{kind:"InlineFragment",selections:aa,type:"Page"},ba],storageKey:null},{alias:null,args:null,concreteType:"SottoVideoContent",kind:"LinkedField",name:"sotto_content",plural:!1,selections:[D],storageKey:null},{alias:null,args:null,concreteType:"VideoThumbnail",kind:"LinkedField",name:"preferred_thumbnail",plural:!1,selections:[{alias:null,args:[{kind:"Literal",name:"height",value:250},{kind:"Literal",name:"width",value:375}],concreteType:"Image",kind:"LinkedField",name:"image",plural:!1,selections:M,storageKey:"image(height:250,width:375)"},b],storageKey:null},{alias:null,args:null,concreteType:"VideoViewModel",kind:"LinkedField",name:"video_view_model",plural:!1,selections:[{alias:null,args:null,concreteType:"VideoListShow",kind:"LinkedField",name:"series",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"title",storageKey:null},b],storageKey:null}],storageKey:null}],storageKey:null},D],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"cursor",storageKey:null}],storageKey:null},{alias:null,args:null,concreteType:"PageInfo",kind:"LinkedField",name:"page_info",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"end_cursor",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"has_next_page",storageKey:null}],storageKey:null}],storageKey:"watched_content(first:10)"},{alias:null,args:T,filters:null,handle:"connection",key:"LivingRoomReplayContainer_watched_content",kind:"LinkedHandle",name:"watched_content"}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"share_uri",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_waiting",storageKey:null},sa,{alias:null,args:null,kind:"ScalarField",name:"living_room_creation_source",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"custom_name",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"living_room_style",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"notif_subscription_status",storageKey:null},{alias:"privacy",args:null,concreteType:"PrivacyScope",kind:"LinkedField",name:"creation_story_privacy_scope_for_display",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"description",storageKey:null},{alias:null,args:null,concreteType:"Image",kind:"LinkedField",name:"icon_image",plural:!1,selections:e,storageKey:null}],storageKey:null},{alias:null,args:null,concreteType:"Page",kind:"LinkedField",name:"displayable_sponsor_page",plural:!1,selections:[b,c],storageKey:null},y,{alias:null,args:null,concreteType:"EntLivingRoomEnabledAds",kind:"LinkedField",name:"enabled_ads",plural:!0,selections:[{alias:null,args:null,kind:"ScalarField",name:"enabled",storageKey:null}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"auto_play_v2_eligible",storageKey:null},{alias:null,args:null,concreteType:"Story",kind:"LinkedField",name:"creation_story",plural:!1,selections:[{alias:null,args:null,kind:"ScalarField",name:"creation_time",storageKey:null},C,b],storageKey:null},{alias:"group",args:null,concreteType:null,kind:"LinkedField",name:"profile",plural:!1,selections:[D,b,{kind:"InlineFragment",selections:[c,{alias:null,args:null,kind:"ScalarField",name:"can_viewer_approve_posts",storageKey:null}],type:"Group"}],storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"is_rtc_call_ongoing",storageKey:null},{alias:null,args:null,kind:"ScalarField",name:"did_customize_name",storageKey:null}],storageKey:null}]},params:{id:"2809688859126834",metadata:{},name:"LivingRoomStoreInitializerQuery",operationKind:"query",text:null}}}();e.exports=a}),null);
+__d("ChromeExtensionInstallError",[],(function(a,b,c,d,e,f){"use strict";a=function(a){babelHelpers.inheritsLoose(b,a);function b(b,c,d){var e;e=a.call(this,b)||this;e.message=b;e.$ChromeExtensionInstallError3=b;e.$ChromeExtensionInstallError1=d;e.$ChromeExtensionInstallError2=c;e.name=e.constructor.name;return e}var c=b.prototype;c.toString=function(){return this.name+": "+[this.message,this.$ChromeExtensionInstallError2,this.$ChromeExtensionInstallError1].join("-")};c.getTypedMessage=function(){return this.$ChromeExtensionInstallError3};c.getInstallType=function(){return this.$ChromeExtensionInstallError2};return b}(babelHelpers.wrapNativeSuper(Error));e.exports=a}),null);
+__d("RTCChromeExtensionListener",["DateConsts","EventEmitter"],(function(a,b,c,d,e,f){"use strict";a=b("DateConsts").MS_PER_SEC;var g=a;c=function(a){babelHelpers.inheritsLoose(b,a);function b(b){var c;c=a.call(this)||this;c.$RTCChromeExtensionListener1=!1;c.$RTCChromeExtensionListener2=null;c.$RTCChromeExtensionListener5=function(a){var b=a;if(a.type==="notificationButtonClicked"){var d=a.buttonIndex;a=a.notificationId;d!==0&&d!==1&&(b={type:"notificationClicked",notificationId:a})}c.emit(b.type,b)};c.$RTCChromeExtensionListener6=function(a){a.onMessage.removeListener(c.$RTCChromeExtensionListener5),c.$RTCChromeExtensionListener2=null,c.emit("portDisconnected"),c.$RTCChromeExtensionListener1===!1&&c.$RTCChromeExtensionListener7(g)};c.$RTCChromeExtensionListener3=b;return c}var c=b.prototype;c.$RTCChromeExtensionListener4=function(){if(this.$RTCChromeExtensionListener2==null)try{var a=window.chrome.runtime.connect(this.$RTCChromeExtensionListener3,{name:"notifications"});a.onMessage.addListener(this.$RTCChromeExtensionListener5);a.onDisconnect.addListener(this.$RTCChromeExtensionListener6);this.$RTCChromeExtensionListener2=a;this.emit("portConnected")}catch(a){this.emit("portConnectionError",a)}};c.$RTCChromeExtensionListener7=function(a){var b=this;a===void 0&&(a=10);window.setTimeout(function(){b.$RTCChromeExtensionListener4()},a)};c.connect=function(){this.$RTCChromeExtensionListener7()};c.disconnect=function(){this.$RTCChromeExtensionListener2!=null&&(this.$RTCChromeExtensionListener1=!0,this.$RTCChromeExtensionListener2.disconnect(),this.$RTCChromeExtensionListener2=null)};return b}(b("EventEmitter"));e.exports=c}),null);
+__d("RTCChromeScreenSharingExtension",["Promise","RTCChromeExtensionListener","URI","gkx","isInternalFBURI","isInternURI","isWorkplaceDotComURI","uuid"],(function(a,b,c,d,e,f){var g;function a(){var a=(g||(g=b("URI"))).getRequestURI();return b("gkx")("1290293")&&(b("isInternURI")(a)||b("isInternalFBURI")(a))}function c(){return b("isWorkplaceDotComURI")((g||(g=b("URI"))).getRequestURI())}var h="ncfpggehkhmjpdjpefomjchjafhmbnai",i="flakgngfgjpjpfjknnkcipdebaigofln",j="hmobhiioligjpeieihehfjlkmmkjemfl";j=c()===!0?j:h;function k(a,c){return new(b("Promise"))(function(b,d){window.chrome.runtime.sendMessage(c,a,function(a){if(a!=null)typeof a==="object"&&a.type==="error"?d(new Error(a.message)):b(a);else{a=window.chrome.runtime.lastError.message;d(new Error(a))}})})}function d(a){return new(b("RTCChromeExtensionListener"))(a)}function f(a,b){b===void 0&&(b=["screen","window","tab"]);return k({type:"getStreamID",sources:b},a)}function l(a,b){return k({type:"cancel",requestID:a},b)}function m(){return b("uuid")()}e.exports={EXTENSION_ID:j,INTERN_EXTENSION_ID:i,connectToNotifications:d,generateNotificationID:m,getMediaSourceFromExtension:f,sendExtensionRequest:k,shoulUseInternExtension:a,shoulUseWorkplaceExtension:c,stopExtensionScreenSharing:l}}),null);
+__d("ScreenSharingExtensionInstallationTypedLogger",["Banzai","GeneratedLoggerUtils","nullthrows"],(function(a,b,c,d,e,f){"use strict";a=function(){function a(){this.$1={}}var c=a.prototype;c.log=function(){b("GeneratedLoggerUtils").log("logger:ScreenSharingExtensionInstallationLoggerConfig",this.$1,b("Banzai").BASIC)};c.logVital=function(){b("GeneratedLoggerUtils").log("logger:ScreenSharingExtensionInstallationLoggerConfig",this.$1,b("Banzai").VITAL)};c.logImmediately=function(){b("GeneratedLoggerUtils").log("logger:ScreenSharingExtensionInstallationLoggerConfig",this.$1,{signal:!0})};c.clear=function(){this.$1={};return this};c.getData=function(){return babelHelpers["extends"]({},this.$1)};c.updateData=function(a){this.$1=babelHelpers["extends"]({},this.$1,a);return this};c.setExtensionID=function(a){this.$1.extension_id=a;return this};c.setFailReason=function(a){this.$1.fail_reason=a;return this};c.setInstallEvent=function(a){this.$1.install_event=a;return this};c.setSourceApp=function(a){this.$1.source_app=a;return this};c.setTime=function(a){this.$1.time=a;return this};c.setType=function(a){this.$1.type=a;return this};c.setURIPath=function(a){this.$1.uri_path=a;return this};c.setVC=function(a){this.$1.vc=a;return this};c.setWeight=function(a){this.$1.weight=a;return this};return a}();c={extension_id:!0,fail_reason:!0,install_event:!0,source_app:!0,time:!0,type:!0,uri_path:!0,vc:!0,weight:!0};e.exports=a}),null);
+__d("CollabRTCChromeScreenSharingExtension",["invariant","Promise","regeneratorRuntime","ChromeExtensionInstallError","DateConsts","RTCChromeScreenSharingExtension","ScreenSharingExtensionInstallationTypedLogger","URI","isFacebookURI"],(function(a,b,c,d,e,f,g){"use strict";var h;a=b("DateConsts").MS_PER_MIN;var i=(c=b("RTCChromeScreenSharingExtension")).EXTENSION_ID,j=c.INTERN_EXTENSION_ID,k=c.generateNotificationID,l=c.getMediaSourceFromExtension,m=c.sendExtensionRequest,n=c.shoulUseInternExtension;d=c.shoulUseWorkplaceExtension;var o=c.stopExtensionScreenSharing,p="DIALOG_USER_CANCEL",q="EXTENSION_NOT_FOUND",r="MESSAGESENDER_TAB_UNDEFINED",s="REQUEST_ID_UNDEFINED",t="UNEXPECTED_ERROR";f="data-fb-only-screensharing-extension-available";var u="data-intern-screensharing-extension-available";c="data-wp-screensharing-extension-available";var v=d()?c:f,w=250,x=2*a,y=2;d=function(){function a(){this.DIALOG_USER_CANCEL=p,this.EXTENSION_NOT_FOUND=q,this.MESSAGESENDER_TAB_UNDEFINED=r,this.REQUEST_ID_UNDEFINED=s,this.UNEXPECTED_ERROR=t,this.$2=i,this.$3=v}var c=a.prototype;c.isInstalled=function(){var a=document;a=a.documentElement;if(n()&&(a!=null&&a.hasAttribute(u))){this.$2=j;this.$3=u;return!0}return a!=null&&a.hasAttribute(this.$3)?!0:!1};c.throwIfNotInstalled=function(){if(this.isInstalled()!==!0)throw new Error(q)};c.$4=function(a,c){var d=this,e=(c=a)!=null?(c=c.chrome)!=null?c.webstore:c:c;if(e==null)return b("Promise").reject(new(b("ChromeExtensionInstallError"))("CHROME_WEBSTORE_UNDEFINED","inline"));var f=window.document.documentElement;z(this.getExtensionURL(),window.document);a!==window&&z(this.getExtensionURL(),a.document);return new(b("Promise"))(function(a,c){e.install(d.getExtensionURL(),function(){f!=null&&f.setAttribute(d.getPresenseAttr(),"true"),a()},function(a,d){c(new(b("ChromeExtensionInstallError"))("EXTENSION_INSTALL_FAILED","inline",d))})}).then(function(){d.$5(y);return"inline"})};c.$6=function(a){var c=this;if(this.isInstalled())return b("Promise").resolve("store");z(this.getExtensionURL(),window.document);window.open(this.getExtensionURL(),"_blank");return this.$5(x/w).then(function(){var a=window.document.documentElement;a.setAttribute(c.getPresenseAttr(),"true");return"store"})["catch"](function(){throw new(b("ChromeExtensionInstallError"))("EXTENSION_STORE_INSTALL_TIMEOUT","store")})};c.getPresenseAttr=function(){return this.$3};c.isInlineInstallCapableDomain=function(){return b("isFacebookURI")((h||(h=b("URI"))).getRequestURI())};c.install=function(a){var c=this;if(this.isInstalled())return b("Promise").resolve();new(b("ScreenSharingExtensionInstallationTypedLogger"))().setInstallEvent("started").setExtensionID(this.$2).setSourceApp(a).log();return this.$7(a).then(function(d){new(b("ScreenSharingExtensionInstallationTypedLogger"))().setInstallEvent("installed").setExtensionID(c.$2).setType(d).setSourceApp(a).setURIPath((h||(h=b("URI"))).getRequestURI().getPath()).log()})["catch"](function(d){new(b("ScreenSharingExtensionInstallationTypedLogger"))().setInstallEvent("failed").setExtensionID(c.$2).setFailReason(d.getTypedMessage()).setType(d.getInstallType()).setSourceApp(a).setURIPath((h||(h=b("URI"))).getRequestURI().getPath()).log();throw d})};c.$7=function(a){var b;if(!this.isInlineInstallCapableDomain())return this.$6(a);b=(b=window)!=null?(b=b.chrome)!=null?b.webstore:b:b;if(b==null)return this.$6(a);return window.opener?this.$6(a):this.$4(window,a)};c.getSourceID=function(a){var c;return b("regeneratorRuntime").async(function(d){while(1)switch(d.prev=d.next){case 0:if(this.isInstalled()){d.next=2;break}throw new Error(q);case 2:d.next=4;return b("regeneratorRuntime").awrap(l(this.$2,a));case 4:c=d.sent;d.t0=c.type;d.next=d.t0==="streamID"?8:d.t0==="canceledGetStreamID"?10:11;break;case 8:this.$1=c.requestID;return d.abrupt("return",c.streamID);case 10:throw new Error(p);case 11:throw new Error(t);case 12:case"end":return d.stop()}},null,this)};c.getExtensionID=function(){return this.$2};c.getExtensionURL=function(){return"https://chrome.google.com/webstore/detail/"+this.$2};c.stop=function(){return b("regeneratorRuntime").async(function(a){while(1)switch(a.prev=a.next){case 0:a.next=2;return b("regeneratorRuntime").awrap(o(this.$1,this.$2));case 2:this.$1=null;case 3:case"end":return a.stop()}},null,this)};c.$5=function(a){var b=this;return m({type:"ping"},this.$2)["catch"](function(c){if(a<1)throw c;return A(w).then(function(){return b.$5(a-1)})})};c.isMinimumVersionNumber=function(a,c,d){var e,f,g,h,i,j;return b("regeneratorRuntime").async(function(k){while(1)switch(k.prev=k.next){case 0:this.throwIfNotInstalled();k.next=3;return b("regeneratorRuntime").awrap(m({type:"ping"},this.$2));case 3:e=k.sent;f=e.version;g=f.split(".").map(function(a){return parseInt(a,10)}),h=g[0],i=g[1],j=g[2];if(!(h>=a)){k.next=10;break}if(!(i>c)){k.next=9;break}return k.abrupt("return",!0);case 9:return k.abrupt("return",i===c&&j>=d);case 10:return k.abrupt("return",!1);case 11:case"end":return k.stop()}},null,this)};c.focusTabAndWindow=function(){var a;return b("regeneratorRuntime").async(function(c){while(1)switch(c.prev=c.next){case 0:this.throwIfNotInstalled();c.next=3;return b("regeneratorRuntime").awrap(m({type:"focusTabAndWindow"},this.$2));case 3:a=c.sent;return c.abrupt("return",{tab:a.tab,window:a.window});case 5:case"end":return c.stop()}},null,this)};c.getLastFocusedWindow=function(a){var c;return b("regeneratorRuntime").async(function(d){while(1)switch(d.prev=d.next){case 0:this.throwIfNotInstalled();d.next=3;return b("regeneratorRuntime").awrap(m({type:"getLastFocusedWindow",getInfo:a},this.$2));case 3:c=d.sent;return d.abrupt("return",c.window);case 5:case"end":return d.stop()}},null,this)};c.getTabForSender=function(){var a;return b("regeneratorRuntime").async(function(c){while(1)switch(c.prev=c.next){case 0:this.throwIfNotInstalled();c.next=3;return b("regeneratorRuntime").awrap(m({type:"getTabForSender"},this.$2));case 3:a=c.sent;return c.abrupt("return",a.tab);case 5:case"end":return c.stop()}},null,this)};c.getTabAndWindowForSender=function(){var a;return b("regeneratorRuntime").async(function(c){while(1)switch(c.prev=c.next){case 0:this.throwIfNotInstalled();c.next=3;return b("regeneratorRuntime").awrap(m({type:"getTabAndWindowForSender"},this.$2));case 3:a=c.sent;return c.abrupt("return",{tab:a.tab,window:a.window});case 5:case"end":return c.stop()}},null,this)};c.getWindow=function(a,c){var d;return b("regeneratorRuntime").async(function(e){while(1)switch(e.prev=e.next){case 0:this.throwIfNotInstalled();e.next=3;return b("regeneratorRuntime").awrap(m({type:"getWindow",windowId:a,getInfo:c},this.$2));case 3:d=e.sent;return e.abrupt("return",d.window);case 5:case"end":return e.stop()}},null,this)};c.updateTab=function(a,c){var d,e;return b("regeneratorRuntime").async(function(f){while(1)switch(f.prev=f.next){case 0:this.throwIfNotInstalled();d={type:"updateTab",updateProperties:a};c!==void 0&&(d.tabId=c);f.next=5;return b("regeneratorRuntime").awrap(m(d,this.$2));case 5:e=f.sent;return f.abrupt("return",e.tab);case 7:case"end":return f.stop()}},null,this)};c.updateWindow=function(a,c){var d;return b("regeneratorRuntime").async(function(e){while(1)switch(e.prev=e.next){case 0:this.throwIfNotInstalled();e.next=3;return b("regeneratorRuntime").awrap(m({type:"updateWindow",windowId:a,updateInfo:c},this.$2));case 3:d=e.sent;return e.abrupt("return",d.window);case 5:case"end":return e.stop()}},null,this)};c.clearNotification=function(a){var c,d;return b("regeneratorRuntime").async(function(e){while(1)switch(e.prev=e.next){case 0:e.next=2;return b("regeneratorRuntime").awrap(this.isNotificationPermissionGranted());case 2:c=e.sent;if(!(c===!1)){e.next=5;break}throw new Error("Chrome extension notifications permission not granted");case 5:e.next=7;return b("regeneratorRuntime").awrap(m({type:"clearNotification",notificationId:a},this.$2));case 7:d=e.sent;return e.abrupt("return",d.wasCleared);case 9:case"end":return e.stop()}},null,this)};c.createNotification=function(a){var c,d;return b("regeneratorRuntime").async(function(e){while(1)switch(e.prev=e.next){case 0:e.next=2;return b("regeneratorRuntime").awrap(this.isNotificationPermissionGranted());case 2:c=e.sent;if(!(c===!1)){e.next=5;break}throw new Error("Chrome extension notifications permission not granted");case 5:e.next=7;return b("regeneratorRuntime").awrap(m({type:"createNotification",notificationId:k(),options:a},this.$2));case 7:d=e.sent;return e.abrupt("return",d.notificationId);case 9:case"end":return e.stop()}},null,this)};c.getAllNotifications=function(){var a,c;return b("regeneratorRuntime").async(function(d){while(1)switch(d.prev=d.next){case 0:d.next=2;return b("regeneratorRuntime").awrap(this.isNotificationPermissionGranted());case 2:a=d.sent;if(!(a===!1)){d.next=5;break}throw new Error("Chrome extension notifications permission not granted");case 5:d.next=7;return b("regeneratorRuntime").awrap(m({type:"getAllNotifications"},this.$2));case 7:c=d.sent;return d.abrupt("return",Object.keys(c.notifications));case 9:case"end":return d.stop()}},null,this)};c.getNotificationsPermissionLevel=function(){var a;return b("regeneratorRuntime").async(function(c){while(1)switch(c.prev=c.next){case 0:this.throwIfNotInstalled();c.next=3;return b("regeneratorRuntime").awrap(m({type:"getNotificationsPermissionLevel"},this.$2));case 3:a=c.sent;return c.abrupt("return",a.level);case 5:case"end":return c.stop()}},null,this)};c.updateNotification=function(a,c){var d,e;return b("regeneratorRuntime").async(function(f){while(1)switch(f.prev=f.next){case 0:f.next=2;return b("regeneratorRuntime").awrap(this.isNotificationPermissionGranted());case 2:d=f.sent;if(!(d===!1)){f.next=5;break}throw new Error("Chrome extension notifications permission not granted");case 5:f.next=7;return b("regeneratorRuntime").awrap(m({type:"updateNotification",notificationId:a,options:c},this.$2));case 7:e=f.sent;return f.abrupt("return",e.wasUpdated);case 9:case"end":return f.stop()}},null,this)};c.isNotificationPermissionGranted=function(){var a;return b("regeneratorRuntime").async(function(c){while(1)switch(c.prev=c.next){case 0:a="denied";c.prev=1;c.next=4;return b("regeneratorRuntime").awrap(this.getNotificationsPermissionLevel());case 4:a=c.sent;c.next=10;break;case 7:c.prev=7,c.t0=c["catch"](1),a="denied";case 10:c.t1=a;c.next=c.t1==="granted"?13:c.t1==="denied"?14:15;break;case 13:return c.abrupt("return",!0);case 14:return c.abrupt("return",!1);case 15:throw new Error("Received an unexpected permission level: "+a);case 16:case"end":return c.stop()}},null,this,[[1,7]])};return a}();function z(a,b){var c="chrome-webstore-item";if(!b.querySelector('link[href="'+a+'"][rel="'+c+'"]')){var d=b.createElement("link");d.setAttribute("href",a);d.setAttribute("rel",c);b.head!=null||g(0,6240);b.head.appendChild(d)}}function A(a){return new(b("Promise"))(function(b){return window.setTimeout(b,a)})}e.exports=new d()}),null);
+__d("CollabRTCChromeScreenSharing",["CollabRTCChromeScreenSharingExtension"],(function(a,b,c,d,e,f){"use strict";a={focusTabAndWindow:function(){return b("CollabRTCChromeScreenSharingExtension").focusTabAndWindow()},getLastFocusedWindow:function(a){return b("CollabRTCChromeScreenSharingExtension").getLastFocusedWindow(a)},getTabForSender:function(){return b("CollabRTCChromeScreenSharingExtension").getTabForSender()},getTabAndWindowForSender:function(){return b("CollabRTCChromeScreenSharingExtension").getTabAndWindowForSender()},getWindow:function(a,c){return b("CollabRTCChromeScreenSharingExtension").getWindow(a,c)},getSourceID:function(a,c){return b("CollabRTCChromeScreenSharingExtension").install(c).then(function(){return b("CollabRTCChromeScreenSharingExtension").getSourceID(a)})},stop:function(){return b("CollabRTCChromeScreenSharingExtension").stop()},updateTab:function(a,c){return b("CollabRTCChromeScreenSharingExtension").updateTab(a,c)},updateWindow:function(a,c){return b("CollabRTCChromeScreenSharingExtension").updateWindow(a,c)}};e.exports=a}),null);
+__d("FDSSplitButton.react",["FDSButton.react","FDSButtonGroup.react","FDSButtonSpinner.react","FDSDropdownMenu.react","FDSDropdownSelectorOption.react","FDSDropdownSelectorSeparator.react","FDSPrivateDropdownMenuContext","React","makeFDSStandardComponent","shallowEqual"],(function(a,b,c,d,e,f){"use strict";var g=b("React");a=function(a){babelHelpers.inheritsLoose(c,a);function c(){var b,c;for(var d=arguments.length,e=new Array(d),f=0;f<d;f++)e[f]=arguments[f];return(b=c=a.call.apply(a,[this].concat(e))||this,c.state={menuAlignment:"right",labelIsHidden:!0,isDisabled:c.props.isDisabled,size:c.props.size,use:c.props.use},b)||babelHelpers.assertThisInitialized(c)}c.getDerivedStateFromProps=function(a,c){a=babelHelpers["extends"]({},c,{isDisabled:a.isDisabled,size:a.size,use:a.use});return b("shallowEqual")(c,a)?c:a};var d=c.prototype;d.$1=function(a){a===void 0&&(a=this.props);return{children:a.children,contextualLayerBehaviors_DEPRECATED:a.contextualLayerBehaviors_DEPRECATED,dropdownMaxHeight_DEPRECATED:a.dropdownMaxHeight_DEPRECATED,dropdownWidth_DEPRECATED:a.dropdownWidth_DEPRECATED,menuAlignment_DEPRECATED:a.menuAlignment_DEPRECATED,menuPosition_DEPRECATED:a.menuPosition_DEPRECATED,shouldHideOnMouseLeave_DEPRECATED:a.shouldHideOnMouseLeave_DEPRECATED,onChange_DEPRECATED:a.onChange_DEPRECATED}};d.render=function(){var a=this.props,c=a.isBusy,d=a.menu,e=a.margin,f=a.maxWidth,j=a.minWidth,k=a.width;a.children;a.contextualLayerBehaviors_DEPRECATED;a.dropdownMaxHeight_DEPRECATED;a.dropdownWidth_DEPRECATED;a.menuAlignment_DEPRECATED;a.menuPosition_DEPRECATED;a.shouldHideOnMouseLeave_DEPRECATED;a.onChange_DEPRECATED;a=babelHelpers.objectWithoutPropertiesLoose(a,["isBusy","menu","margin","maxWidth","minWidth","width","children","contextualLayerBehaviors_DEPRECATED","dropdownMaxHeight_DEPRECATED","dropdownWidth_DEPRECATED","menuAlignment_DEPRECATED","menuPosition_DEPRECATED","shouldHideOnMouseLeave_DEPRECATED","onChange_DEPRECATED"]);var l=f!==void 0||j!==void 0||k!==void 0,m=l?"100%":void 0,n=l?0:void 0,o=l?"flex":void 0;l=l?{maxWidth:f,minWidth:j,width:k}:null;j=(f=d)!=null?f:h(this.$1());k=g.jsxs(b("FDSButtonGroup.react"),{density:o,margin:e,children:[g.jsx(b("FDSButton.react"),babelHelpers["extends"]({},a,{busyIndicator:c===!0?g.jsx(b("FDSButtonSpinner.react"),{shade:i(this.props.use)}):null,maxWidth:m,minWidth:n})),j]});return g.jsx(b("FDSPrivateDropdownMenuContext").Provider,{value:this.state,children:l==null?k:g.jsx("div",{style:l,children:k})})};return c}(g.Component);a.defaultProps={isBusy:!1,isDisabled:!1,labelIsHidden:!1,size:"medium",type:"button",use:"default"};function h(a){var c=function(b){return function(){typeof a.onChange_DEPRECATED==="function"&&a.onChange_DEPRECATED(b)}},d=g.Children.toArray(a.children).map(function(a){var d=a.type;a=a.props;switch(d){case b("FDSDropdownSelectorOption.react"):return{type:"item","data-testid":a["data-testid"],isDisabled:a.isDisabled,icon:a.icon,label:a.children,description:typeof a.tooltip==="string"?a.tooltip:void 0,onClick:c(a.value)};case b("FDSDropdownSelectorSeparator.react"):return{type:"separator"};default:return null}}).filter(Boolean);return g.jsx(b("FDSDropdownMenu.react"),{contextualLayerBehaviors:a.contextualLayerBehaviors_DEPRECATED,dropdownWidth:a.dropdownWidth_DEPRECATED,items:d,maxHeight:a.dropdownMaxHeight_DEPRECATED,menuAlignment:a.menuAlignment_DEPRECATED,menuPosition:a.menuPosition_DEPRECATED,shouldHideOnMouseLeave:a.shouldHideOnMouseLeave_DEPRECATED})}function i(a){return a==="default"||a==="flat"||a==="flatWhite"?"dark":"light"}e.exports=b("makeFDSStandardComponent")("FDSSplitButton",a)}),null);
+__d("RTCEndCallReason",["FBRTCConstants","FBRTCDismissReason","FBRTCHangupReason","FBRTCRtcResponseStatusCode","RTWebStrings"],(function(a,b,c,d,e,f){"use strict";var g=b("FBRTCConstants").CallEndReason,h=b("FBRTCConstants").CollabCallEndSubreason;a=function(){function a(a){this.$3="local",typeof a==="string"||a instanceof String?this.$1=b("FBRTCConstants").endCallReasonFromString(a):this.$1=a}var c=a.prototype;c.setSubreason=function(a){this.$2=a;return this};c.getSubreason=function(){return this.$2};c.setRemoteEnded=function(a){this.$3=a?"remote":"local";return this};c.getRemoteEnded=function(){return this.$3==="remote"};c.toStrName=function(a){a===void 0&&(a=!0);return a?this.$4()+"_"+this.$3:this.$4()};c.$4=function(){return b("FBRTCConstants").callEndReasonString(this.$1)};c.getReasonID=function(){return this.$1};c.toString=function(a){var b;a===void 0&&(a=!1);b=((b=this.$5(a))!=null?b:"").toString();return a?b+" "+this.$6():b};c.$5=function(a){switch(this.$1){case g.NO_ANSWER_TIMEOUT:case g.IGNORE_CALL:return b("RTWebStrings").noAnswer;case g.OTHER_NOT_CAPABLE:if(this.$2===h.MCU_INVALID_STREAM_CONFIGURATION)return b("RTWebStrings").invalidStreamConfiguration;case g.INCOMING_TIMEOUT:case g.NO_PERMISSION:case g.OTHER_CARRIER_BLOCKED:return b("RTWebStrings").unreachable;case g.SIGNALING_MESSAGE_FAILED:case g.WEBRTC_ERROR:case g.NO_UI_ERROR:case g.CALLER_NOT_VISIBLE:case g.CLIENT_ERROR:return b("RTWebStrings").callFailed;case g.UNSUPPORTED_VERSION:return b("RTWebStrings").cannotConnect;case g.IN_ANOTHER_CALL:return b("RTWebStrings").inAnotherCall;case g.CARRIER_BLOCKED:return b("RTWebStrings").switchToWiFi;case g.CLIENT_INTERRUPTED:return b("RTWebStrings").callInterrupted;case g.HANGUP_CALL:case g.ACCEPT_AFTER_HANGUP:return a?"":b("RTWebStrings").callEnded;case g.CONNECTION_DROPPED:return b("RTWebStrings").connectionLost;case g.OTHER_INSTANCE_HANDLED:return null;case g.CLIENT_ENCRYPTION_ERROR:return b("RTWebStrings").clientEncryptionError;case g.INACTIVE_TIMEOUT:return b("RTWebStrings").inactive;default:return null}};c.$6=function(){var a;if(this.$1!==g.OTHER_NOT_CAPABLE&&this.$1!==g.SIGNALING_MESSAGE_FAILED&&this.$1!==g.HANGUP_CALL&&this.$1!==g.ACCEPT_AFTER_HANGUP)return"";switch(this.$2){case h.REMOTE_PEER_HANGUP:return"Call ended";case h.REMOTE_PEER_REJECT:return"Call declined";case h.CLOSED_BY_MCU:return"Call expired";case h.CLOSED_AS_STALE:return"Server failed, call is stale";case h.CALL_INITIALIZATION_FAILED:return"Call initialization to room failed";case h.SIP_CONNECTION_INITIALIZATION_FAILED:return"No Answer";case h.LOST_MCU_CONNECTION:return"MCU Media connection failed";case h.LOST_MCU_THRIFT_CONNECTION:return"MCU infrastructure dropped connection";case h.LOST_SIP_ADAPTER_CONNECTION:return"SIP infrastructure dropped connection";case h.MCU_NO_AUDIO_STREAM:return"Invalid audio stream";case h.MCU_INVALID_STREAM_CONFIGURATION:return"Invalid stream configuration";case h.INVALID_MEETING_ID:return"Invalid meeting ID";case h.UNKNOWN:default:a=(a=this.$2)!=null?a:"Unknown";return this.$2!=null&&this.$2!==""?"Unexpected call failure: "+a:"Call ended"}};a.fromHangupReason=function(c){switch(c){case b("FBRTCHangupReason").IGNORE_CALL:return new a(g.IGNORE_CALL);case b("FBRTCHangupReason").NO_ANSWER_TIMEOUT:return new a(g.NO_ANSWER_TIMEOUT);case b("FBRTCHangupReason").HANGUP_CALL:return new a(g.HANGUP_CALL);case b("FBRTCHangupReason").CLIENT_ERROR:return new a(g.CLIENT_ERROR);case b("FBRTCHangupReason").IN_ANOTHER_CALL:return new a(g.IN_ANOTHER_CALL);case b("FBRTCHangupReason").CLIENT_INTERRUPTED:return new a(g.CLIENT_INTERRUPTED);default:return new a(g.HANGUP_CALL)}};a.subreasonFromDismissRequest=function(a){if(!a)return null;switch(a.reason){case b("FBRTCDismissReason").REMOVED_BY_PARTICIPANT:return"REMOVED_BY_PARTICIPANT";default:return null}};a.fromDismissRequest=function(c){if(!c)return new a(g.HANGUP_CALL);switch(c.reason){case b("FBRTCDismissReason").ANSWERED_ON_ANOTHER_DEVICE:case b("FBRTCDismissReason").REJECTED_ON_ANOTHER_DEVICE:return new a(g.OTHER_INSTANCE_HANDLED);case b("FBRTCDismissReason").CALL_ENDED:return new a(g.HANGUP_CALL);case b("FBRTCDismissReason").IN_ANOTHER_CALL:return new a(g.IN_ANOTHER_CALL);case b("FBRTCDismissReason").CONNECTION_DROPPED:return new a(g.CONNECTION_DROPPED);case b("FBRTCDismissReason").REMOVED_BY_PARTICIPANT:return new a(g.HANGUP_CALL);case b("FBRTCDismissReason").REJECTED_BY_CALLEE:return new a(g.IGNORE_CALL);case b("FBRTCDismissReason").INTERNAL_ERROR:return new a(g.SIGNALING_MESSAGE_FAILED);default:return new a(g.HANGUP_CALL)}};a.fromResponseStatusCode=function(c){switch(c){case b("FBRTCRtcResponseStatusCode").PRECONDITION_FAILURE:case b("FBRTCRtcResponseStatusCode").METHOD_NOT_ALLOWED:case b("FBRTCRtcResponseStatusCode").UNAUTHORIZED:return new a(g.NO_PERMISSION);case b("FBRTCRtcResponseStatusCode").SERVICE_UNAVAILABLE:return new a(g.SIGNALING_MESSAGE_FAILED);case b("FBRTCRtcResponseStatusCode").SERVER_INTERNAL_ERROR:case b("FBRTCRtcResponseStatusCode").BAD_REQUEST:case b("FBRTCRtcResponseStatusCode").BUSY_HERE:case b("FBRTCRtcResponseStatusCode").CONDITIONAL_REQUEST_FAILED:case b("FBRTCRtcResponseStatusCode").NOT_FOUND:return new a(g.CLIENT_ERROR);default:return new a(g.HANGUP_CALL)}};return a}();e.exports=a}),null);
+__d("ZenonExperiments",["gkx","qex"],(function(a,b,c,d,e,f){"use strict";function g(){var a=b("qex")._("1380106"),c=b("qex")._("1380107"),d=b("qex")._("1380108");return i(a,c,d)}function h(){var a=b("qex")._("1426250"),c=b("qex")._("1426251"),d=b("qex")._("1426252");return i(a,c,d)}function i(a,b,c){if(a==null||b==null||c==null)return null;var d=a/b;return{width:{ideal:a},height:{ideal:b},aspectRatio:{ideal:d},frameRate:{ideal:c}}}function a(){return b("qex")._("1380109")?g():null}function c(){return b("qex")._("1380110")?g():null}function d(){return b("qex")._("1426253")?h():null}function f(){var a=b("qex")._("1419919"),c=b("qex")._("1419920"),d=b("qex")._("1419921");return i(a,c,d)}a={getNetworkMonitorRttThreshold:function(){return b("qex")._("1064197")},getNetworkMonitorPacketLossRateThreshold:function(){return b("qex")._("1064198")},getMediaMetricParserPollingRate:function(){return b("qex")._("1064222")},shouldUseM4Buttons:function(){return b("gkx")("1376351")},shouldUseM4DominantView:function(){return b("gkx")("1369511")},displayUnifiedCallState:function(){var a;return(a=b("qex")._("1160100"))!=null?a:!1},displayNewLayoutAndDarkTheme:function(){return b("gkx")("1376351")},shouldUseChatInGroupCalls:function(){var a;return(a=b("qex")._("1262170"))!=null?a:!1},screenShareWithReplaceTrack:function(){return b("gkx")("1369511")||b("gkx")("1428146")},blockMuteWhileConnecting:function(){return b("gkx")("1410739")},subscribeOnlyToDominantSpeaker:function(){return b("gkx")("1418022")},disableAudioAutoGainControl:function(){return b("gkx")("1440429")},subscribeOnlyWhenVisible:function(){return b("gkx")("1442468")},getP2PVideoConstraints:a,getMWVideoConstraints:c,getMWebVideoConstraints:f,getMWVideoConstraintsRooms:d};e.exports=a}),null);
+__d("RTCUserMediaConstraints",["FBRTCConstants","FBRTCSupport","RTCConfig","ZenonExperiments"],(function(a,b,c,d,e,f){"use strict";a=b("FBRTCConstants").RTCConstraints;var g=b("FBRTCConstants").VideoQuality,h={width:a.FHD_WIDTH,height:a.FHD_HEIGHT,frameRate:a.FRAME_RATE},i={width:a.HD_WIDTH,height:a.HD_HEIGHT,frameRate:a.FRAME_RATE},j={width:a.SD_WIDTH,height:a.SD_HEIGHT,frameRate:a.FRAME_RATE},k={width:a.LQ_WIDTH,height:a.LQ_HEIGHT,frameRate:a.LQ_FRAME_RATE},l={audio:function(a){return a?{deviceId:{exact:a}}:!0},video:function(a,c,d){d===void 0&&(d=b("RTCConfig").CollaborationCallQuality.videoToRoom);c=c?{deviceId:{exact:c}}:null;if(a===g.CUSTOM_VIDEO)return babelHelpers["extends"]({},d,c);if(b("FBRTCSupport").isMobileDevice())return m(b("ZenonExperiments").getP2PVideoConstraints());d=o(a);a=n(a)?k:q(d);return babelHelpers["extends"]({width:p(d,"width",a),height:p(d,"height",a),frameRate:p(d,"frameRate",{frameRate:10})},c)},chromeMediaSource:function(a,b){a=a.video;a=l.chromify(a);if(typeof a!=="object")return{audio:!1,video:Boolean(a)};var c=a.mandatory;a=a.optional;a=a===void 0?[]:a;return{audio:!1,video:{mandatory:babelHelpers["extends"]({},c,{chromeMediaSource:"desktop",chromeMediaSourceId:b}),optional:[{googTemporalLayeredScreencast:!0}].concat(a)}}},chromify:function(a,b){if(!a||typeof a!=="object")return Boolean(a);if(!t(a))return a;b=b?b.optionalConstraintsOnly:!1;var c=a.mandatory;c=c===void 0?{}:c;var d=a.optional;d=d===void 0?[]:d;var e=Object.entries(a);for(var f=0;f<e.length;f++){var g=e[f],h=g[0];g=g[1];if(h==="require"||h==="advanced"||h==="mediaSource")continue;g=g&&typeof g==="object"?g:{ideal:g};Number.isFinite(g.exact)&&(g.min=g.exact,g.max=g.exact);var i=g.ideal,j=g.exact;if(i!==void 0)if(Number.isFinite(i)){var k;d.push((k={},k[s(h,"min")]=i,k),(k={},k[s(h,"max")]=i,k))}else{d.push((k={},k[s(h)]=i,k))}if(!b)if(j!==void 0&&!Number.isFinite(j))c[s(h)]=j;else{i=["min","max"];for(var k=0;k<i.length;k++){j=i[k];Number.isFinite(g[j])&&(c[s(h,j)]=g[j])}}}a.advanced&&d.push.apply(d,a.advanced);j={};Object.keys(c).length>0?j.mandatory=c:b&&(j.mandatory={});d.length>0&&(j.optional=d);return j}};function m(a){if(a===null)return{};var b={};b.width=a==null?void 0:a.width;b.height=a==null?void 0:a.height;b.aspectRatio=a==null?void 0:a.aspectRatio;b.frameRate=a==null?void 0:a.frameRate;b.facingMode={ideal:"user"};return b}function n(a){return a===g.HD_IDEAL_LQ_REQUIRED_VIDEO||a===g.FHD_IDEAL_LQ_REQUIRED_VIDEO}function o(a){switch(a){case g.FHD_VIDEO:case g.FHD_IDEAL_LQ_REQUIRED_VIDEO:return h;case g.HD_VIDEO:case g.HD_IDEAL_LQ_REQUIRED_VIDEO:return i;case g.LQ_VIDEO:return k;case g.SD_VIDEO:return j;default:return i}}function p(a,b,c){c===void 0&&(c=q(a));var d=a[b];return{min:Math.min(c[b],d),max:Math.max(r(a)[b],d),ideal:d}}function q(a){switch(a){case h:return i;case i:return j;case j:case k:default:return k}}function r(a){switch(a){case k:return j;case j:return i;case i:case h:default:return h}}function s(b,a){return a?""+a+b.charAt(0).toUpperCase()+b.slice(1):b==="deviceId"?"sourceId":b}function t(a){return Object.keys(a).some(function(a){return a!=="mandatory"&&a!=="optional"})}e.exports=l}),null);
+__d("RTCAudioTrackNoiseDetector",["invariant","Promise","MediaStream"],(function(a,b,c,d,e,f,g){"use strict";var h="audio track with absolute silence",i="audio track data timeout",j='wrong track type, expected "audio"',k=100;a={ABSOLUTE_SILENCE_ERROR:h,DATA_TIMEOUT_ERROR:i,WRONG_TRACK_TYPE_ERROR:j,detect:function(a,c){if("kind"in a&&a.kind!=="audio")return b("Promise").reject(new Error(j));var d=new(b("MediaStream"))();d.addTrack(a);var e=new AudioContext(),f=e.createMediaStreamSource(d),l=e.createScriptProcessor(0,1,1),m=k,n=function(){l!=null||g(0,2865);l.onaudioprocess=null;l.disconnect();l=null;f!=null||g(0,2866);f.disconnect();f=null;d!=null||g(0,2867);d.removeTrack(a);d=null;e!=null||g(0,2868);return b("Promise").resolve(e.close())["catch"](function(){return b("Promise").resolve()}).then(function(){e=null})};return b("Promise").race([new(b("Promise"))(function(a,b){l!=null||g(0,2865),l.onaudioprocess=function(c){c=c.inputBuffer;for(var c=c.getChannelData(0),d=Array.isArray(c),e=0,c=d?c:c[typeof Symbol==="function"?Symbol.iterator:"@@iterator"]();;){var f;if(d){if(e>=c.length)break;f=c[e++]}else{e=c.next();if(e.done)break;f=e.value}f=f;if(f!==0){a();return}}m>0?m--:b(new Error(h))},f!=null||g(0,2866),f.connect(l),e!=null||g(0,2868),l.connect(e.destination)}),new(b("Promise"))(function(a){return window.setTimeout(a,c)}).then(function(){throw new Error(i)})]).then(function(){return n()})["catch"](function(a){return n().then(function(){throw a})})}};e.exports=a}),null);
+__d("RTCVideoTrackActivityDetector",["invariant","Promise","MediaStream","assignMediaStream"],(function(a,b,c,d,e,f,g){"use strict";var h="video track playback timeout",i="unexpected video track ready state",j='wrong track type, expected "video"';a={PLAYBACK_TIMEOUT_ERROR:h,WRONG_READY_STATE_ERROR:i,WRONG_TRACK_TYPE_ERROR:j,detect:function(a,c){if("kind"in a&&a.kind!=="video")return b("Promise").reject(new Error(j));var d=document.createElement("video");d.muted=!0;var e=new(b("MediaStream"))();e.addTrack(a);var f,k=null,l=function(){window.clearInterval(k),d&&(d.pause(),b("assignMediaStream")(d,null),d.removeEventListener("timeupdate",f),d=null),e&&(e.removeTrack(a),e=null)};return b("Promise").race([new(b("Promise"))(function(c,h){d!=null||g(0,5995),b("assignMediaStream")(d,e),f=function(b){d!=null||g(0,5995),d.currentTime>0&&(a.readyState==="live"?(c(),l()):h(new Error(i)))},b("Promise").resolve(d.pause()).then(function(){d!=null||g(0,5995);return d.play()}).then(function(){f(),d!=null||g(0,5995),d.addEventListener("timeupdate",f),k=window.setInterval(f,50)})["catch"](function(a){return h(a)})}),new(b("Promise"))(function(a){return window.setTimeout(a,c)}).then(function(){throw new Error(h)})])["catch"](function(a){l();throw a})}};e.exports=a}),null);
+__d("RTCMediaStreamValidator",["Promise","RTCAudioTrackNoiseDetector","RTCVideoTrackActivityDetector"],(function(a,b,c,d,e,f){"use strict";var g="no audio tracks",h="no video tracks",i="too many audio tracks",j="too many video tracks",k="unexpected audio track(s)",l="unexpected video track(s)";a={NO_AUDIO_TRACKS_ERROR:g,NO_VIDEO_TRACKS_ERROR:h,TOO_MANY_AUDIO_TRACKS_ERROR:i,TOO_MANY_VIDEO_TRACKS_ERROR:j,UNEXPECTED_AUDIO_TRACKS_ERROR:k,UNEXPECTED_VIDEO_TRACKS_ERROR:l,validate:function(a,c,d,e){d===void 0&&(d={});e===void 0&&(e={});d=d;var f=d.audio;f=f===void 0?!0:f;d=d.video;d=d===void 0?!0:d;e=e;var g=e.audio;g=g===void 0?1e3:g;e=e.video;e=e===void 0?1e3:e;return b("Promise").all([m(a,c,f,g),n(a,c,d,e)]).then(function(){return a})}};function m(a,c,d,e){var f=a.getAudioTracks();if(!c.audio)return f.length>0?b("Promise").reject(new Error(k)):b("Promise").resolve(a);if(f.length<1)return b("Promise").reject(new Error(g));else if(f.length>1)return b("Promise").reject(new Error(i));return d?b("RTCAudioTrackNoiseDetector").detect(f[0],e).then(function(){return a}):b("Promise").resolve(a)}function n(a,c,d,e){var f=a.getVideoTracks();if(!c.video)return f.length>0?b("Promise").reject(new Error(l)):b("Promise").resolve(a);if(f.length<1)return b("Promise").reject(new Error(h));else if(f.length>1)return b("Promise").reject(new Error(j));return d?b("RTCVideoTrackActivityDetector").detect(f[0],e).then(function(){return a}):b("Promise").resolve(a)}e.exports=a}),null);
+__d("UserMediaRequestError",[],(function(a,b,c,d,e,f){"use strict";a=function(a){babelHelpers.inheritsLoose(b,a);function b(b,c,d){var e;e=a.call(this,c)||this;e.constraint=d;e.nativeErrorName=b;e.message=g(c);e.name=h(b);return e}b.createFromNative=function(a){var c=a.message,d=a.name;a=a.constraint;return new b(d,c,a||"")};var c=b.prototype;c.isRecoverableError=function(){return this.name==="InvalidStateError"?!0:!1};c.getEndCallSubReason=function(){return"MediaFailed: "+this.name+", "+this.constraint};return b}(babelHelpers.wrapNativeSuper(Error));function g(a){switch(a){case"The operation is insecure.":return"The request is not allowed by the user agent or the platform in the current context.";default:return a}}function h(a){switch(a){case"ConstraintNotSatisfiedError":return"OverconstrainedError";case"NO_DEVICES_FOUND":case"DevicesNotFoundError":return"NotFoundError";case"MediaDeviceFailedDueToShutdown":case"MediaDeviceKillSwitchOn":case"TrackStartError":return"NotReadableError";case"PermissionDeniedError":case"PERMISSION_DENIED":case"PermissionDismissedError":return"NotAllowedError";default:return a}}e.exports=a}),null);
+__d("generateRTCTransactionID",["randomInt"],(function(a,b,c,d,e,f){"use strict";function a(){return String(b("randomInt")(0,4294967294)+1)}e.exports=a}),null);
+__d("RTCUtils",["invariant","Promise","CurrentUser","FBLogger","FBRTCConfig","FBRTCLogger","FBRTCUtils","RTCAudioTrackNoiseDetector","RTCConfig","RTCEndCallReason","RTCMediaDevices","RTCMediaStreamValidator","RTCScreenSharing","RTCUser","RTCUserMediaConstraints","RTCVideoTrackActivityDetector","RTWebClientFeatureGating","RTWebUserActionLogger","URI","UserAgent","UserMediaRequestError","generateRTCTransactionID"],(function(a,b,c,d,e,f,g){"use strict";var h,i=b("RTCAudioTrackNoiseDetector").DATA_TIMEOUT_ERROR,j=b("RTCVideoTrackActivityDetector").PLAYBACK_TIMEOUT_ERROR,k={isGroupCall:function(a){return a.split(":")[0]==="GROUP"},isMessengerCall:function(a){return a.split(":")[0]==="MESSENGER"},isRoomCall:function(a){return a.split(":")[0]==="ROOM"},isPeerCall:function(a){return a.split(":")[0]==="PEER"},isAlohaCall:function(a){return a.split(":")[0]==="ALOHA"},isWatchPartyCall:function(a){return a.split(":")[0]==="WATCH"},isSupportedMWCall:function(a){return k.isGroupCall(a)||k.isMessengerCall(a)||k.isRoomCall(a)||k.isAlohaCall(a)||k.isWatchPartyCall(a)},getPeerID:function(a){if(k.isGroupCall(a))throw new Error("Not a P2P call: "+a);a=a.split(":");a=a.slice(1);return a[0]===b("CurrentUser").getID()?a[1]:a[0]},getMessengerCallID:function(a){if(!k.isMessengerCall(a))throw new Error("Not a Messenger call: "+a);return Number(a.split(":")[1])},getThreadID:function(a){return!k.isGroupCall(a)?null:Number(a.split(":")[1])},getSandboxingTierFromURIOrEmpty:function(a,b){b=b+"=";a=a.split(b);if(a[1]){b=a.pop().split("&").shift();return b}return""},createRequestHeader:function(a,c,d,e,f){a={type:a,transactionId:b("generateRTCTransactionID")(),retryCount:0,conferenceName:c,clientSessionId:e?e:""};c={};d&&(a.serverInfoData=d);f&&(c.esc_p2p_call_id=f);if(b("RTWebClientFeatureGating").canUseMultiwaySandbox()){e=window.location.href;d=k.getSandboxingTierFromURIOrEmpty(e,"multiway_www_tier");f=k.getSandboxingTierFromURIOrEmpty(e,"multiway_core_tier");d&&(c.multiwayWwwTier=d);f&&(c.multiwayCoreTier=f)}a.extensions=c;return a},createClientContextMessage:function(a,b){a={num_participants:a,trigger:b};b={header:{topic_DEPRECATED:"client_context",shouldSendToAllUsers:!1},body:{genericMessage:{topic:"client_context",data:JSON.stringify(a)}}};return b},createResponseHeader:function(a,b,c){b={type:a.type,transactionId:a.transactionId,retryCount:0,conferenceName:a.conferenceName,responseStatusCode:b,clientSessionId:c?c:""};a.serverInfoData&&(b.serverInfoData=a.serverInfoData);return b},maybeRemoveVideoConstraint:function(a){return b("RTCMediaDevices").enumerateDevices().then(function(c){if(c.some(function(a){return a.kind==="videoinput"})){b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[maybeRemoveVideoConstraint] At least one device has videoinput.  Keeping constraints "+JSON.stringify(a)});return a}b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[maybeRemoveVideoConstraint] No devices capable of videoinput.",errorDomain:"GetUserMedia",errorType:"Removing video stream by setting video constraint to false."});return babelHelpers["extends"]({},a,{video:!1})})["catch"](function(){return b("Promise").resolve(a)})},getUserMediaWithAudioFallback:function(a,c){return a.video?k.maybeRemoveVideoConstraint(a).then(function(a){return k.getUserMedia(a,c)})["catch"](function(c){if(a.video){if(c.name==="NotFoundError"||c.name==="StreamFailedToStart"){var d="Audio Fallback Error Recovery: "+JSON.stringify(c)+" constraints: "+JSON.stringify(a);b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMediaWithAudioFallback] Retrying getUserMedia with no video stream",errorDomain:"GetUserMedia",errorType:d});return k.getUserMedia({video:!1,audio:a.audio})}if(c.name==="OverconstrainedError"){d="Video Constraints Error Recovery: "+JSON.stringify(c)+" constraints: "+JSON.stringify(a);b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMediaWithAudioFallback] Retrying getUserMedia with no video constraints",errorDomain:"GetUserMedia",errorType:d});return k.getUserMedia({video:!0,audio:a.audio})}}d="Error: "+JSON.stringify(c)+" constraints: "+JSON.stringify(a);b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMediaWithAudioFallback] Throwing other error",errorDomain:"GetUserMedia",errorType:d});throw c}):k.getUserMedia(a,c)},getUserMediaWithFallbackToEmptyVideoConstraints:function(a,c){return k.getUserMedia(a,c)["catch"](function(c){if(a.video&&c.name==="OverconstrainedError"){b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMediaWithFallbackToEmptyVideoConstraints] Fallback getUserMedia with no video constraints",errorDomain:"GetUserMedia",errorType:"Original Constraints: "+JSON.stringify(a)});return k.getUserMedia(babelHelpers["extends"]({},a,{video:!0}))}throw c})},getUserScreenMedia:function(a,c,d){return b("RTCScreenSharing").getUserMedia(a,c,d)},getUserMedia:function(a,c){var d=navigator,e=d.mediaDevices;if(typeof a.video==="object"&&a.video.mediaSource){b("FBLogger")("rtc_www").mustfix("Please use %s instead of %s for screen","RTCUtils.getUserScreenMedia()","RTCUtils.getUserMedia()");return b("RTCScreenSharing").getUserMedia(a,"unknown")}d=c&&c.optionalConstraintsOnly&&a.video;var f=k._parseConstraints(a,{optionalConstraintsOnly:!!d}),g=navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia;return new(b("Promise"))(function(a,d){e&&typeof e.getUserMedia==="function"?(b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMedia] Newer version"}),a(e.getUserMedia(f).then(function(a){return k._maybeSupportFilteredStreams(a,!!(c&&c.supportFilteredStreams))}))):g?(b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMedia] Backwards compatible version"}),g.call(navigator,f,a,d)):(b("RTWebUserActionLogger").logCheckpoint({checkpoint:"[getUserMedia] Not supported"}),d("getUserMedia not supported"))})["catch"](function(a){var c=a.message,d=a.name,e=a.constraint;b("RTWebUserActionLogger").logError({errorDomain:"GetUserMedia",errorType:(d?d:"unknown GetUserMedia error")+":"+(c?" "+c:"")+(e?" "+e:"")});throw b("UserMediaRequestError").createFromNative(a)})},_parseConstraints:function(a,c){if(b("UserAgent").isBrowser("Chrome")||b("UserAgent").isBrowser("Opera")){var d=a.audio,e=a.video,f={};d!==void 0&&(f.audio=b("RTCUserMediaConstraints").chromify(d));e!==void 0&&(f.video=b("RTCUserMediaConstraints").chromify(e,c));return f}return a},_maybeSupportFilteredStreams:function(a,b){return a},getUserMediaWithValidation:function(a,c,d,e){c===void 0&&(c={audio:!0,video:!0});d===void 0&&(d=5);e===void 0&&(e={audio:1e3,video:1e3});return new(b("Promise"))(function(f,g){var h=function d(h){k.getUserMedia(a).then(function(d){return b("RTCMediaStreamValidator").validate(d,a,c,e).then(function(a){return f({stream:a})})["catch"](function(a){if(a.message===i||a.message===j)f({stream:d,err:a});else{k.stopMediaStream(d);throw a}})},g)["catch"](function(a){h>0?d(h-1):g(a)})};h(d)})},isFullScreen:function(){return Boolean(document.fullscreenElement||document.mozFullScreenElement||document.webkitFullscreenElement||document.msFullscreenElement)},requestFullScreen:function(a){a===void 0&&(a=document.documentElement),typeof a.requestFullscreen==="function"?a.requestFullscreen():typeof a.msRequestFullscreen==="function"?a.msRequestFullscreen():typeof a.mozRequestFullScreen==="function"?a.mozRequestFullScreen():typeof a.webkitRequestFullscreen==="function"&&a.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT)},exitFullScreen:function(){typeof document.exitFullscreen==="function"?document.exitFullscreen():typeof document.msExitFullscreen==="function"?document.msExitFullscreen():typeof document.mozCancelFullScreen==="function"?document.mozCancelFullScreen():typeof document.webkitExitFullscreen==="function"&&document.webkitExitFullscreen()},toggleFullScreen:function(){k.isFullScreen()?k.exitFullScreen():k.requestFullScreen()},endCallReasonFromHangupReason:function(a){return b("RTCEndCallReason").fromHangupReason(a).getReasonID()},endCallReasonFromDismissRequest:function(a){return b("RTCEndCallReason").fromDismissRequest(a).getReasonID()},endCallSubreasonFromDismissRequest:function(a){return b("RTCEndCallReason").subreasonFromDismissRequest(a)},endCallReasonFromResponseStatusCode:function(a){return b("RTCEndCallReason").fromResponseStatusCode(a).getReasonID()},stopMediaStream:function(a){if(!a.active&&"active"in a)return;a.getTracks().forEach(function(a){a.readyState!=="ended"&&a.stop()})},transferAudioTracks:function(a,b){for(var c=b.getAudioTracks(),d=Array.isArray(c),e=0,c=d?c:c[typeof Symbol==="function"?Symbol.iterator:"@@iterator"]();;){var f;if(d){if(e>=c.length)break;f=c[e++]}else{e=c.next();if(e.done)break;f=e.value}f=f;a.addTrack(f);b.removeTrack(f)}},payloadParticipantsToRTCUsers:function(a){return a.map(function(a){var c=a.big_image_src||a.image_src;a.fbid||g(0,1174);return new(b("RTCUser"))({FBID:a.fbid,profileUrl:new(h||(h=b("URI")))(a.href),profilePictureUrl:c,isMessengerUser:!!a.is_messenger_user,isPartiesUser:!!a.is_parties_user,userName:a.name,userShortName:a.short_name,vanity:a.vanity||""})})},getStreamVideoResolution:function(a){return new(b("Promise"))(function(c,d){var e=document.createElement("video");b("FBRTCUtils").attachMediaStream(e,a);var f=function(){e.removeEventListener("loadedmetadata",g),e.removeEventListener("error",h),b("FBRTCUtils").attachMediaStream(e,null)},g=function(){c({height:e.videoHeight,width:e.videoWidth}),f()},h=function(){d(e.error),f()};e.addEventListener("loadedmetadata",g);e.addEventListener("error",h)})},isScreenSharingSupported:function(){return b("UserAgent").isBrowser("Chrome")||this.isVCScreenSharingSupported()},isVCScreenSharingSupported:function(){return b("FBRTCConfig").isVCEndpointCall()&&b("RTCConfig").CollabWhitelistedBrowserGK},filterDevicesByKind:function(a,b){return a?a.filter(function(a){return a.kind===b}):[]},isDevicePresent:function(a,b){return a==null?!1:a.some(function(a){return a.deviceId===b})}};e.exports=k}),null);
+__d("RTCScreenSharing",["Promise","CollabRTCChromeScreenSharing","RTCUserMediaConstraints","RTCUtils","UserAgent","WorkplaceChatHelper"],(function(a,b,c,d,e,f){"use strict";var g="SCREEN_SHARING_NOT_SUPPORTED",h="UNEXPECTED_ERROR",i={SCREEN_SHARING_NOT_SUPPORTED:g,getUserMedia:function(a,c,d){if(b("UserAgent").isBrowser("Chrome")){var e;b("WorkplaceChatHelper").isDesktopChatApp()?e=b("WorkplaceChatHelper").getScreenSharingSourceID():e=b("CollabRTCChromeScreenSharing").getSourceID(d,c);return e.then(function(c){return b("RTCUtils").getUserMedia(b("RTCUserMediaConstraints").chromeMediaSource(a,c))}).then(function(a){for(var b=a.getTracks(),c=Array.isArray(b),d=0,b=c?b:b[typeof Symbol==="function"?Symbol.iterator:"@@iterator"]();;){var e;if(c){if(d>=b.length)break;e=b[d++]}else{d=b.next();if(d.done)break;e=d.value}e=e;e.addEventListener("ended",function(b){return window.setTimeout(function(){a.active||i.stop()})})}return a})}else if(b("RTCUtils").isVCScreenSharingSupported()&&navigator.mediaDevices&&typeof navigator.mediaDevices.getUserMedia==="function")return b("Promise").resolve(navigator.mediaDevices.getUserMedia(a)["catch"](function(a){if(a.name==="NotAllowedError")throw new Error(g)}));return b("Promise").reject(new Error(g))},stop:function(){return b("UserAgent").isBrowser("Chrome")?b("WorkplaceChatHelper").isDesktopChatApp()?b("WorkplaceChatHelper").stopScreenSharing():b("CollabRTCChromeScreenSharing").stop():b("Promise").reject(new Error(h))}};e.exports=i}),null);
+__d("RTCIceCandidate",[],(function(a,b,c,d,e,f){"use strict";e.exports=window.RTCIceCandidate||window.mozRTCIceCandidate}),null);
+/**
+ * Released under the MIT license. Copyright (c) 2013 Eirik Albrigtsen.
+ *
+ * @nolint
+ * @preserve-header
+ * @preserve-whitespace
+ */
+__d("sdp-transform-grammar",[],(function $module_sdp_transform_grammar(global,require,requireDynamic,requireLazy,module,exports){
+
+var grammar = module.exports = {
+  v: [{
+    name: 'version',
+    reg: /^(\d*)$/
+  }],
+  o: [{ //o=- 20518 0 IN IP4 203.0.113.1
+    // NB: sessionId will be a String in most cases because it is huge
+    name: 'origin',
+    reg: /^(\S*) (\d*) (\d*) (\S*) IP(\d) (\S*)/,
+    names: ['username', 'sessionId', 'sessionVersion', 'netType', 'ipVer', 'address'],
+    format: '%s %s %d %s IP%d %s'
+  }],
+  // default parsing of these only (though some of these feel outdated)
+  s: [{ name: 'name' }],
+  i: [{ name: 'description' }],
+  u: [{ name: 'uri' }],
+  e: [{ name: 'email' }],
+  p: [{ name: 'phone' }],
+  z: [{ name: 'timezones' }], // TODO: this one can actually be parsed properly..
+  r: [{ name: 'repeats' }],   // TODO: this one can also be parsed properly
+  //k: [{}], // outdated thing ignored
+  t: [{ //t=0 0
+    name: 'timing',
+    reg: /^(\d*) (\d*)/,
+    names: ['start', 'stop'],
+    format: '%d %d'
+  }],
+  c: [{ //c=IN IP4 10.47.197.26
+    name: 'connection',
+    reg: /^IN IP(\d) (\S*)/,
+    names: ['version', 'ip'],
+    format: 'IN IP%d %s'
+  }],
+  b: [{ //b=AS:4000
+    push: 'bandwidth',
+    reg: /^(TIAS|AS|CT|RR|RS):(\d*)/,
+    names: ['type', 'limit'],
+    format: '%s:%s'
+  }],
+  m: [{ //m=video 51744 RTP/AVP 126 97 98 34 31
+    // NB: special - pushes to session
+    // TODO: rtp/fmtp should be filtered by the payloads found here?
+    reg: /^(\w*) (\d*) ([\w\/]*)(?: (.*))?/,
+    names: ['type', 'port', 'protocol', 'payloads'],
+    format: '%s %d %s %s'
+  }],
+  a: [
+    { //a=rtpmap:110 opus/48000/2
+      push: 'rtp',
+      reg: /^rtpmap:(\d*) ([\w\-\.]*)(?:\s*\/(\d*)(?:\s*\/(\S*))?)?/,
+      names: ['payload', 'codec', 'rate', 'encoding'],
+      format: function (o) {
+        return (o.encoding) ?
+          'rtpmap:%d %s/%s/%s':
+          o.rate ?
+          'rtpmap:%d %s/%s':
+          'rtpmap:%d %s';
+      }
+    },
+    { //a=fmtp:108 profile-level-id=24;object=23;bitrate=64000
+      //a=fmtp:111 minptime=10; useinbandfec=1
+      push: 'fmtp',
+      reg: /^fmtp:(\d*) ([\S| ]*)/,
+      names: ['payload', 'config'],
+      format: 'fmtp:%d %s'
+    },
+    { //a=control:streamid=0
+      name: 'control',
+      reg: /^control:(.*)/,
+      format: 'control:%s'
+    },
+    { //a=rtcp:65179 IN IP4 193.84.77.194
+      name: 'rtcp',
+      reg: /^rtcp:(\d*)(?: (\S*) IP(\d) (\S*))?/,
+      names: ['port', 'netType', 'ipVer', 'address'],
+      format: function (o) {
+        return (o.address != null) ?
+          'rtcp:%d %s IP%d %s':
+          'rtcp:%d';
+      }
+    },
+    { //a=rtcp-fb:98 trr-int 100
+      push: 'rtcpFbTrrInt',
+      reg: /^rtcp-fb:(\*|\d*) trr-int (\d*)/,
+      names: ['payload', 'value'],
+      format: 'rtcp-fb:%d trr-int %d'
+    },
+    { //a=rtcp-fb:98 nack rpsi
+      push: 'rtcpFb',
+      reg: /^rtcp-fb:(\*|\d*) ([\w-_]*)(?: ([\w-_]*))?/,
+      names: ['payload', 'type', 'subtype'],
+      format: function (o) {
+        return (o.subtype != null) ?
+          'rtcp-fb:%s %s %s':
+          'rtcp-fb:%s %s';
+      }
+    },
+    { //a=extmap:2 urn:ietf:params:rtp-hdrext:toffset
+      //a=extmap:1/recvonly URI-gps-string
+      push: 'ext',
+      reg: /^extmap:(\d+)(?:\/(\w+))? (\S*)(?: (\S*))?/,
+      names: ['value', 'direction', 'uri', 'config'],
+      format: function (o) {
+        return 'extmap:%d' + (o.direction ? '/%s' : '%v') + ' %s' + (o.config ? ' %s' : '');
+      }
+    },
+    { //a=crypto:1 AES_CM_128_HMAC_SHA1_80 inline:PS1uQCVeeCFCanVmcjkpPywjNWhcYD0mXXtxaVBR|2^20|1:32
+      push: 'crypto',
+      reg: /^crypto:(\d*) ([\w_]*) (\S*)(?: (\S*))?/,
+      names: ['id', 'suite', 'config', 'sessionConfig'],
+      format: function (o) {
+        return (o.sessionConfig != null) ?
+          'crypto:%d %s %s %s':
+          'crypto:%d %s %s';
+      }
+    },
+    { //a=setup:actpass
+      name: 'setup',
+      reg: /^setup:(\w*)/,
+      format: 'setup:%s'
+    },
+    { //a=mid:1
+      name: 'mid',
+      reg: /^mid:([^\s]*)/,
+      format: 'mid:%s'
+    },
+    { //a=msid:0c8b064d-d807-43b4-b434-f92a889d8587 98178685-d409-46e0-8e16-7ef0db0db64a
+      name: 'msid',
+      reg: /^msid:(.*)/,
+      format: 'msid:%s'
+    },
+    { //a=ptime:20
+      name: 'ptime',
+      reg: /^ptime:(\d*)/,
+      format: 'ptime:%d'
+    },
+    { //a=maxptime:60
+      name: 'maxptime',
+      reg: /^maxptime:(\d*)/,
+      format: 'maxptime:%d'
+    },
+    { //a=sendrecv
+      name: 'direction',
+      reg: /^(sendrecv|recvonly|sendonly|inactive)/
+    },
+    { //a=ice-lite
+      name: 'icelite',
+      reg: /^(ice-lite)/
+    },
+    { //a=ice-ufrag:F7gI
+      name: 'iceUfrag',
+      reg: /^ice-ufrag:(\S*)/,
+      format: 'ice-ufrag:%s'
+    },
+    { //a=ice-pwd:x9cml/YzichV2+XlhiMu8g
+      name: 'icePwd',
+      reg: /^ice-pwd:(\S*)/,
+      format: 'ice-pwd:%s'
+    },
+    { //a=fingerprint:SHA-1 00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33
+      name: 'fingerprint',
+      reg: /^fingerprint:(\S*) (\S*)/,
+      names: ['type', 'hash'],
+      format: 'fingerprint:%s %s'
+    },
+    { //a=candidate:0 1 UDP 2113667327 203.0.113.1 54400 typ host
+      //a=candidate:1162875081 1 udp 2113937151 192.168.34.75 60017 typ host generation 0 network-id 3 network-cost 10
+      //a=candidate:3289912957 2 udp 1845501695 193.84.77.194 60017 typ srflx raddr 192.168.34.75 rport 60017 generation 0 network-id 3 network-cost 10
+      //a=candidate:229815620 1 tcp 1518280447 192.168.150.19 60017 typ host tcptype active generation 0 network-id 3 network-cost 10
+      //a=candidate:3289912957 2 tcp 1845501695 193.84.77.194 60017 typ srflx raddr 192.168.34.75 rport 60017 tcptype passive generation 0 network-id 3 network-cost 10
+      push:'candidates',
+      reg: /^candidate:(\S*) (\d*) (\S*) (\d*) (\S*) (\d*) typ (\S*)(?: raddr (\S*) rport (\d*))?(?: tcptype (\S*))?(?: generation (\d*))?(?: network-id (\d*))?(?: network-cost (\d*))?/,
+      names: ['foundation', 'component', 'transport', 'priority', 'ip', 'port', 'type', 'raddr', 'rport', 'tcptype', 'generation', 'network-id', 'network-cost'],
+      format: function (o) {
+        var str = 'candidate:%s %d %s %d %s %d typ %s';
+
+        str += (o.raddr != null) ? ' raddr %s rport %d' : '%v%v';
+
+        // NB: candidate has three optional chunks, so %void middles one if it's missing
+        str += (o.tcptype != null) ? ' tcptype %s' : '%v';
+
+        if (o.generation != null) {
+          str += ' generation %d';
+        }
+
+        str += (o['network-id'] != null) ? ' network-id %d' : '%v';
+        str += (o['network-cost'] != null) ? ' network-cost %d' : '%v';
+        return str;
+      }
+    },
+    { //a=end-of-candidates (keep after the candidates line for readability)
+      name: 'endOfCandidates',
+      reg: /^(end-of-candidates)/
+    },
+    { //a=remote-candidates:1 203.0.113.1 54400 2 203.0.113.1 54401 ...
+      name: 'remoteCandidates',
+      reg: /^remote-candidates:(.*)/,
+      format: 'remote-candidates:%s'
+    },
+    { //a=ice-options:trickle fb-force-5245
+      name: 'iceOptions',
+      reg: /^ice-options:(.*)/,
+      format: 'ice-options:%s'
+    },
+    { //a=ssrc:2566107569 cname:t9YU8M1UxTF8Y1A1
+      push: 'ssrcs',
+      reg: /^ssrc:(\d*) ([\w_]*)(?::(.*))?/,
+      names: ['id', 'attribute', 'value'],
+      format: function (o) {
+        var str = 'ssrc:%d';
+        if (o.attribute != null) {
+          str += ' %s';
+          if (o.value != null) {
+            str += ':%s';
+          }
+        }
+        return str;
+      }
+    },
+    { //a=ssrc-group:FEC 1 2
+      //a=ssrc-group:FEC-FR 3004364195 1080772241
+      push: 'ssrcGroups',
+      // token-char = %x21 / %x23-27 / %x2A-2B / %x2D-2E / %x30-39 / %x41-5A / %x5E-7E
+      reg: /^ssrc-group:([\x21\x23\x24\x25\x26\x27\x2A\x2B\x2D\x2E\w]*) (.*)/,
+      names: ['semantics', 'ssrcs'],
+      format: 'ssrc-group:%s %s'
+    },
+    { //a=msid-semantic: WMS Jvlam5X3SX1OP6pn20zWogvaKJz5Hjf9OnlV
+      name: 'msidSemantic',
+      reg: /^msid-semantic:\s?(\w*) (\S*)/,
+      names: ['semantic', 'token'],
+      format: 'msid-semantic: %s %s' // space after ':' is not accidental
+    },
+    { //a=group:BUNDLE audio video
+      push: 'groups',
+      reg: /^group:(\w*) (.*)/,
+      names: ['type', 'mids'],
+      format: 'group:%s %s'
+    },
+    { //a=rtcp-mux
+      name: 'rtcpMux',
+      reg: /^(rtcp-mux)/
+    },
+    { //a=rtcp-rsize
+      name: 'rtcpRsize',
+      reg: /^(rtcp-rsize)/
+    },
+    { //a=sctpmap:5000 webrtc-datachannel 1024
+      name: 'sctpmap',
+      reg: /^sctpmap:([\w_\/]*) (\S*)(?: (\S*))?/,
+      names: ['sctpmapNumber', 'app', 'maxMessageSize'],
+      format: function (o) {
+        return (o.maxMessageSize != null) ?
+          'sctpmap:%s %s %s' :
+          'sctpmap:%s %s';
+      }
+    },
+    { //a=x-google-flag:conference
+      name: 'xGoogleFlag',
+      reg: /^x-google-flag:([^\s]*)/,
+      format: 'x-google-flag:%s'
+    },
+    { //a=rid:1 send max-width=1280;max-height=720;max-fps=30;depend=0
+      push: 'rids',
+      reg: /^rid:([\d\w]+) (\w+)(?: ([\S| ]*))?/,
+      names: ['id', 'direction', 'params'],
+      format: function (o) {
+        return (o.params) ? 'rid:%s %s %s' : 'rid:%s %s';
+      }
+    },
+    { //a=imageattr:97 send [x=800,y=640,sar=1.1,q=0.6] [x=480,y=320] recv [x=330,y=250]
+      //a=imageattr:* send [x=800,y=640] recv *
+      //a=imageattr:100 recv [x=320,y=240]
+      push: 'imageattrs',
+      reg: new RegExp(
+        //a=imageattr:97
+        '^imageattr:(\\d+|\\*)' +
+        //send [x=800,y=640,sar=1.1,q=0.6] [x=480,y=320]
+        '[\\s\\t]+(send|recv)[\\s\\t]+(\\*|\\[\\S+\\](?:[\\s\\t]+\\[\\S+\\])*)' +
+        //recv [x=330,y=250]
+        '(?:[\\s\\t]+(recv|send)[\\s\\t]+(\\*|\\[\\S+\\](?:[\\s\\t]+\\[\\S+\\])*))?'
+      ),
+      names: ['pt', 'dir1', 'attrs1', 'dir2', 'attrs2'],
+      format: function (o) {
+        return 'imageattr:%s %s %s' + (o.dir2 ? ' %s %s' : '');
+      }
+    },
+    { //a=simulcast:send 1,2,3;~4,~5 recv 6;~7,~8
+      //a=simulcast:recv 1;4,5 send 6;7
+      name: 'simulcast',
+      reg: new RegExp(
+        //a=simulcast:
+        '^simulcast:' +
+        //send 1,2,3;~4,~5
+        '(send|recv) ([a-zA-Z0-9\\-_~;,]+)' +
+        //space + recv 6;~7,~8
+        '(?:\\s?(send|recv) ([a-zA-Z0-9\\-_~;,]+))?' +
+        //end
+        '$'
+      ),
+      names: ['dir1', 'list1', 'dir2', 'list2'],
+      format: function (o) {
+        return 'simulcast:%s %s' + (o.dir2 ? ' %s %s' : '');
+      }
+    },
+    { //Old simulcast draft 03 (implemented by Firefox)
+      //  https://tools.ietf.org/html/draft-ietf-mmusic-sdp-simulcast-03
+      //a=simulcast: recv pt=97;98 send pt=97
+      //a=simulcast: send rid=5;6;7 paused=6,7
+      name: 'simulcast_03',
+      reg: /^simulcast:[\s\t]+([\S+\s\t]+)$/,
+      names: ['value'],
+      format: 'simulcast: %s'
+    },
+    {
+      //a=framerate:25
+      //a=framerate:29.97
+      name: 'framerate',
+      reg: /^framerate:(\d+(?:$|\.\d+))/,
+      format: 'framerate:%s'
+    },
+    { // any a= that we don't understand is kepts verbatim on media.invalid
+      push: 'invalid',
+      names: ['value']
+    }
+  ]
+};
+
+// set sensible defaults to avoid polluting the grammar with boring details
+Object.keys(grammar).forEach(function (key) {
+  var objs = grammar[key];
+  objs.forEach(function (obj) {
+    if (!obj.reg) {
+      obj.reg = /(.*)/;
+    }
+    if (!obj.format) {
+      obj.format = '%s';
+    }
+  });
+});
+
+/*  */}),null);
+/**
+ * Released under the MIT license. Copyright (c) 2013 Eirik Albrigtsen.
+ *
+ * @nolint
+ * @preserve-header
+ * @preserve-whitespace
+ */
+__d("sdp-transform-parser",["sdp-transform-grammar"],(function $module_sdp_transform_parser(global,require,requireDynamic,requireLazy,module,exports){
+
+var toIntIfInt = function (v) {
+  return String(Number(v)) === v ? Number(v) : v;
+};
+
+var attachProperties = function (match, location, names, rawName) {
+  if (rawName && !names) {
+    location[rawName] = toIntIfInt(match[1]);
+  }
+  else {
+    for (var i = 0; i < names.length; i += 1) {
+      if (match[i+1] != null) {
+        location[names[i]] = toIntIfInt(match[i+1]);
+      }
+    }
+  }
+};
+
+var parseReg = function (obj, location, content) {
+  var needsBlank = obj.name && obj.names;
+  if (obj.push && !location[obj.push]) {
+    location[obj.push] = [];
+  }
+  else if (needsBlank && !location[obj.name]) {
+    location[obj.name] = {};
+  }
+  var keyLocation = obj.push ?
+    {} :  // blank object that will be pushed
+    needsBlank ? location[obj.name] : location; // otherwise, named location or root
+
+  attachProperties(content.match(obj.reg), keyLocation, obj.names, obj.name);
+
+  if (obj.push) {
+    location[obj.push].push(keyLocation);
+  }
+};
+
+var grammar = require('sdp-transform-grammar');
+var validLine = RegExp.prototype.test.bind(/^([a-z])=(.*)/);
+
+exports.parse = function (sdp) {
+  var session = {}
+    , media = []
+    , location = session; // points at where properties go under (one of the above)
+
+  // parse lines we understand
+  sdp.split(/(\r\n|\r|\n)/).filter(validLine).forEach(function (l) {
+    var type = l[0];
+    var content = l.slice(2);
+    if (type === 'm') {
+      media.push({rtp: [], fmtp: []});
+      location = media[media.length-1]; // point at latest media line
+    }
+
+    for (var j = 0; j < (grammar[type] || []).length; j += 1) {
+      var obj = grammar[type][j];
+      if (obj.reg.test(content)) {
+        return parseReg(obj, location, content);
+      }
+    }
+  });
+
+  session.media = media; // link it up
+  return session;
+};
+
+var paramReducer = function (acc, expr) {
+  var s = expr.split(/=(.+)/, 2);
+  if (s.length === 2) {
+    acc[s[0]] = toIntIfInt(s[1]);
+  }
+  return acc;
+};
+
+exports.parseParams = function (str) {
+  return str.split(/\;\s?/).reduce(paramReducer, {});
+};
+
+// For backward compatibility - alias will be removed in 3.0.0
+exports.parseFmtpConfig = exports.parseParams;
+
+exports.parsePayloads = function (str) {
+  return str.split(' ').map(Number);
+};
+
+exports.parseRemoteCandidates = function (str) {
+  var candidates = [];
+  var parts = str.split(' ').map(toIntIfInt);
+  for (var i = 0; i < parts.length; i += 3) {
+    candidates.push({
+      component: parts[i],
+      ip: parts[i + 1],
+      port: parts[i + 2]
+    });
+  }
+  return candidates;
+};
+
+exports.parseImageAttributes = function (str) {
+  return str.split(' ').map(function (item) {
+    return item.substring(1, item.length-1).split(',').reduce(paramReducer, {});
+  });
+};
+
+exports.parseSimulcastStreamList = function (str) {
+  return str.split(';').map(function (stream) {
+    return stream.split(',').map(function (format) {
+      var scid, paused = false;
+
+      if (format[0] !== '~') {
+        scid = toIntIfInt(format);
+      } else {
+        scid = toIntIfInt(format.substring(1, format.length));
+        paused = true;
+      }
+
+      return {
+        scid: scid,
+        paused: paused
+      };
+    });
+  });
+};
+
+/*  */}),null);
+/**
+ * Released under the MIT license. Copyright (c) 2013 Eirik Albrigtsen.
+ *
+ * @nolint
+ * @preserve-header
+ * @preserve-whitespace
+ */
+__d("sdp-transform-writer",["sdp-transform-grammar"],(function $module_sdp_transform_writer(global,require,requireDynamic,requireLazy,module,exports){
+
+var grammar = require('sdp-transform-grammar');
+
+// customized util.format - discards excess arguments and can void middle ones
+var formatRegExp = /%[sdv%]/g;
+var format = function (formatStr) {
+  var i = 1;
+  var args = arguments;
+  var len = args.length;
+  return formatStr.replace(formatRegExp, function (x) {
+    if (i >= len) {
+      return x; // missing argument
+    }
+    var arg = args[i];
+    i += 1;
+    switch (x) {
+    case '%%':
+      return '%';
+    case '%s':
+      return String(arg);
+    case '%d':
+      return Number(arg);
+    case '%v':
+      return '';
+    }
+  });
+  // NB: we discard excess arguments - they are typically undefined from makeLine
+};
+
+var makeLine = function (type, obj, location) {
+  var str = obj.format instanceof Function ?
+    (obj.format(obj.push ? location : location[obj.name])) :
+    obj.format;
+
+  var args = [type + '=' + str];
+  if (obj.names) {
+    for (var i = 0; i < obj.names.length; i += 1) {
+      var n = obj.names[i];
+      if (obj.name) {
+        args.push(location[obj.name][n]);
+      }
+      else { // for mLine and push attributes
+        args.push(location[obj.names[i]]);
+      }
+    }
+  }
+  else {
+    args.push(location[obj.name]);
+  }
+  return format.apply(null, args);
+};
+
+// RFC specified order
+// TODO: extend this with all the rest
+var defaultOuterOrder = [
+  'v', 'o', 's', 'i',
+  'u', 'e', 'p', 'c',
+  'b', 't', 'r', 'z', 'a'
+];
+var defaultInnerOrder = ['i', 'c', 'b', 'a'];
+
+
+module.exports = function (session, opts) {
+  opts = opts || {};
+  // ensure certain properties exist
+  if (session.version == null) {
+    session.version = 0; // 'v=0' must be there (only defined version atm)
+  }
+  if (session.name == null) {
+    session.name = ' '; // 's= ' must be there if no meaningful name set
+  }
+  session.media.forEach(function (mLine) {
+    if (mLine.payloads == null) {
+      mLine.payloads = '';
+    }
+  });
+
+  var outerOrder = opts.outerOrder || defaultOuterOrder;
+  var innerOrder = opts.innerOrder || defaultInnerOrder;
+  var sdp = [];
+
+  // loop through outerOrder for matching properties on session
+  outerOrder.forEach(function (type) {
+    grammar[type].forEach(function (obj) {
+      if (obj.name in session && session[obj.name] != null) {
+        sdp.push(makeLine(type, obj, session));
+      }
+      else if (obj.push in session && session[obj.push] != null) {
+        session[obj.push].forEach(function (el) {
+          sdp.push(makeLine(type, obj, el));
+        });
+      }
+    });
+  });
+
+  // then for each media line, follow the innerOrder
+  session.media.forEach(function (mLine) {
+    sdp.push(makeLine('m', grammar.m[0], mLine));
+
+    innerOrder.forEach(function (type) {
+      grammar[type].forEach(function (obj) {
+        if (obj.name in mLine && mLine[obj.name] != null) {
+          sdp.push(makeLine(type, obj, mLine));
+        }
+        else if (obj.push in mLine && mLine[obj.push] != null) {
+          mLine[obj.push].forEach(function (el) {
+            sdp.push(makeLine(type, obj, el));
+          });
+        }
+      });
+    });
+  });
+
+  return sdp.join('\r\n') + '\r\n';
+};
+
+/*  */}),null);
+/**
+ * Released under the MIT license. Copyright (c) 2013 Eirik Albrigtsen.
+ *
+ * @nolint
+ * @preserve-header
+ * @preserve-whitespace
+ */
+__d("sdp-transform",["sdp-transform-parser","sdp-transform-writer"],(function $module_sdp_transform(global,require,requireDynamic,requireLazy,module,exports){
+
+var parser = require('sdp-transform-parser');
+var writer = require('sdp-transform-writer');
+
+exports.write = writer;
+exports.parse = parser.parse;
+exports.parseFmtpConfig = parser.parseFmtpConfig;
+exports.parseParams = parser.parseParams;
+exports.parsePayloads = parser.parsePayloads;
+exports.parseRemoteCandidates = parser.parseRemoteCandidates;
+exports.parseImageAttributes = parser.parseImageAttributes;
+exports.parseSimulcastStreamList = parser.parseSimulcastStreamList;
+
+/*  */}),null);
+/**
+ * Copyright @ 2015 Atlassian Pty Ltd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @nolint
+ * @preserve-header
+ * @preserve-whitespace
+ */
+__d("sdp-interop-transform",["sdp-transform"],(function $module_sdp_interop_transform(global,require,requireDynamic,requireLazy,module,exports){
+
+const transform = require('sdp-transform');
+
+exports.write = function(session, opts) {
+
+  if (typeof session !== 'undefined' &&
+      typeof session.media !== 'undefined' &&
+      Array.isArray(session.media)) {
+
+    session.media.forEach(function (mLine) {
+      // expand sources to ssrcs
+      if (typeof mLine.sources !== 'undefined' &&
+        Object.keys(mLine.sources).length !== 0) {
+          mLine.ssrcs = [];
+          Object.keys(mLine.sources).forEach(function (ssrc) {
+            const source = mLine.sources[ssrc];
+            Object.keys(source).forEach(function (attribute) {
+              mLine.ssrcs.push({
+                id: ssrc,
+                attribute: attribute,
+                value: source[attribute]
+              });
+            });
+          });
+          delete mLine.sources;
+        }
+
+      // join ssrcs in ssrc groups
+      if (typeof mLine.ssrcGroups !== 'undefined' &&
+        Array.isArray(mLine.ssrcGroups)) {
+          mLine.ssrcGroups.forEach(function (ssrcGroup) {
+            if (typeof ssrcGroup.ssrcs !== 'undefined' &&
+                Array.isArray(ssrcGroup.ssrcs)) {
+              ssrcGroup.ssrcs = ssrcGroup.ssrcs.join(' ');
+            }
+          });
+        }
+    });
+  }
+
+  // join group mids
+  if (typeof session !== 'undefined' &&
+      typeof session.groups !== 'undefined' && Array.isArray(session.groups)) {
+
+    session.groups.forEach(function (g) {
+      if (typeof g.mids !== 'undefined' && Array.isArray(g.mids)) {
+        g.mids = g.mids.join(' ');
+      }
+    });
+  }
+
+  return transform.write(session, opts);
+};
+
+exports.parse = function(sdp) {
+  const session = transform.parse(sdp);
+
+  if (typeof session !== 'undefined' && typeof session.media !== 'undefined' &&
+      Array.isArray(session.media)) {
+
+    session.media.forEach(function (mLine) {
+      // group sources attributes by ssrc
+      if (typeof mLine.ssrcs !== 'undefined' && Array.isArray(mLine.ssrcs)) {
+        mLine.sources = {};
+        mLine.ssrcs.forEach(function (ssrc) {
+          if (!mLine.sources[ssrc.id])
+          mLine.sources[ssrc.id] = {};
+        mLine.sources[ssrc.id][ssrc.attribute] = ssrc.value;
+        });
+
+        delete mLine.ssrcs;
+      }
+
+      // split ssrcs in ssrc groups
+      if (typeof mLine.ssrcGroups !== 'undefined' &&
+        Array.isArray(mLine.ssrcGroups)) {
+          mLine.ssrcGroups.forEach(function (ssrcGroup) {
+            if (typeof ssrcGroup.ssrcs === 'string') {
+              ssrcGroup.ssrcs = ssrcGroup.ssrcs.split(' ');
+            }
+          });
+        }
+    });
+  }
+  // split group mids
+  if (typeof session !== 'undefined' &&
+      typeof session.groups !== 'undefined' && Array.isArray(session.groups)) {
+
+    session.groups.forEach(function (g) {
+      if (typeof g.mids === 'string') {
+        g.mids = g.mids.split(' ');
+      }
+    });
+  }
+
+  return session;
+};
+
+/*  */}),null);
+__d("LivingRoomPresenceLatencyLogger",["CurrentUser","LivingRoomTypedLogger","gkx","immutable"],(function(a,b,c,d,e,f){"use strict";a=b("immutable").Map;var g=a();c={registerJoin:function(a){if(!b("gkx")("810030"))return;a=this._createKey(a);g=g.set(a,Date.now())},logPresenceLatency:function(a){var c=this._createKey(a),d=g.get(c);if(!d)return;d=Date.now()-d;new(b("LivingRoomTypedLogger"))().setLivingRoomAction("viewer_joined_presence").setLivingRoomID(a).setTimeSpent(d).log();g=g.remove(c)},_createKey:function(a){return b("CurrentUser").getID()+"_"+a}};e.exports=c}),null);
+__d("LivingRoomStoreInitializer",["CurrentUser","LivingRoomActions","LivingRoomComposerDispatcher","LivingRoomComposerStore","LivingRoomDispatcher","LivingRoomPresenceLatencyLogger","LivingRoomStore","LivingRoomTypedLogger","LivingRoomTypeUtils","LivingRoomTypeValues","RelayFBEnvironmentFactory","RelayModern","nullthrows","LivingRoomStoreInitializerQuery.graphql","LivingRoomStoreInitializerPage.graphql","LivingRoomStoreInitializerLivingRoom.graphql"],(function(a,b,c,d,e,f){var g,h,i,j=b("LivingRoomTypeValues").AddVideoTabValue,k=b("LivingRoomTypeValues").WalkthroughStepValue,l=b("RelayModern").fetchQuery;b("RelayModern").graphql;a={_initializeImpl:function(a,c,d,e,f){e===void 0&&(e=null);f===void 0&&(f=null);if(c==null){this._logFailure(e,f);return}var g=c.id;if(g==null){this._logFailure(e,f);return}b("LivingRoomActions").initStore(g,a);f=d&&(d==null?void 0:d.id)?b("LivingRoomTypeUtils").convertPageToUser(d,((e=c.creator)==null?void 0:e.id)===(d==null?void 0:d.id)?"HOST":"MEMBER"):b("LivingRoomTypeUtils").convertUser(b("nullthrows")(c.current_viewer));b("LivingRoomActions").setSelf(g,f);b("LivingRoomActions").updatePresentUsers(g,b("LivingRoomTypeUtils").convertUsers(((e=(a=c.active_viewers)==null?void 0:a.edges)!=null?e:[]).map(function(a){return a.node})));b("LivingRoomActions").updatePresentUserCount(g,(f=(d=c.active_viewers)==null?void 0:d.count)!=null?f:0);b("LivingRoomActions").updateContentQueue(g,b("LivingRoomTypeUtils").convertContentQueue((e=(a=c.queued_items)==null?void 0:a.edges)!=null?e:[]));b("LivingRoomActions").updateSuggestedItems(g,b("LivingRoomTypeUtils").convertSuggestedItems((f=(d=c.suggested_items)==null?void 0:d.edges)!=null?f:[]),(e=(a=c.suggested_items)==null?void 0:a.count)!=null?e:0);b("LivingRoomActions").setPermissions(g,b("LivingRoomTypeUtils").convertPermissions(c));if(c.currently_playing){d=b("LivingRoomTypeUtils").convertContentItem(c.currently_playing);d&&b("LivingRoomActions").setCurrentContentItem(g,d)}b("LivingRoomActions").setCanViewerSeePresenceNux(g,c.can_viewer_see_presence_nux_www===!0);b("LivingRoomActions").setCanViewerSeeWelcomeNux(g,c.can_viewer_see_welcome_nux_www===!0);c.can_viewer_see_host_walkthrough_www===!0&&b("LivingRoomActions").setWalkthroughStep(g,k.SHOW_SEARCH);c.is_active!==!1&&b("LivingRoomActions").initializeSubscriptions(g);if(c.video_state){f=b("LivingRoomTypeUtils").convertVideoState(c.video_state);b("LivingRoomActions").updateVideoState(g,f)}b("LivingRoomActions").setFeedPresenceUsers(g,b("LivingRoomTypeUtils").convertUsers(c.feed_presence_users));c.is_viewer_present===!0&&b("LivingRoomPresenceLatencyLogger").logPresenceLatency(g);c.experiments.indexOf("AVD_DEFAULT_PAGE_TAB")!==-1&&b("LivingRoomActions").setAddVideoDialogTab(g,j.PAGE);b("LivingRoomActions").setAutoPlayState(g,(a=c.auto_play_enabled)!=null?a:!1)},_registerStores:function(){b("LivingRoomDispatcher").explicitlyRegisterStores([b("LivingRoomStore")]),b("LivingRoomComposerDispatcher").explicitlyRegisterStores([b("LivingRoomComposerStore")])},initialize:function(a,c,d,e){var f=this;d===void 0&&(d=null);e===void 0&&(e=null);this._registerStores();var h=(c=c)!=null?c:b("CurrentUser").getID();return l(b("RelayFBEnvironmentFactory").getForActorID(h),g!==void 0?g:g=b("LivingRoomStoreInitializerQuery.graphql"),{actorID:h,livingRoomID:a},{force:!0}).then(function(a){return f._initializeImpl(h,a.living_room,a.page,d,e)})},initializeFromComposerQueryResponse:function(a,b,c,d){var e;c===void 0&&(c=null);d===void 0&&(d=null);this._registerStores();e=(e=(e=b.node)==null?void 0:e.attachments)!=null?e:[];e=e[0].target;this._initializeImpl(a,e,b.page,c,d)},_logFailure:function(a,c){new(b("LivingRoomTypedLogger"))().setLivingRoomAction("www_initializer_failed").setEntrySource(a).updateExtraData({file_entry_source:c}).log()}};h!==void 0?h:h=b("LivingRoomStoreInitializerPage.graphql");i!==void 0?i:i=b("LivingRoomStoreInitializerLivingRoom.graphql");e.exports=a}),null);
+__d("RTCCallActionTypes",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({CALL:"CALL",CALL_SUCCESS:"CALL_SUCCESS",CALL_ERROR:"CALL_ERROR",INCOMING_CALL_SUCCESS:"INCOMING_CALL_SUCCESS",INIT:"INIT",RESET:"RESET",RESET_FOR_REDIAL:"RESET_FOR_REDIAL",CALL_COLLISION:"CALL_COLLISION",WAIT_FOR_USER_INPUT:"WAIT_FOR_USER_INPUT",SET_CALL_SUMMARY:"SET_CALL_SUMMARY",SET_MW_CALL_TYPE:"SET_MW_CALL_TYPE",SET_LAYOUT:"SET_LAYOUT",SET_LINKHASH:"SET_LINKHASH",SET_DOMINANT_SPEAKER:"SET_DOMINANT_SPEAKER",SET_PINNED_SPEAKER:"SET_PINNED_SPEAKER",SET_USE_DOMINANT_SPEAKE_VIEW:"SET_USE_DOMINANT_SPEAKE_VIEW",SET_GRID_VIEW:"SET_GRID_VIEW",SET_STRIP_VIEW:"SET_STRIP_VIEW",INIT_THREAD:"INIT_THREAD",ON_PARTICIPANT_LEFT:"ON_PARTICIPANT_LEFT",ON_PARTICIPANTS_ADDED:"ON_PARTICIPANTS_ADDED",ADD_PARTICIPANTS_TO_RING:"ADD_PARTICIPANTS_TO_RING",JOIN:"JOIN",JOIN_SUCCESS:"JOIN_SUCCESS",JOIN_ERROR:"JOIN_ERROR",HANGUP:"HANGUP",HANGUP_SUCCESS:"HANGUP_SUCCESS",HANGUP_ERROR:"HANGUP_ERROR",ON_CONFERENCE_STATE:"ON_CONFERENCE_STATE",DISMISS:"DISMISS",END_CALL:"END_CALL",ON_JOIN_REQUEST_SENT:"ON_JOIN_REQUEST_SENT",ON_JOIN_RESPONSE:"ON_JOIN_RESPONSE",ON_RECEIVED_JOIN_RESPONSE:"ON_RECEIVED_JOIN_RESPONSE",ON_PROCESSED_JOIN_RESPONSE:"ON_PROCESSED_JOIN_RESPONSE",ON_SERVER_MEDIA_UPDATE_SUCCESS:"ON_SERVER_MEDIA_UPDATE_SUCCESS",ON_CLIENT_MEDIA_UPDATE_RESPONSE:"ON_CLIENT_MEDIA_UPDATE_RESPONSE",SET_LOCAL_CLIENT_VERSION:"SET_LOCAL_CLIENT_VERSION",INIT_LOCAL_USER:"INIT_LOCAL_USER",INIT_REMOTE_USERS:"INIT_REMOTE_USERS",UPDATE_REMOTE_USERS:"UPDATE_REMOTE_USERS",ADD_REMOTE_STREAM:"ADD_REMOTE_STREAM",REMOVE_REMOTE_STREAM:"REMOVE_REMOTE_STREAM",REMOVE_ALL_REMOTE_STREAMS:"REMOVE_ALL_REMOTE_STREAMS",ADD_REMOTE_TRACK:"ADD_REMOTE_TRACK",REMOVE_REMOTE_TRACK:"REMOVE_REMOTE_TRACK",AUDIO_MUTED:"AUDIO_MUTED",AUDIO_UNMUTED:"AUDIO_UNMUTED",VIDEO_MUTED:"VIDEO_MUTED",VIDEO_UNMUTED:"VIDEO_UNMUTED",REMOTE_AUDIO_MUTED:"REMOTE_AUDIO_MUTED",REMOTE_AUDIO_UNMUTED:"REMOTE_AUDIO_UNMUTED",REMOTE_VIDEO_MUTED:"REMOTE_VIDEO_MUTED",REMOTE_VIDEO_UNMUTED:"REMOTE_VIDEO_UNMUTED",SELF_VIEW_COLLAPSED:"SELF_VIEW_COLLAPSED",SELF_VIEW_UNCOLLAPSED:"SELF_VIEW_UNCOLLAPSED",ADD_LOCAL_STREAM:"ADD_LOCAL_STREAM",REMOVE_LOCAL_STREAM:"REMOVE_LOCAL_STREAM",REPLACE_LOCAL_STREAM:"REPLACE_LOCAL_STREAM",REMOVE_ALL_LOCAL_STREAMS:"REMOVE_ALL_LOCAL_STREAMS",STOP_LOCAL_STREAM:"STOP_LOCAL_STREAM",ADD_LOCAL_SCREEN_STREAM:"ADD_LOCAL_SCREEN_STREAM",REMOVE_LOCAL_SCREEN_STREAM:"REMOVE_LOCAL_SCREEN_STREAM",REMOVE_ALL_LOCAL_SCREEN_STREAMS:"REMOVE_ALL_LOCAL_SCREEN_STREAMS",REPLACE_LOCAL_SCREEN_STREAM:"REPLACE_LOCAL_SCREEN_STREAM",ADD_REMOTE_SCREEN_STREAM:"ADD_REMOTE_SCREEN_STREAM",REMOVE_REMOTE_SCREEN_STREAM:"REMOVE_REMOTE_SCREEN_STREAM",TOGGLE_REMOTE_STREAM:"TOGGLE_REMOTE_STREAM",SUBMIT_RATING:"SUBMIT_RATING",SUBMIT_FEEDBACK:"SUBMIT_FEEDBACK",SUBMIT_FEEDBACK_OPTIONS:"SUBMIT_FEEDBACK_OPTIONS",SUBMIT_SURVEY_CHOICE:"SUBMIT_SURVEY_CHOICE",RATING_SHOWN:"RATING_SHOWN",FEEDBACK_SHOWN:"FEEDBACK_SHOWN",SET_CONFERENCE_STATE:"SET_CONFERENCE_STATE",SET_END_CALL_REASON:"SET_END_CALL_REASON",FLOOR_STATUS:"FLOOR_STATUS",SET_INPUT_SYNC_STATE:"SET_INPUT_SYNC_STATE",SET_OUTPUT_SYNC_STATE:"SET_OUTPUT_SYNC_STATE",STATE_SYNC_SUBSCRIBE:"STATE_SYNC_SUBSCRIBE",STATE_SYNC_UNSUBSCRIBE:"STATE_SYNC_UNSUBSCRIBE",ADD_REMOTE_SCREEN_SHARING_USER_ID:"ADD_REMOTE_SCREEN_SHARING_USER_ID",REMOVE_REMOTE_SCREEN_SHARING_USER_ID:"REMOVE_REMOTE_SCREEN_SHARING_USER_ID"})}),null);
+__d("RTCGroupCallEscalationActionTypes",[],(function(a,b,c,d,e,f){e.exports=Object.freeze({GROUP_ESCALATION_START:"GROUP_ESCALATION_START",GROUP_ESCALATION_SUCCESS:"GROUP_ESCALATION_SUCCESS",GROUP_ESCALATION_CANCEL:"GROUP_ESCALATION_CANCEL",GROUP_ESCALATION_SET_USERS_TO_RING:"GROUP_ESCALATION_SET_USERS_TO_RING",GROUP_ESCALATION_CLEAR_P2P_CONNECTION:"GROUP_ESCALATION_CLEAR_P2P_CONNECTION",GROUP_ESCALATION_SET_P2P_CALLSUMMARY:"GROUP_ESCALATION_SET_P2P_CALLSUMMARY",GROUP_ESCALATION_ADD_LOCAL_STREAM:"GROUP_ESCALATION_ADD_LOCAL_STREAM"})}),null);
+/**
+ * License: https://www.facebook.com/legal/license/MDzNl_j9yvg/
+ */
+__d("emotion-utils-9.0.1",[],(function(a,b,c,d,e,f){"use strict";var g={},h={exports:g};function i(){Object.defineProperty(g,"__esModule",{value:!0});function a(a){return b(a,a.length).toString(36)}function b(a,b){var c=a.length;b=b^c;var d=0,e;while(c>=4)e=a.charCodeAt(d)&255|(a.charCodeAt(++d)&255)<<8|(a.charCodeAt(++d)&255)<<16|(a.charCodeAt(++d)&255)<<24,e=(e&65535)*1540483477+(((e>>>16)*1540483477&65535)<<16),e^=e>>>24,e=(e&65535)*1540483477+(((e>>>16)*1540483477&65535)<<16),b=(b&65535)*1540483477+(((b>>>16)*1540483477&65535)<<16)^e,c-=4,++d;switch(c){case 3:b^=(a.charCodeAt(d+2)&255)<<16;case 2:b^=(a.charCodeAt(d+1)&255)<<8;case 1:b^=a.charCodeAt(d)&255,b=(b&65535)*1540483477+(((b>>>16)*1540483477&65535)<<16)}b^=b>>>13;b=(b&65535)*1540483477+(((b>>>16)*1540483477&65535)<<16);b^=b>>>15;return b>>>0}var c=function a(b){function c(e,j,k,o,p){for(var q=0,r=0,s=0,t=0,v,w,y,z=0,A=0,B=0,C=0,D=0,E=0,F=0,M=0,O=w=0,Q=0,V=0,W=k.length,a=W-1,X="",Y="",Z="",b="",$;M<W;){y=k.charCodeAt(M);M===a&&0!==r+t+s+q&&(0!==r&&(y=47===r?10:47),t=s=q=0,W++,a++);if(0===r+t+s+q){if(M===a&&(0<w&&(X=X.replace(n,"")),0<X.trim().length)){switch(y){case 32:case 9:case 59:case 13:case 10:break;default:X+=k.charAt(M)}y=59}if(1===O)switch(y){case 123:case 125:case 59:case 34:case 39:case 40:case 41:case 44:O=0;case 9:case 13:case 10:case 32:break;default:for(O=0,V=M,v=y,M--,y=59;V<W;)switch(k.charCodeAt(++V)){case 10:case 13:case 59:M++,y=v;case 58:case 123:V=W}}switch(y){case 123:X=X.trim();v=X.charCodeAt(0);C=1;for(V=++M;M<W;){y=k.charCodeAt(M);switch(y){case 123:C++;break;case 125:C--}if(0===C)break;M++}E=k.substring(V,M);0===v&&(v=(X=X.replace(m,"").trim()).charCodeAt(0));switch(v){case 64:0<w&&(X=X.replace(n,""));w=X.charCodeAt(1);switch(w){case 100:case 109:case 115:case 45:v=j;break;default:v=ga}E=c(j,v,E,w,p+1);V=E.length;0<N&&0===V&&(V=X.length);0<P&&(v=d(ga,X,Q),$=i(3,E,v,j,H,G,V,w,p),X=v.join(""),void 0!==$&&0===(V=(E=$.trim()).length)&&(w=0,E=""));if(0<V)switch(w){case 115:X=X.replace(ea,h);case 100:case 109:case 45:E=X+"{"+E+"}";break;case 107:X=X.replace(ba,"$1 $2"+(0<R?S:""));E=X+"{"+E+"}";E=1===K||2===K&&g("@"+E,3)?"@-webkit-"+E+"@"+E:"@"+E;break;default:E=X+E,112===o&&(E=(Y+=E,""))}else E="";break;default:E=c(j,d(j,X,Q),E,o,p+1)}Z+=E;E=Q=w=F=O=D=0;X="";y=k.charCodeAt(++M);break;case 125:case 59:X=(0<w?X.replace(n,""):X).trim();if(1<(V=X.length))switch(0===F&&(v=X.charCodeAt(0),45===v||96<v&&123>v)&&(V=(X=X.replace(" ",":")).length),0<P&&void 0!==($=i(1,X,j,e,H,G,Y.length,o,p))&&0===(V=(X=$.trim()).length)&&(X="\0\0"),v=X.charCodeAt(0),w=X.charCodeAt(1),v+w){case 0:break;case 169:case 163:b+=X+k.charAt(M);break;default:58!==X.charCodeAt(V-1)&&(Y+=f(X,v,w,X.charCodeAt(2)))}Q=w=F=O=D=0;X="";y=k.charCodeAt(++M)}}switch(y){case 13:case 10:if(0===r+t+s+q+fa)switch(B){case 41:case 39:case 34:case 64:case 126:case 62:case 42:case 43:case 47:case 45:case 58:case 44:case 59:case 123:case 125:break;default:0<F&&(O=1)}47===r?r=0:0===J+D&&(w=1,X+="\0");0<P*ha&&i(0,X,j,e,H,G,Y.length,o,p);G=1;H++;break;case 59:case 125:if(0===r+t+s+q){G++;break}default:G++;v=k.charAt(M);switch(y){case 9:case 32:if(0===t+q+r)switch(z){case 44:case 58:case 9:case 32:v="";break;default:32!==y&&(v=" ")}break;case 0:v="\\0";break;case 12:v="\\f";break;case 11:v="\\v";break;case 38:0===t+r+q&&0<J&&(w=Q=1,v="\f"+v);break;case 108:if(0===t+r+q+I&&0<F)switch(M-F){case 2:112===z&&58===k.charCodeAt(M-3)&&(I=z);case 8:111===A&&(I=A)}break;case 58:0===t+r+q&&(F=M);break;case 44:0===r+s+t+q&&(w=1,v+="\r");break;case 34:0===r&&(t=t===y?0:0===t?y:t);break;case 39:0===r&&(t=t===y?0:0===t?y:t);break;case 91:0===t+r+s&&q++;break;case 93:0===t+r+s&&q--;break;case 41:0===t+r+q&&s--;break;case 40:if(0===t+r+q){if(0===D)switch(2*z+3*A){case 533:break;default:C=0,D=1}s++}break;case 64:0===r+s+t+q+F+E&&(E=1);break;case 42:case 47:if(!(0<t+q+s))switch(r){case 0:switch(2*y+3*k.charCodeAt(M+1)){case 235:r=47;break;case 220:V=M,r=42}break;case 42:47===y&&42===z&&(33===k.charCodeAt(V+2)&&(Y+=k.substring(V,M+1)),v="",r=0)}}if(0===r){if(0===J+t+q+E&&107!==o&&59!==y)switch(y){case 44:case 126:case 62:case 43:case 41:case 40:if(0===D){switch(z){case 9:case 32:case 10:case 13:v+="\0";break;default:v="\0"+v+(44===y?"":"\0")}w=1}else switch(y){case 40:D=++C;break;case 41:0===(D=--C)&&(w=1,v+="\0")}break;case 9:case 32:switch(z){case 0:case 123:case 125:case 59:case 44:case 12:case 9:case 32:case 10:case 13:break;default:0===D&&(w=1,v+="\0")}}X+=v;32!==y&&9!==y&&(B=y)}}A=z;z=y;M++}V=Y.length;0<N&&0===V&&0===Z.length&&0===j[0].length===!1&&(109!==o||1===j.length&&(0<J?T:U)===j[0])&&(V=j.join(",").length+2);if(0<V){if(0===J&&107!==o){k=0;q=j.length;for(r=Array(q);k<q;++k){z=j[k].split(aa);A="";B=0;for(W=z.length;B<W;++B)if(!(0===(C=(t=z[B]).length)&&1<W)){M=A.charCodeAt(A.length-1);Q=t.charCodeAt(0);s="";if(0!==B)switch(M){case 42:case 126:case 62:case 43:case 32:case 40:break;default:s=" "}switch(Q){case 38:t=s+T;case 126:case 62:case 43:case 32:case 41:case 40:break;case 91:t=s+t+T;break;case 58:switch(2*t.charCodeAt(1)+3*t.charCodeAt(2)){case 530:if(0<L){t=s+t.substring(8,C-1);break}default:(1>B||1>z[B-1].length)&&(t=s+T+t)}break;case 44:s="";default:t=1<C&&0<t.indexOf(":")?s+t.replace(da,"$1"+T+"$2"):s+t+T}A+=t}r[k]=A.replace(n,"").trim()}j=r}v=j;if(0<P&&($=i(2,Y,v,e,H,G,V,o,p),void 0!==$&&0===(Y=$).length))return b+Y+Z;Y=v.join(",")+"{"+Y+"}";if(0!==K*I){2!==K||g(Y,2)||(I=0);switch(I){case 111:Y=Y.replace(ca,":-moz-$1")+Y;break;case 112:Y=Y.replace(x,"::-webkit-input-$1")+Y.replace(x,"::-moz-$1")+Y.replace(x,":-ms-input-$1")+Y}I=0}}return b+Y+Z}function d(a,b,c){var d=b.trim().split(t);b=d;var f=d.length,g=a.length;switch(g){case 0:case 1:var h=0;for(a=0===g?"":a[0]+" ";h<f;++h)b[h]=e(a,b[h],c,g).trim();break;default:var i=h=0;for(b=[];h<f;++h)for(var j=0;j<g;++j)b[i++]=e(a[j]+" ",d[h],c,g).trim()}return b}function e(a,b,c,d){var e=b.charCodeAt(0);33>e&&(e=(b=b.trim()).charCodeAt(0));switch(e){case 38:switch(J+d){case 0:case 1:if(0===a.trim().length)break;default:return b.replace(u,"$1"+a.trim())}break;case 58:switch(b.charCodeAt(1)){case 103:if(0<L&&0<J)return b.replace(v,"$1").replace(u,"$1"+U);break;default:return a.trim()+b}default:if(0<c*J&&0<b.indexOf("\f"))return b.replace(u,(58===a.charCodeAt(0)?"":"$1")+a.trim())}return a+b}function f(a,b,c,d){var e=0,f=a+";";b=2*b+3*c+4*d;if(944===b){e=f.length;a=f.indexOf(":",9)+1;c=f.substring(0,a).trim();d=f.substring(a,e-1).trim();switch(f.charCodeAt(9)*R){case 0:break;case 45:if(110!==f.charCodeAt(10))break;default:for(f=d.split((d="",r)),a=b=0,e=f.length;b<e;a=0,++b){for(var h=f[b],i=h.split(s);h=i[a];){var j=h.charCodeAt(0);if(1===R&&(64<j&&90>j||96<j&&123>j||95===j||45===j&&45!==h.charCodeAt(1)))switch(isNaN(parseFloat(h))+(-1!==h.indexOf("("))){case 1:switch(h){case"infinite":case"alternate":case"backwards":case"running":case"normal":case"forwards":case"both":case"none":case"linear":case"ease":case"ease-in":case"ease-out":case"ease-in-out":case"paused":case"reverse":case"alternate-reverse":case"inherit":case"initial":case"unset":case"step-start":case"step-end":break;default:h+=S}}i[a++]=h}d+=(0===b?"":",")+i.join(" ")}}d=c+d+";";return 1===K||2===K&&g(d,1)?"-webkit-"+d+d:d}if(0===K||2===K&&!g(f,1))return f;switch(b){case 1015:return 45===f.charCodeAt(9)?"-webkit-"+f+f:f;case 951:return 116===f.charCodeAt(3)?"-webkit-"+f+f:f;case 963:return 110===f.charCodeAt(5)?"-webkit-"+f+f:f;case 1009:if(100!==f.charCodeAt(4))break;case 969:case 942:return"-webkit-"+f+f;case 978:return"-webkit-"+f+"-moz-"+f+f;case 1019:case 983:return"-webkit-"+f+"-moz-"+f+"-ms-"+f+f;case 883:return 45===f.charCodeAt(8)?"-webkit-"+f+f:f;case 932:if(45===f.charCodeAt(4))switch(f.charCodeAt(5)){case 103:return"-webkit-box-"+f.replace("-grow","")+"-webkit-"+f+"-ms-"+f.replace("grow","positive")+f;case 115:return"-webkit-"+f+"-ms-"+f.replace("shrink","negative")+f;case 98:return"-webkit-"+f+"-ms-"+f.replace("basis","preferred-size")+f}return"-webkit-"+f+"-ms-"+f+f;case 964:return"-webkit-"+f+"-ms-flex-"+f+f;case 1023:if(99!==f.charCodeAt(8))break;a=f.substring(f.indexOf(":",15)).replace("flex-","").replace("space-between","justify");return"-webkit-box-pack"+a+"-webkit-"+f+"-ms-flex-pack"+a+f;case 1005:return p.test(f)?f.replace(o,":-webkit-")+f.replace(o,":-moz-")+f:f;case 1e3:a=f.substring(13).trim();e=a.indexOf("-")+1;switch(a.charCodeAt(0)+a.charCodeAt(e)){case 226:a=f.replace(C,"tb");break;case 232:a=f.replace(C,"tb-rl");break;case 220:a=f.replace(C,"lr");break;default:return f}return"-webkit-"+f+"-ms-"+a+f;case 1017:if(-1===f.indexOf("sticky",9))break;case 975:e=(f=a).length-10;a=(33===f.charCodeAt(e)?f.substring(0,e):f).substring(a.indexOf(":",7)+1).trim();switch(b=a.charCodeAt(0)+(a.charCodeAt(7)|0)){case 203:if(111>a.charCodeAt(8))break;case 115:f=f.replace(a,"-webkit-"+a)+";"+f;break;case 207:case 102:f=f.replace(a,"-webkit-"+(102<b?"inline-":"")+"box")+";"+f.replace(a,"-webkit-"+a)+";"+f.replace(a,"-ms-"+a+"box")+";"+f}return f+";";case 938:if(45===f.charCodeAt(5))switch(f.charCodeAt(6)){case 105:return a=f.replace("-items",""),"-webkit-"+f+"-webkit-box-"+a+"-ms-flex-"+a+f;case 115:return"-webkit-"+f+"-ms-flex-item-"+f.replace(E,"")+f;default:return"-webkit-"+f+"-ms-flex-line-pack"+f.replace("align-content","")+f}break;case 953:if(0<(e=f.indexOf("-content",9))&&109===f.charCodeAt(e-3)&&45!==f.charCodeAt(e-4))return a=f.substring(e-3),"width:-webkit-"+a+"width:-moz-"+a+"width:"+a;break;case 962:if(f="-webkit-"+f+(102===f.charCodeAt(5)?"-ms-"+f:"")+f,211===c+d&&105===f.charCodeAt(13)&&0<f.indexOf("transform",10))return f.substring(0,f.indexOf(";",27)+1).replace(q,"$1-webkit-$2")+f}return f}function g(a,b){var c=a.indexOf(1===b?":":"{"),d=a.substring(0,3!==b?c:10);c=a.substring(c+1,a.length-1);return Q(2!==b?d:d.replace(F,"$1"),c,b)}function h(a,b){a=f(b,b.charCodeAt(0),b.charCodeAt(1),b.charCodeAt(2));return a!==b+";"?a.replace(D," or ($1)").substring(4):"("+b+")"}function i(a,b,c,d,e,f,g,h,i){for(var j=0,k=b,m;j<P;++j)switch(m=O[j].call(l,a,k,c,d,e,f,g,h,i)){case void 0:case!1:case!0:case null:break;default:k=m}switch(k){case void 0:case!1:case!0:case null:case b:break;default:return k}}function j(a){switch(a){case void 0:case null:P=O.length=0;break;default:switch(a.constructor){case Array:for(var b=0,c=a.length;b<c;++b)j(a[b]);break;case Function:O[P++]=a;break;case Boolean:ha=!!a|0}}return j}function k(a){for(var b in a){var c=a[b];switch(b){case"keyframe":R=c|0;break;case"global":L=c|0;break;case"cascade":J=c|0;break;case"compress":M=c|0;break;case"semicolon":fa=c|0;break;case"preserve":N=c|0;break;case"prefix":Q=null,c?"function"!==typeof c?K=1:(K=2,Q=c):K=0}}return k}function l(b,d){if(void 0!==this&&this.constructor===l)return a(b);b=b;var e=b.charCodeAt(0);33>e&&(e=(b=b.trim()).charCodeAt(0));0<R&&(S=b.replace(w,91===e?"":"-"));e=1;1===J?U=b:T=b;b=[U];if(0<P){var f=i(-1,d,b,b,H,G,0,0,0);void 0!==f&&"string"===typeof f&&(d=f)}d=c(ga,b,d,0,0);0<P&&(f=i(-2,d,b,b,H,G,d.length,0,0),void 0!==f&&"string"!==typeof (d=f)&&(e=0));T=U=S="";I=0;G=H=1;return 0===M*e?d:d.replace(n,"").replace(y,"").replace(z,"$1").replace(A,"$1").replace(B," ")}var m=/^\0+/g,n=/[\0\r\f]/g,o=/: */g,p=/zoo|gra/,q=/([,: ])(transform)/g,r=/,+\s*(?![^(]*[)])/g,s=/ +\s*(?![^(]*[)])/g,aa=/ *[\0] */g,t=/,\r+?/g,u=/([\t\r\n ])*\f?&/g,v=/:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,w=/\W+/g,ba=/@(k\w+)\s*(\S*)\s*/,x=/::(place)/g,ca=/:(read-only)/g,y=/\s+(?=[{\];=:>])/g,z=/([[}=:>])\s+/g,A=/(\{[^{]+?);(?=\})/g,B=/\s{2,}/g,da=/([^\(])(:+) */g,C=/[svh]\w+-[tblr]{2}/,ea=/\(\s*(.*)\s*\)/g,D=/([^]*?);/g,E=/-self|flex-/g,F=/[^]*?(:[rp][el]a[\w-]+)[^]*/,G=1,H=1,I=0,J=1,K=1,L=1,M=0,fa=0,N=0,ga=[],O=[],P=0,Q=null,ha=0,R=1,S="",T="",U="";l.use=j;l.set=k;void 0!==b&&k(b);return l},d=function(a){var b={};return function(c){b[c]===void 0&&(b[c]=a(c));return b[c]}},e="__emotion_styles",f={animationIterationCount:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1};g.memoize=d;g.STYLES_KEY=e;g.unitless=f;g.hashString=a;g.Stylis=c}var j=!1,k=function(){j||(j=!0,i());return h.exports};a=function(a){switch(a){case void 0:return k()}};e.exports=a}),null);
+/**
+ * License: https://www.facebook.com/legal/license/MDzNl_j9yvg/
+ */
+__d("stylis-rule-sheet-0.0.5",[],(function(a,b,c,d,e,f){"use strict";var g={},h={exports:g},i;function j(){(function(a){typeof g==="object"&&typeof h!=="undefined"?h.exports=a():typeof i==="function"&&i.amd?i(a()):window.stylisRuleSheet=a()})(function(){return function(a){var b="/*|*/",c=b+"}";function d(b){if(b)try{a(b+"}")}catch(a){}}return function(e,f,g,h,i,j,k,l,m){switch(e){case 1:m===0&&f.charCodeAt(0)===64&&a(f);break;case 2:if(l===0)return f+b;break;case 3:switch(l){case 102:case 112:return a(g[0]+f),"";default:return f+b}case-2:f.split(c).forEach(d)}}}})}var k=!1,l=function(){k||(k=!0,j());return h.exports};a=function(a){switch(a){case void 0:return l()}};e.exports=a}),null);
+/**
+ * License: https://www.facebook.com/legal/license/MDzNl_j9yvg/
+ */
+__d("create-emotion-9.0.2",["emotion-utils-9.0.1","stylis-rule-sheet-0.0.5"],(function(a,b,c,d,e,f){"use strict";function a(a){return a&&typeof a==="object"&&"default"in a?a["default"]:a}var g=a(b("emotion-utils-9.0.1")),h=a(b("stylis-rule-sheet-0.0.5"));c={};var i={exports:c};function j(){function a(a){return a&&typeof a==="object"&&"default"in a?a["default"]:a}var b=g(),c=a(h()),d=/[A-Z]|^ms/g,e=b.memoize(function(a){return a.replace(d,"-$&").toLowerCase()}),f=function(a,c){if(c==null||typeof c==="boolean")return"";return b.unitless[a]!==1&&a.charCodeAt(1)!==45&&!isNaN(c)&&c!==0?c+"px":c},j=function a(b){var c=b.length,d=0,e="";for(;d<c;d++){var f=b[d];if(f==null)continue;var g=void 0;switch(typeof f){case"boolean":break;case"function":g=a([f()]);break;case"object":if(Array.isArray(f))g=a(f);else{g="";for(var h in f)f[h]&&h&&(g&&(g+=" "),g+=h)}break;default:g=f}g&&(e&&(e+=" "),e+=g)}return e},k=typeof document!=="undefined";function l(a){if(a.sheet)return a.sheet;for(var b=0;b<document.styleSheets.length;b++)if(document.styleSheets[b].ownerNode===a)return document.styleSheets[b]}function m(a){var b=document.createElement("style");b.type="text/css";b.setAttribute("data-emotion",a.key||"");a.nonce!==void 0&&b.setAttribute("nonce",a.nonce);b.appendChild(document.createTextNode(""));(a.container!==void 0?a.container:document.head).appendChild(b);return b}function n(a){this.isSpeedy=!0,this.tags=[],this.ctr=0,this.opts=a}function o(){if(this.injected)throw new Error("already injected!");this.tags[0]=m(this.opts);this.injected=!0}function p(a){if(this.ctr!==0)throw new Error("cannot change speedy now");this.isSpeedy=!!a}function q(a,b){if(this.isSpeedy){var c=this.tags[this.tags.length-1];c=l(c);try{c.insertRule(a,c.cssRules.length)}catch(a){}}else{c=m(this.opts);this.tags.push(c);c.appendChild(document.createTextNode(a+(b||"")))}this.ctr++;this.ctr%65e3===0&&this.tags.push(m(this.opts))}function r(a){return a.parentNode.removeChild(a)}function s(){this.tags.forEach(r),this.tags=[],this.ctr=0,this.injected=!1}var t=function(){var a=n.prototype;a.inject=o;a.speedy=p;a.insert=q;a.flush=s;return n}();function u(a,d){d===void 0&&(d={});var g=d.key||"css",h=a.__SECRET_EMOTION__,i;function l(a){i+=a,k&&o.insert(a,p)}l=c(l);if(h===void 0){var m={keyframe:!1,global:!1,prefix:d.prefix===void 0?!0:d.prefix,semicolon:!0};a.__SECRET_EMOTION__=h={registered:{},inserted:{},sheet:new t(d),stylis:new b.Stylis(m),nonce:d.nonce,key:g};h.stylis.use(d.stylisPlugins)(l);k&&h.sheet.inject()}var n=h.stylis,o=h.sheet,p="";function q(a,c){if(a==null)return"";switch(typeof a){case"boolean":return"";case"function":if(a[b.STYLES_KEY]!==void 0){var d=a.toString();if(d==="NO_COMPONENT_SELECTOR"&&!1)throw new Error("Component selectors can only be used in conjunction with babel-plugin-emotion.");return d}return q.call(this,this===void 0?a():a(this.mergedProps,this.context),c);case"object":return u.call(this,a);default:d=h.registered[a];return c===!1&&d!==void 0?d:a}}var s=new WeakMap();function u(b){if(s.has(b))return s.get(b);var c="";function a(a){c+=q.call(this,a,!1)}function d(a){if(typeof b[a]!=="object")h.registered[b[a]]!==void 0?c+=a+"{"+h.registered[b[a]]+"}":c+=e(a)+":"+f(a,b[a])+";";else{if(a==="NO_COMPONENT_SELECTOR"&&!1)throw new Error("Component selectors can only be used in conjunction with babel-plugin-emotion.");c+=a+"{"+q.call(this,b[a],!1)+"}"}}Array.isArray(b)?b.forEach(a,this):Object.keys(b).forEach(d,this);s.set(b,c);return c}var v,w=/label:\s*([^\s;\n{]+)\s*;/g,x=function(a){var c=!0,d="",e="";a==null||a.raw===void 0?(c=!1,d+=q.call(this,a,!1)):d+=a[0];for(var f=arguments.length,g=new Array(f>1?f-1:0),h=1;h<f;h++)g[h-1]=arguments[h];g.forEach(function(b,e){d+=q.call(this,b,d.charCodeAt(d.length-1)===46),c===!0&&a[e+1]!==void 0&&(d+=a[e+1])},this);d=d.replace(w,function(a,b){e+="-"+b;return""});v=b.hashString(d+e)+e;return d};function y(a,b){h.inserted[v]===void 0&&(i="",n(a,b),h.inserted[v]=i)}var z=function(){var a=x.apply(this,arguments),b=g+"-"+v;h.registered[b]===void 0&&(h.registered[b]=a);y("."+b,a);return b};a=function(){var a=x.apply(this,arguments),b="animation-"+v;y("","@keyframes "+b+"{"+a+"}");return b};m=function(){var a=x.apply(this,arguments);y("",a)};function A(a,b){var c="";b.split(" ").forEach(function(b){h.registered[b]!==void 0?a.push(b):c+=b+" "});return c}function B(a,b){var c=[],d=A(c,a);return c.length<2?a:d+z(c,b)}function C(){for(var a=arguments.length,b=new Array(a),c=0;c<a;c++)b[c]=arguments[c];return B(j(b))}function D(a){h.inserted[a]=!0}function E(a){a.forEach(D)}function F(){k&&(o.flush(),o.inject()),h.inserted={},h.registered={}}function G(a){o.tags[0].parentNode.insertBefore(a,o.tags[0]),a.getAttribute("data-emotion-"+g).split(" ").forEach(D)}if(k){d=document.querySelectorAll("[data-emotion-"+g+"]");Array.prototype.forEach.call(d,G)}l={flush:F,hydrate:E,cx:C,merge:B,getRegisteredStyles:A,injectGlobal:m,keyframes:a,css:z,sheet:o,caches:h};return l}i.exports=u}var k=!1,l=function(){k||(k=!0,j());return i.exports};d=function(a){switch(a){case void 0:return l()}};e.exports=d}),null);
+/**
+ * License: https://www.facebook.com/legal/license/MDzNl_j9yvg/
+ */
+__d("emotion-9.0.2",["create-emotion-9.0.2"],(function(a,b,c,d,e,f){"use strict";function c(a){return a&&typeof a==="object"&&"default"in a?a["default"]:a}var g=c(b("create-emotion-9.0.2")),h={},i={exports:h};function j(){Object.defineProperty(h,"__esModule",{value:!0});function b(a){return a&&typeof a==="object"&&"default"in a?a["default"]:a}b=b(g());var c=typeof a!=="undefined"?a:{};b=b(c);c=b.flush;var d=b.hydrate,e=b.cx,f=b.merge,i=b.getRegisteredStyles,j=b.injectGlobal,k=b.keyframes,l=b.css,m=b.sheet;b=b.caches;h.flush=c;h.hydrate=d;h.cx=e;h.merge=f;h.getRegisteredStyles=i;h.injectGlobal=j;h.keyframes=k;h.css=l;h.sheet=m;h.caches=b}var k=!1,l=function(){k||(k=!0,j());return i.exports};d=function(a){switch(a){case void 0:return l()}};e.exports=d}),null);
+__d("emotion",["emotion-9.0.2"],(function(a,b,c,d,e,f){e.exports=b("emotion-9.0.2")()}),null);
+__d("XCollabCallSendMessageController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/collab/sendmessage/",{recipient_id:{type:"Int",required:!0},msg_id:{type:"Int",required:!0},message_info:{type:"String",required:!0},webrtc_fbtrace:{type:"Int"}})}),null);
+__d("XGroupCallController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/groupcall/{?call_context}/",{call_context:{type:"String",required:!0},call_id:{type:"Int"},users_to_ring:{type:"FBIDSet",defaultValue:[]},has_video:{type:"Bool",defaultValue:!0},initialize_video:{type:"Bool",defaultValue:!0},server_info_data:{type:"String"},nonce:{type:"String"},multiway_www_tier:{type:"String"},multiway_core_tier:{type:"String"},locale:{type:"String"},funnel_session_id:{type:"String"}})}),null);
+__d("XGroupCallSendMessageController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/groupcall/sendmessage/",{webrtc_fbtrace:{type:"Int"}})}),null);
+__d("XGroupCallSendRequestController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/groupcall/sendrequest/",{webrtc_fbtrace:{type:"Int"}})}),null);
+__d("XGroupCallSigningController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/groupcall/init/",{call_context:{type:"String",required:!0},call_id:{type:"Int"},users_to_ring:{type:"FBIDSet",defaultValue:[]},has_video:{type:"Bool",defaultValue:!1},initialize_video:{type:"Bool",defaultValue:!1},server_info_data:{type:"String"},nonce:{type:"String"},multiway_www_tier:{type:"String"},multiway_core_tier:{type:"String"}})}),null);
+__d("XLivingRoomFullScreenController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/watchparty/{living_room_id}/",{living_room_id:{type:"FBID",required:!0},entry_source:{type:"Enum",enumType:1},search_results_session_id:{type:"String"},vpsb_external_log_video_id:{type:"FBID"}})}),null);
+__d("XRTCCallNUXController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/rtc/call/nuxstatus/",{})}),null);
+__d("XScreenSharingController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/videocall/screen_sharing/",{peer_id:{type:"FBID",required:!0},version:{type:"Int"}})}),null);
+__d("XVideoCallAdminMessageController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/videocall/admin_msg/",{})}),null);
+__d("XVideoCallController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/videocall/incall/",{peer_id:{type:"FBID",required:!0},call_id:{type:"Int"},is_caller:{type:"Bool",defaultValue:!1},audio_only:{type:"Bool",defaultValue:!1},nonce:{type:"String"},meeting_id:{type:"Int"},meeting_pass:{type:"String"},initialize_video:{type:"Bool",defaultValue:!0},locale:{type:"String"}})}),null);
+__d("XVideoCallSendMessageController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/videocall/sendmessage/",{recipient_id:{type:"Int",required:!0},msg_id:{type:"Int",required:!0},message_info:{type:"String",required:!0},webrtc_fbtrace:{type:"Int"}})}),null);
+__d("XVideoCallTurnDiscoveryController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/videocall/turndiscovery/",{version:{type:"Int",required:!0},call_id:{type:"String"}})}),null);

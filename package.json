@@ -4,7 +4,9 @@
   "description": "n/a",
   "main": "index.js",
   "scripts": {
-    "test": "n/a"
+    "test": "n/a",
+    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-bundle": "webpack -w -d"
   },
   "repository": {
     "type": "git",

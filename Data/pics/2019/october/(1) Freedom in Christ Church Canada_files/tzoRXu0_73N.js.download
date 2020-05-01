@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["tPAQb"]); }
+
+__d("MediaManagerPageAdminOnlyNonProfilePlusTabConfigExt",["PageAdminTypes"],(function(a,b,c,d,e,f){"use strict";a={permissionsCheck:function(a){return a.mediaManagerPageType==="PAGE"&&(a.adminType===b("PageAdminTypes").MANAGER||a.adminType===b("PageAdminTypes").CONTENT_CREATOR)}};e.exports=a}),null);

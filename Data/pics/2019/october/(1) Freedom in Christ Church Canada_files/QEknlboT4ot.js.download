@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Jc\/V\/"]); }
+
+__d("MediaManagerPageOnlyTabConfigExt",["PageAdminTypes"],(function(a,b,c,d,e,f){"use strict";a={permissionsCheck:function(a){return a.mediaManagerPageType==="PAGE"}};e.exports=a}),null);
