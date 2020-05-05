@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App';
+import MainPage from './components/MainPage';
 
 ReactDOM.hydrate(
-  <App />,
+  <MainPage />,
   document.getElementById('mountNode'),
 );
