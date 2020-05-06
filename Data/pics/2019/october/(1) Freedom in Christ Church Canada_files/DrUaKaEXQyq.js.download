@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["Mb2tV"]); }
-
-__d("AdsCFSectionPerformanceComponentMountedDataActionFlux",[],(function(a,b,c,d,e,f){"use strict";e.exports={actionType:"ADS_CF_SECTION_PERF__COMPONENT_MOUNTED"}}),null);
