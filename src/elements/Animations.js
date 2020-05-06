@@ -17,4 +17,4 @@ const Rotate = styled.div`
     font-size: 1.2rem;
 `;
 
-export default Rotate;
+export default Rotate; 

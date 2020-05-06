@@ -12,6 +12,7 @@ server.get('/', (req, res) => {
   res.send(`
     <html>
       <head>
+        <link rel="shortcut icon" href="../../data/pics/icon/favicon.ico" />
         <title>Freedom in Christ Church</title>
       </head>
       <body>
