@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+import { Statements } from './Statements';
+// import './App.css'; -- create react app default
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,6 +15,9 @@ function App() {
         >
           Click here to see our Facebook page.
         </a>
+        <br/><br/>
+        <Statements text="vision" /><br/>
+        <Statements text='mission' />
       </header>
     </div>
   );
