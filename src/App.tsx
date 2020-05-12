@@ -1,13 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+interface MyMessageProps {
+  message: string;
+}
+
+function MyMessage(props: MyMessageProps){
+  return <div>{props.message}</div>;
+}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Welcome to Freedom in Christ Church!</p>
+        <img src="./n9d0ggy.png" className="App-logo" alt="logo" />
+        <MyMessage message="Welcome to Freedom in Christ Church!"/>
       </header>
     </div>
   );
