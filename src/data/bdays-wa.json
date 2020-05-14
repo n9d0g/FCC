@@ -1,0 +1,132 @@
+{
+  "months": {
+    "january": {
+      "Bulanadi": [1, "WA"],
+      "Zarate": [4, "WA"],
+      "Raquel Quiambao": [8, "BD"],
+      "Benologa": [14, "WA"],
+      "Efren Medillo": [23, "BD"],
+      "Joi Lardizabal": [27, "BD"],
+      "Bernard Bersamin": [28, "BD"]
+    },
+    "february": {
+      "Jacinto and Emelita": [3, "WA"],
+      "Daniel Mendillo": [4, "BD"],
+      "Louise Meriel": [6, "BD"],
+      "Jacinto Critsobal Jr.": [7, "BD"],
+      "Ian Weir": [14, "BD"],
+      "Nanette Mendillo": [15, "BD"],
+      "Allan Macasaquit": [16, "BD"],
+      "Rommel Benologa": [21, "BD"],
+      "Jinky": [27, "BD"],
+      "Andrew B.": [4, "BD"]
+    },
+    "march": {
+      "Rita": [3, "BD"],
+      "Juliet D.": [3, "BD"],
+      "Paula Macasaquit": [10, "BD"],
+      "Deng Pedralvez": [12, "BD"],
+      "Sarah Rasco": [13, "BD"],
+      "Rasco": [14, "WA"],
+      "Joseph Sucalit": [22, "BD"]
+    },
+    "april": {
+      "Rolly Benologa": [9, "BD"],
+      "Che Bulanadi": [19, "BD"],
+      "Henry": [19, "BD"],
+      "Ymuz Cruz": [20, "BD"],
+      "April Zarate": [30, "BD"]
+    },
+    "may": {
+      "Emelita Cristobal": [4, "BD"],
+      "Nathan De La Cruz": [6, "BD"],
+      "Beverley Shi": [11, "BD"],
+      "Yva Rasco": [27, "BD"],
+      "Olive Zarate": [28, "BD"]
+    },
+    "june": {
+      "Carla Meriel": [3, "BD"],
+      "Lara Sucalit": [11, "BD"],
+      "Sio": [12, "WA"],
+      "Jenica Benologa": [22, "BD"],
+      "Geneveive Mendillo": [24, "BD"],
+      "Cherry Macasaquit": [24, "BD"],
+      "Timothy Bulanadi": [29, "BD"],
+      "Eliana Bulanadi": [29, "BD"],
+      "Nathan Lardizabal": [29, "BD"],
+      "Macasaquit": [29, "WA"]
+    },
+    "july": {
+      "Gianna Meriel": [4, "BD"],
+      "Yumul": [15, "WA"],
+      "Maricar Rasco": [16, "BD"],
+      "Walter": [18, "BD"],
+      "Yolanda Quiambao": [19, "BD"],
+      "RJ Yumul": [27, "BD"],
+      "Yhab Cruz": [29, "BD"]
+    },
+    "august": {
+      "Josephine Meriel": [2, "BD"],
+      "Juillian Meriel": [5, "BD"],
+      "Stephanie Yumul": [5, "BD"],
+      "Icon Meriel": [7, "BD"],
+      "Kenzo Bersamin": [8, "BD"],
+      "Isaiah": [9, "BD"],
+      "Lolita Irong": [18, "BD"],
+      "Fedelina": [20, "BD"],
+      "Justin Ortiz": [20, "BD"],
+      "Javidd Daylo": [20, "BD"],
+      "Robert Sio": [23, "BD"],
+      "Rhoda Bersamin": [24, "BD"],
+      "Ayden Pedralvez": [24, "BD"],
+      "May Pedralvez": [27, "BD"],
+      "James Quiambao": [27, "BD"],
+      "Frances Sanchez": [29, "BD"],
+      "Noreen Lardizabal": [30, "BD"]
+    },
+    "september": {
+      "Ian Irong": [5, "BD"],
+      "John Benologa": [11, "BD"],
+      "Jacob Mendillo": [14, "BD"],
+      "Sucalit": [14, "WA"],
+      "Allyson Zarate": [19, "BD"],
+      "Meriel": [21, "WA"],
+      "Mai Sanchez": [22, "BD"],
+      "Vince Bersamin": [24, "BD"],
+      "Meng Benologa": [27, "BD"],
+      "De La Cruz": [28, "WA"],
+      "Lexie Macasaquit": [29, "BD"]
+    },
+    "october": {
+      "Mendillo": [3, "WA"],
+      "Aida Yumul": [10, "BD"],
+      "Dorothy Sio": [15, "BD"],
+      "Elijah": [18, "BD"],
+      "Noel Bulanadi": [23, "BD"],
+      "Nathan Bulanadi": [24, "BD"],
+      "Joshua Sio": [24, "BD"],
+      "Myrna": [28, "BD"],
+      "Digna Cruz": [29, "BD"],
+      "Cherry Lou": [29, "BD"],
+      "Ben": [30, "BD"],
+      "Roland Yumul": [30, "BD"]
+    },
+    "november": {
+      "Noemi Bulanadi": [3, "BD"],
+      "Tito Zarate": [3, "BD"],
+      "Jonah Sucalit": [21, "BD"],
+      "Danica Cruz": [21, "BD"],
+      "Errol Rasco": [22, "BD"],
+      "Norman Lardizabal": [26, "BD"]
+    },
+    "december": {
+      "Jacqui C.": [2, "BD"],
+      "Bersamin": [4, "WA"],
+      "Walter & Cherrylou": [7, "BD"],
+      "Jeffrey": [9, "BD"],
+      "Pedralvez": [19, "WA"],
+      "Miguel Sanchez": [21, "BD"],
+      "Olive Lauren Zarate": [21, "BD"]
+    }
+  }
+}
