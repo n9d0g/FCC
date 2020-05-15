@@ -12,8 +12,12 @@ function App() {
         <MyMessage churchStatement="mission" />
         <br />
         <MyMessage churchStatement="vision" />
-        <Button label="facebook" />
+        <br />
+        Links:
+        <Button label="fcc_facebook" />
+        <Button label="fcac_facebook" />
         <Button label="instagram" />
+        <Button label="youtube" />
       </header>
     </div>
   );
