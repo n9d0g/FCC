@@ -4,7 +4,9 @@ interface MyMessageProps {
   churchStatement?: string;
 }
 
-export function MyMessage(props: MyMessageProps): any {
+export const statements = ["mission", "vision"];
+
+export function Statements(props: MyMessageProps): any {
   switch (props.churchStatement) {
     case "vision": {
       return (
@@ -27,4 +29,14 @@ export function MyMessage(props: MyMessageProps): any {
       return <div>Welcome to Freedom in Christ Church!</div>;
     }
   }
+}
+
+export function ChurchStatements(): any {
+  return (
+    <div>
+      {statements.map((statement) => {
+        return <Statements churchStatement={statement} />;
+      })}
+    </div>
+  );
 }
