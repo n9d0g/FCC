@@ -8,6 +8,7 @@ const { Content } = Layout
 const HomeView: FC = () => {
     return (
         <Content style={{ padding: '0 50px' }}>
+            <h1 className="module-header">Home</h1>
             <Breadcrumb style={{ margin: '16px 0' }}>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
             </Breadcrumb>

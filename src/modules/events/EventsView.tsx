@@ -1,6 +1,9 @@
 import React, { FC } from 'react'
 import '../app/App.css'
-import { Calendar } from 'antd'
+import { Calendar, Layout, Breadcrumb } from 'antd'
+import EventsCarousel from './components/EventsCarousel'
+
+const { Content } = Layout
 
 // function onPanelChange(value, mode) {
 //     console.log(value.format('YYYY-MM-DD'), mode)
@@ -8,10 +11,14 @@ import { Calendar } from 'antd'
 
 const EventsView: FC = () => {
     return (
-        <div>
+        <Content style={{ padding: '0 50px' }}>
             <h1 className="module-header">Events Page</h1>
+            <Breadcrumb style={{ margin: '16px 0' }}>
+                <Breadcrumb.Item>Events</Breadcrumb.Item>
+            </Breadcrumb>
+            <EventsCarousel />
             <Calendar />
-        </div>
+        </Content>
     )
 }
 
