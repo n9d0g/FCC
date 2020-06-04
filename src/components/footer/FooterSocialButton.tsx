@@ -1,5 +1,9 @@
 import React, { FC } from 'react'
-import { Button } from 'antd'
+import {
+    InstagramFilled,
+    FacebookFilled,
+    YoutubeFilled,
+} from '@ant-design/icons'
 
 interface Props {
     platform: string
@@ -7,11 +11,27 @@ interface Props {
 }
 
 const FooterSocialButton: FC<Props> = ({ platform, link }) => {
+    var icon
+    switch (platform) {
+        case 'Instagram':
+            icon = <InstagramFilled />
+            break
+        case 'YouTube':
+            icon = <YoutubeFilled />
+            break
+        default:
+            icon = <FacebookFilled />
+            break
+    }
+
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-            <Button type="primary" shape="round">
-                {platform}
-            </Button>
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ fontSize: 20 }}
+        >
+            {icon}
         </a>
     )
 }
