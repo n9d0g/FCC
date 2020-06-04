@@ -7,8 +7,8 @@
 
 .site-layout-content {
     background: rgba(255, 255, 255, 0.465);
-    /* padding: 24px;
-    min-height: 280px; */
+    min-height: 100%;
+    /* position: relative; */
 }
 #components-layout-demo-top .logo {
     width: 120px;

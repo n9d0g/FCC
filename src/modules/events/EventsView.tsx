@@ -14,6 +14,7 @@ const EventsView: FC = () => {
         <Content style={{ padding: '0 50px' }}>
             <h1 className="module-header">Events Page</h1>
             <Breadcrumb style={{ margin: '16px 0' }}>
+                <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Events</Breadcrumb.Item>
             </Breadcrumb>
             <EventsCarousel />

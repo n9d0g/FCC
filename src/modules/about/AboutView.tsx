@@ -15,6 +15,7 @@ const AboutView: FC = () => {
         <Content style={{ padding: '0 50px' }}>
             <h1 className="module-header">About Page</h1>
             <Breadcrumb style={{ margin: '16px 0' }}>
+                <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>About</Breadcrumb.Item>
             </Breadcrumb>
             <div className="about-content">

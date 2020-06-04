@@ -13,6 +13,7 @@ const GiveView: FC = () => {
         <Content style={{ padding: '0 50px' }}>
             <h1 className="module-header">Give Page</h1>
             <Breadcrumb style={{ margin: '16px 0' }}>
+                <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Give</Breadcrumb.Item>
             </Breadcrumb>
             <GiveForm />

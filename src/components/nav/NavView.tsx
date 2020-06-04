@@ -2,13 +2,14 @@ import React from 'react'
 import './Nav.css'
 import { Link } from 'react-router-dom'
 import { Layout, Menu } from 'antd'
+import '../../images/n9d0ggy.png'
 
 const { Header } = Layout
 
 const NavView: React.FC = () => {
     return (
         <Header>
-            {/* <div className="logo">FCC Logo</div> */}
+            <div className="logo" />
             <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
                 <Menu.Item key="1">
                     <Link to="/">Home</Link>

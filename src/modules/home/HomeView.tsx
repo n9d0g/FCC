@@ -1,7 +1,9 @@
 import React, { FC } from 'react'
 import '../app/App.css'
-import './components/HomeContent.css'
+import './components/HomeView.css'
 import { Layout, Breadcrumb } from 'antd'
+import HomeButton from './components/HomeButton'
+import { Link } from 'react-router-dom'
 
 const { Content } = Layout
 
@@ -14,6 +16,14 @@ const HomeView: FC = () => {
             </Breadcrumb>
             <div className="home-content">
                 Welcome to Freedom in Christ Church :)
+            </div>
+            <div className="newButton">
+                <Link to="/about">
+                    <HomeButton text="I'm new here" />
+                </Link>
+                <Link to="/sermons">
+                    <HomeButton text="Sermons" />
+                </Link>
             </div>
         </Content>
     )

@@ -9,6 +9,7 @@ const ConnectView: FC = () => {
         <Content style={{ padding: '0 50px' }}>
             <h1 className="module-header">Connect Page</h1>
             <Breadcrumb style={{ margin: '16px 0' }}>
+                <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Connect</Breadcrumb.Item>
             </Breadcrumb>
         </Content>
