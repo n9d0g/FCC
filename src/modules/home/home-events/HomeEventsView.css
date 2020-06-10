@@ -1,0 +1,10 @@
+.home-events {
+    display: grid;
+    background-color: #f1e7d9;
+    color: #1d1d1c;
+}
+
+.home-events-title {
+    text-align: center;
+    font-family: Merriweather, serif;
+}

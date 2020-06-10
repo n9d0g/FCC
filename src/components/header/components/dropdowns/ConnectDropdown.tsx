@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 const ConnectDropdown = (
     <Menu className="dropdown">
         <Menu.Item>
-            <Link to="/">Ministries</Link>
+            <Link to="/ministries">Ministries</Link>
         </Menu.Item>
         <Menu.Item>
-            <Link to="/">Small Groups</Link>
+            <Link to="/small-groups">Small Groups</Link>
         </Menu.Item>
         <Menu.Item>
-            <Link to="/">Weekly Church Services</Link>
+            <Link to="/services">Weekly Church Services</Link>
         </Menu.Item>
     </Menu>
 )

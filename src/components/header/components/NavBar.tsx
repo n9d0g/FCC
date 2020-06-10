@@ -6,7 +6,6 @@ import { Dropdown } from 'antd'
 import { DownOutlined } from '@ant-design/icons'
 import AboutDropdown from './dropdowns/AboutDropdown'
 import ConnectDropdown from './dropdowns/ConnectDropdown'
-import EventsDropdown from './dropdowns/EventsDropdown'
 
 const NavBar = () => {
     return (
@@ -28,11 +27,9 @@ const NavBar = () => {
                         Connect <DownOutlined />
                     </Link>
                 </Dropdown>
-                <Dropdown overlay={EventsDropdown}>
-                    <Link to="/events" className="events-nav">
-                        Events <DownOutlined />
-                    </Link>
-                </Dropdown>
+                <Link to="/events" className="events-nav">
+                    Events
+                </Link>
                 <Link to="/sermons" className="sermons-nav">
                     Sermons
                 </Link>
