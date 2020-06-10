@@ -1,11 +1,14 @@
 import React, { FC } from 'react'
 import './styles/AboutView.css'
-import { Layout } from 'antd'
-
-const { Content } = Layout
+import AboutMainView from './about-main/AboutMainView'
 
 const AboutView: FC = () => {
-    return <Content className="content-container">About Home</Content>
+    return (
+        <div className="about-content">
+            <h1 className="module-header">About Home</h1>
+            <AboutMainView />
+        </div>
+    )
 }
 
 export default AboutView

@@ -9,7 +9,7 @@ const AboutMissionVisionView: FC = () => {
         'to introduce and represent Christ through our nurturing small group-driven ministries in the community.'
 
     return (
-        <div className="about-content">
+        <div className="content-container">
             <h1 className="module-header">About Page</h1>
             Mission: {MissionStatement}
             <br />
