@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import {
-    InstagramFilled,
-    FacebookFilled,
-    YoutubeFilled,
+    InstagramOutlined,
+    FacebookOutlined,
+    YoutubeOutlined,
 } from '@ant-design/icons'
 
 interface Props {
@@ -11,16 +11,16 @@ interface Props {
 }
 
 const FooterSocialButton: FC<Props> = ({ platform, link }) => {
-    var icon
+    let icon: JSX.Element
     switch (platform) {
         case 'Instagram':
-            icon = <InstagramFilled />
+            icon = <InstagramOutlined />
             break
         case 'YouTube':
-            icon = <YoutubeFilled />
+            icon = <YoutubeOutlined />
             break
         default:
-            icon = <FacebookFilled />
+            icon = <FacebookOutlined />
             break
     }
 

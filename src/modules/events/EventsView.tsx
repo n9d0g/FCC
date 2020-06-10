@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
-import '../app/App.css'
-import { Calendar, Layout, Breadcrumb } from 'antd'
+import { Calendar, Layout } from 'antd'
 import EventsCarousel from './components/EventsCarousel'
 
 const { Content } = Layout
@@ -11,12 +10,8 @@ const { Content } = Layout
 
 const EventsView: FC = () => {
     return (
-        <Content style={{ padding: '0 50px' }}>
+        <Content className="content-container">
             <h1 className="module-header">Events Page</h1>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>Events</Breadcrumb.Item>
-            </Breadcrumb>
             <EventsCarousel />
             <Calendar />
         </Content>

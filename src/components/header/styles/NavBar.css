@@ -1,0 +1,91 @@
+.header-container {
+    color: #f7f4f0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1d1d1c;
+}
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    min-height: 65px;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    background-color: #1d1d1c;
+    text-align: center;
+}
+
+.logo {
+    display: grid;
+    justify-content: end;
+    align-content: right;
+}
+
+.logo-img {
+    width: 75px;
+}
+
+a {
+    color: #fff;
+}
+
+.links-container {
+    color: #f7f4f0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: '. . home-nav about-nav connect-nav events-nav sermons-nav  give-nav';
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+}
+
+.banner-container {
+    margin-bottom: 15px;
+    margin-top: -20px;
+    padding: 8px;
+    text-align: center;
+    color: #f7f4f0;
+    background-color: #292827;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+
+.home-nav {
+    grid-area: home-nav;
+    color: #f7f4f0;
+}
+
+.about-nav {
+    grid-area: about-nav;
+    color: #f7f4f0;
+}
+
+.connect-nav {
+    grid-area: connect-nav;
+    color: #f7f4f0;
+}
+
+.sermons-nav {
+    grid-area: sermons-nav;
+    color: #f7f4f0;
+}
+
+.events-nav {
+    grid-area: events-nav;
+    color: #f7f4f0;
+}
+
+.give-nav {
+    grid-area: give-nav;
+    color: #f7f4f0;
+}

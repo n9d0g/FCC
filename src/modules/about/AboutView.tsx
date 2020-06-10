@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
-import '../app/App.css'
-import './components/AboutContent.css'
+import './styles/AboutView.css'
 import { Layout, Breadcrumb } from 'antd'
 
 const { Content } = Layout
@@ -12,9 +11,9 @@ const AboutView: FC = () => {
         'to introduce and represent Christ through our nurturing small group-driven ministries in the community.'
 
     return (
-        <Content style={{ padding: '0 50px' }}>
+        <Content className="content-container">
             <h1 className="module-header">About Page</h1>
-            <Breadcrumb style={{ margin: '16px 0' }}>
+            <Breadcrumb className="breadcrumb-container">
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>About</Breadcrumb.Item>
             </Breadcrumb>

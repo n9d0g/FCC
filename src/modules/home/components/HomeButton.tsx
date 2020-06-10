@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
-import '../../app/App.css'
-import './HomeView.css'
+import '../styles/HomeView.css'
 import { Button } from 'antd'
 
 interface HomeButtonProps {

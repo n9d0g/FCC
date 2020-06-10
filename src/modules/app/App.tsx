@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HomeView from '../home/HomeView'
-import NavView from '../../components/nav/NavView'
+import HeaderView from '../../components/header/HeaderView'
 import AboutView from '../about/AboutView'
 import ConnectView from '../connect/ConnectView'
 import SermonsView from '../sermons/SermonsView'
@@ -9,13 +9,12 @@ import EventsView from '../events/EventsView'
 import GiveView from '../give/GiveView'
 import FooterView from '../../components/footer/FooterView'
 import './App.css'
-import { Layout } from 'antd'
 
 const App: FC = () => {
     return (
-        <Layout className="site-layout-content">
+        <div className="app">
             <Router>
-                <NavView />
+                <HeaderView />
                 <Switch>
                     <Route path="/" exact component={HomeView} />
                     <Route path="/about" exact component={AboutView} />
@@ -26,7 +25,7 @@ const App: FC = () => {
                 </Switch>
             </Router>
             <FooterView />
-        </Layout>
+        </div>
     )
 }
 

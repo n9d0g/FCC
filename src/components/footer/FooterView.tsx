@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Layout } from 'antd'
-import './FooterView.css'
-import FooterSocialButton from './FooterSocialButton'
+import './styles/FooterView.css'
+import FooterSocialButton from './components/FooterSocialButton'
 
 const { Footer } = Layout
 
@@ -16,10 +16,6 @@ const FooterView: FC = () => {
             <FooterSocialButton
                 platform="FCC Facebook"
                 link="https://www.facebook.com/groups/1667915316820460/?ref=bookmarks"
-            />
-            <FooterSocialButton
-                platform="FCAC Facebook"
-                link="https://www.facebook.com/groups/838147516272852/"
             />
             <FooterSocialButton
                 platform="YouTube"

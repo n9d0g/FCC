@@ -1,17 +1,12 @@
 import React, { FC } from 'react'
-import '../app/App.css'
-import { Layout, Breadcrumb } from 'antd'
+import { Layout } from 'antd'
 
 const { Content } = Layout
 
 const SermonsView: FC = () => {
     return (
-        <Content style={{ padding: '0 50px' }}>
+        <Content className="content-container">
             <h1 className="module-header">Sermons Page</h1>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>Sermons</Breadcrumb.Item>
-            </Breadcrumb>
         </Content>
     )
 }
