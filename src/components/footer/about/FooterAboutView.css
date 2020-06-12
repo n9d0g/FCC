@@ -1,0 +1,20 @@
+.footer-about {
+    display: grid;
+    grid-template-areas: 'values' 'mission-vision' 'leadership' '' '';
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #b1aeab;
+    line-height: 1.2;
+}
+
+.values {
+    display: grid;
+}
+
+.mission-vision {
+    display: grid;
+}
+
+.leadership {
+    display: grid;
+}

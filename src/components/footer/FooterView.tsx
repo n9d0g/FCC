@@ -1,27 +1,23 @@
 import React, { FC } from 'react'
-import { Layout } from 'antd'
 import './styles/FooterView.css'
-import FooterSocialButton from './components/FooterSocialButton'
-
-const { Footer } = Layout
+import SocialButtonsView from './social-buttons/SocialButtonsView'
+import FooterLogoView from './logo/FooterLogoView'
+import FooterLocationView from './location/FooterLocationView'
+import FooterAboutView from './about/FooterAboutView'
+import FooterConnectView from './connect/FooterConnectView'
+import FooterRemainingView from './remaining/FooterRemainingView'
 
 const FooterView: FC = () => {
     return (
-        <Footer className="footer">
-            2020 Freedom in Christ Church, All Rights Reserved
-            <FooterSocialButton
-                platform="Instagram"
-                link="https://www.instagram.com/n9d0g/"
-            />
-            <FooterSocialButton
-                platform="FCC Facebook"
-                link="https://www.facebook.com/groups/1667915316820460/?ref=bookmarks"
-            />
-            <FooterSocialButton
-                platform="YouTube"
-                link="https://www.youtube.com/channel/UCwfnmKKZ8giVd3wtI-p7qvQ?view_as=subscriber"
-            />
-        </Footer>
+        <div className="footer-container">
+            <FooterLogoView />
+            <FooterLocationView />
+            <FooterAboutView />
+            <FooterConnectView />
+            <FooterRemainingView />
+            {/* 2020 Freedom in Christ Church, All Rights Reserved hello */}
+            <SocialButtonsView />
+        </div>
     )
 }
 

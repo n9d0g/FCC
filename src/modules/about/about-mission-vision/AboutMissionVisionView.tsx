@@ -10,10 +10,12 @@ const AboutMissionVisionView: FC = () => {
 
     return (
         <div className="content-container">
-            <h1 className="module-header">About Page</h1>
-            Mission: {MissionStatement}
-            <br />
-            Vision: {VisionStatement}
+            <h1 className="module-header">FCC Mission and Vision</h1>
+            <div className="about-content">
+                Mission: {MissionStatement}
+                <br />
+                Vision: {VisionStatement}
+            </div>
         </div>
     )
 }
