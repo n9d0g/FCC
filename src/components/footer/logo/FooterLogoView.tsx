@@ -1,7 +1,7 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 
 const FooterLogoView: FC = () => {
-    return <div>Footer Logo View</div>
+  return <div className='footer-logo'>Footer Logo View</div>
 }
 
 export default FooterLogoView

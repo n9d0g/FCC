@@ -1,23 +1,24 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import FooterSocialButton from '../components/FooterSocialButton'
+import * as mediaLinks from '../../../data/strings.json'
 
 const SocialButtonsView: FC = () => {
-    return (
-        <div className="social-buttons">
-            <FooterSocialButton
-                platform="Instagram"
-                link="https://www.instagram.com/n9d0g/"
-            />
-            <FooterSocialButton
-                platform="FCC Facebook"
-                link="https://www.facebook.com/groups/1667915316820460/?ref=bookmarks"
-            />
-            <FooterSocialButton
-                platform="YouTube"
-                link="https://www.youtube.com/channel/UCwfnmKKZ8giVd3wtI-p7qvQ?view_as=subscriber"
-            />
-        </div>
-    )
+  return (
+    <div className='social-buttons'>
+      <FooterSocialButton
+        platform='Instagram'
+        link={mediaLinks['social-media-links'].instagram}
+      />
+      <FooterSocialButton
+        platform='FCC Facebook'
+        link={mediaLinks['social-media-links'].facebook}
+      />
+      <FooterSocialButton
+        platform='YouTube'
+        link={mediaLinks['social-media-links'].youtube}
+      />
+    </div>
+  )
 }
 
 export default SocialButtonsView

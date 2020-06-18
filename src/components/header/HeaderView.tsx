@@ -1,14 +1,15 @@
-import React from 'react'
-import NavBar from './components/NavBar'
-import Banner from './components/Banner'
+import React, {FC} from 'react'
+import HeaderNavBar from './navbar/HeaderNavBar'
+import HeaderBanner from './banner/HeaderBanner'
+import './styles/HeaderView.css'
 
-const HeaderView: React.FC = () => {
-    return (
-        <div className="header-container">
-            <Banner />
-            <NavBar />
-        </div>
-    )
+const HeaderView: FC = () => {
+  return (
+    <div className='header-container'>
+      <HeaderBanner />
+      <HeaderNavBar />
+    </div>
+  )
 }
 
 export default HeaderView

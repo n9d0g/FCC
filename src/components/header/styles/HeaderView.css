@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  bottom: auto;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1d1d1c;
+  color: #f7f4f0;
+}
