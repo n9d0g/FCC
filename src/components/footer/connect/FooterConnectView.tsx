@@ -4,14 +4,14 @@ import {Link} from 'react-router-dom'
 const FooterConnectView: FC = () => {
   return (
     <div className='footer-column'>
-      <Link to='/ministries' className='footer-about values'>
-        Ministries
+      <Link to='/ministries'>
+        <div className='footer-link'>Ministries</div>
       </Link>
-      <Link to='/small-groups' className='footer-about mission-vision'>
-        Small Groups
+      <Link to='/small-groups'>
+        <div className='footer-link'>Small Groups</div>
       </Link>
-      <Link to='/services' className='footer-about leadership'>
-        Services
+      <Link to='/services'>
+        <div className='footer-link'>Services</div>
       </Link>
     </div>
   )

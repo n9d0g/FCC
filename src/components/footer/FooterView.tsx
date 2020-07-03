@@ -9,15 +9,17 @@ import FooterRemainingView from './remaining/FooterRemainingView'
 
 const FooterView: FC = () => {
   return (
-    <div className='footer-container'>
-      <FooterLogoView />
-      <FooterLocationView />
-      <FooterAboutView />
-      <FooterConnectView />
-      <FooterRemainingView />
-      <SocialButtonsView />
-      {/* 2020 Freedom in Christ Church, All Rights Reserved hello */}
-    </div>
+    <footer className='footer-container'>
+      <div className='footer-columns-container'>
+        <FooterLogoView />
+        <FooterLocationView />
+        <FooterAboutView />
+        <FooterConnectView />
+        <FooterRemainingView />
+        <SocialButtonsView />
+        {/* 2020 Freedom in Christ Church, All Rights Reserved hello */}
+      </div>
+    </footer>
   )
 }
 
