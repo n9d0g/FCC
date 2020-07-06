@@ -1,0 +1,86 @@
+.home-landingpage {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.home-welcome {
+  display: block;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: rgb(247, 244, 240);
+  position: relative;
+  padding-right: 36px;
+  padding-left: 36px;
+  padding-top: 120px;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-welcome-content {
+  display: block;
+  margin-right: -24px;
+  margin-left: -24px;
+  box-sizing: border-box;
+}
+
+.home-welcome-statement {
+  display: block;
+  margin-bottom: 40px;
+  padding-right: 24px;
+  padding-left: 24px;
+  flex: 1;
+  position: relative;
+}
+
+.home-welcome-title-container {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  font-family: Montserrat, sans-serif;
+  color: #f7f4f0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.title-small {
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #f7f4f0;
+}
+
+.church-name {
+  margin-bottom: 40px;
+  padding-right: 24px;
+  padding-left: 24px;
+  flex: 1;
+  position: relative;
+  float: left;
+  min-height: 1px;
+  color: #d89853;
+  transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.newButton {
+  text-align: center;
+}

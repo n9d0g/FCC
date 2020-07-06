@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap');
 
-.home-content {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    color: rgb(247, 244, 240);
-}
-
-.newButton {
-    text-align: center;
+.section {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
