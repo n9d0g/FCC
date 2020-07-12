@@ -1,6 +1,6 @@
 import React, {FC} from 'react'
 import './HomeEventsView.css'
-import EventTile from '../components/EventTile'
+import SermonTile from '../components/SermonTile'
 
 const HomeEventsView: FC = () => {
   return (
@@ -10,9 +10,9 @@ const HomeEventsView: FC = () => {
           <h2 className='home-events-header'>Events</h2>
         </div>
         <div className='home-events-eventlist'>
-          <EventTile />
-          <EventTile />
-          <EventTile />
+          <SermonTile />
+          <SermonTile />
+          <SermonTile />
         </div>
       </div>
     </section>

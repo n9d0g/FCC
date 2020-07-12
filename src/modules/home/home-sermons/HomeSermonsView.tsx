@@ -8,7 +8,7 @@ const HomeSermonsView: FC = () => {
     <section className='home-sermons'>
       <div className='home-sermons-container'>
         <div className='home-sermons-header-container'>
-          <h2 className='home-sermons-title'>HomeSermonsView</h2>
+          <h2 className='home-sermons-title'>Sermons</h2>
           <ViewAllButton />
         </div>
         <div className='home-sermons-sermonlist'>
