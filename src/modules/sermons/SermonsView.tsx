@@ -1,14 +1,19 @@
-import React, { FC } from 'react'
-import { Layout } from 'antd'
-
-const { Content } = Layout
+import React, {FC, useEffect} from 'react'
+import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 
 const SermonsView: FC = () => {
-    return (
-        <Content className="content-container">
-            <h1 className="module-header">Sermons Page</h1>
-        </Content>
-    )
+  useEffect(() => {
+    document.title = 'Sermons | FCC'
+    return () => {
+      console.log('unmount')
+    }
+  }, [])
+
+  return (
+    <section className='sermons-page-container'>
+      <TitleAndBreadcrumb />
+    </section>
+  )
 }
 
 export default SermonsView

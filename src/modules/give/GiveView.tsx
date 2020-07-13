@@ -1,15 +1,25 @@
-import React, { FC } from 'react'
-import { Layout } from 'antd'
+import React, {FC, useEffect} from 'react'
 import GiveForm from './components/GiveForm'
+import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
+import './styles/GiveView.css'
 
-const { Content } = Layout
 const GiveView: FC = () => {
-    return (
-        <Content className="content-container">
-            <h1 className="module-header">Give Page</h1>
-            <GiveForm />
-        </Content>
-    )
+  useEffect(() => {
+    document.title = 'Give | FCC'
+    return () => {
+      console.log('unmount')
+    }
+  }, [])
+
+  return (
+    <section className='give-page-container'>
+      <div className='give-title-container'>
+        <TitleAndBreadcrumb />
+      </div>
+
+      <GiveForm />
+    </section>
+  )
 }
 
 export default GiveView

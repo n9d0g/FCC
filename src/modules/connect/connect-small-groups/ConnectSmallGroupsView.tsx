@@ -1,11 +1,18 @@
-import React, { FC } from 'react'
+import React, {FC, useEffect} from 'react'
 
 const ConnectSmallGroupsView: FC = () => {
-    return (
-        <div className="content-container">
-            <h1 className="module-header">SmallGroupsView</h1>
-        </div>
-    )
+  useEffect(() => {
+    document.title = 'Small Groups | FCC'
+    return () => {
+      console.log('unmount')
+    }
+  }, [])
+
+  return (
+    <div className='content-container'>
+      <h1 className='module-header'>SmallGroupsView</h1>
+    </div>
+  )
 }
 
 export default ConnectSmallGroupsView

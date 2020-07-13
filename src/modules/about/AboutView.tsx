@@ -1,8 +1,15 @@
-import React, {FC} from 'react'
+import React, {FC, useEffect} from 'react'
 import './styles/AboutView.css'
 import AboutList from './about-landingpage/AboutList'
 
 const AboutView: FC = () => {
+  useEffect(() => {
+    document.title = 'About | FCC'
+    return () => {
+      console.log('unmount')
+    }
+  }, [])
+
   return (
     <section className='about-page'>
       <h1 className='about-title'>
