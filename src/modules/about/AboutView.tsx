@@ -1,30 +1,30 @@
-import React, { FC } from 'react'
+import React, {FC} from 'react'
 import './styles/AboutView.css'
-import ModuleListItem from '../../components/module-list-item/ModuleListItem'
+import AboutList from './about-landingpage/AboutList'
 
 const AboutView: FC = () => {
-    return (
-        <div className="about-content">
-            <h1 className="module-header">About Home</h1>
-            <div className="content-container">
-                <ModuleListItem
-                    link="/values"
-                    section="Values"
-                    subtext="Doctrinal Statement"
-                />
-                <ModuleListItem
-                    link="/mission-vision"
-                    section="Mission and Vision"
-                    subtext="To spread the gospel by word and by deed"
-                />
-                <ModuleListItem
-                    link="/leadership"
-                    section="Leadership"
-                    subtext="Meeting the Leadership Team"
-                />
-            </div>
+  return (
+    <section className='about-page'>
+      <h1 className='about-title'>
+        <div className='about-title-header'>
+          <h1 className='about-header-title'>About FCC</h1>
         </div>
-    )
+        <div className='about-title-header'>
+          <h2 className='about-header-description'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </h2>
+        </div>
+      </h1>
+      <div className='about-content-container'>
+        <div className='about-content-picture'>picture here</div>
+        <div className='about-content-list-pages-container'>
+          <div className='about-content-list-pages'>
+            <AboutList />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default AboutView

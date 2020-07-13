@@ -1,21 +1,21 @@
-import './App.css';
-import React, {FC} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import HomeView from '../home/HomeView';
-import HeaderView from '../../components/header/HeaderView';
-import AboutView from '../about/AboutView';
-import ConnectView from '../connect/ConnectView';
-import SermonsView from '../sermons/SermonsView';
-import EventsView from '../events/EventsView';
-import GiveView from '../give/GiveView';
-import FooterView from '../../components/footer/FooterView';
+import './App.css'
+import React, {FC} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import HomeView from '../home/HomeView'
+import HeaderView from '../../components/header/HeaderView'
+import AboutView from '../about/AboutView'
+import ConnectView from '../connect/ConnectView'
+import SermonsView from '../sermons/SermonsView'
+import EventsView from '../events/EventsView'
+import GiveView from '../give/GiveView'
+import FooterView from '../../components/footer/FooterView'
 
-import AboutMissionVisionView from '../about/about-mission-vision/AboutMissionVisionView';
-import AboutLeadershipView from '../about/about-leadership/AboutLeadershipView';
-import AboutValuesView from '../about/about-values/AboutValuesView';
-import ConnectMinistriesView from '../connect/connect-ministries/ConnectMinistriesView';
-import ConnectServicesView from '../connect/connect-services/ConnectServicesView';
-import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmallGroupsView';
+import AboutMissionVisionView from '../about/about-mission-vision/AboutMissionVisionView'
+import AboutLeadershipView from '../about/about-leadership/AboutLeadershipView'
+import AboutValuesView from '../about/about-values/AboutValuesView'
+import ConnectMinistriesView from '../connect/connect-ministries/ConnectMinistriesView'
+import ConnectServicesView from '../connect/connect-services/ConnectServicesView'
+import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmallGroupsView'
 
 const App: FC = () => {
   return (
@@ -27,20 +27,32 @@ const App: FC = () => {
 
           {/*about section */}
           <Route path='/about' exact component={AboutView} />
-          <Route path='/values' exact component={AboutValuesView} />
+          <Route path='/about/values' exact component={AboutValuesView} />
           <Route
-            path='/mission-vision'
+            path='/about/mission-vision'
             exact
             component={AboutMissionVisionView}
           />
-          <Route path='/leadership' exact component={AboutLeadershipView} />
+          <Route
+            path='/about/leadership'
+            exact
+            component={AboutLeadershipView}
+          />
 
           {/*connect section */}
           <Route path='/connect' exact component={ConnectView} />
-          <Route path='/ministries' exact component={ConnectMinistriesView} />
-          <Route path='/services' exact component={ConnectServicesView} />
           <Route
-            path='/small-groups'
+            path='/connect/ministries'
+            exact
+            component={ConnectMinistriesView}
+          />
+          <Route
+            path='/connect/services'
+            exact
+            component={ConnectServicesView}
+          />
+          <Route
+            path='/connect/small-groups'
             exact
             component={ConnectSmallGroupsView}
           />
@@ -51,7 +63,7 @@ const App: FC = () => {
         <FooterView />
       </Router>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
