@@ -1,7 +1,6 @@
 import React, {FC, useEffect} from 'react'
-import {Calendar} from 'antd'
-import EventsCarousel from './components/EventsCarousel'
 import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
+import './styles/EventsView.css'
 
 const EventsView: FC = () => {
   useEffect(() => {
@@ -12,9 +11,9 @@ const EventsView: FC = () => {
   }, [])
   return (
     <section className='events-page-container'>
-      <TitleAndBreadcrumb />
-      <EventsCarousel />
-      <Calendar />
+      <div className='events-title-container'>
+        <TitleAndBreadcrumb title='Events' />
+      </div>
     </section>
   )
 }

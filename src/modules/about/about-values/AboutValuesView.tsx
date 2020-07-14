@@ -1,4 +1,5 @@
 import React, {FC, useEffect} from 'react'
+import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 
 const AboutValuesView: FC = () => {
   useEffect(() => {
@@ -10,7 +11,12 @@ const AboutValuesView: FC = () => {
 
   return (
     <div className='content-container'>
-      <h1 className='module-header'>Values</h1>
+      <div className='about-subtitle-container'>
+        <TitleAndBreadcrumb
+          title='What We Believe'
+          secondBreadcrumbTitle='About'
+        />
+      </div>
     </div>
   )
 }

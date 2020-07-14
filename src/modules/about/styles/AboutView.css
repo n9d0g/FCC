@@ -81,3 +81,12 @@
   max-width: 450px;
   padding-top: 30%;
 }
+
+.about-subtitle-container {
+  padding-left: 36px;
+  padding-right: 36px;
+  width: 90%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -14,9 +14,8 @@ const GiveView: FC = () => {
   return (
     <section className='give-page-container'>
       <div className='give-title-container'>
-        <TitleAndBreadcrumb />
+        <TitleAndBreadcrumb title='Give' />
       </div>
-
       <GiveForm />
     </section>
   )

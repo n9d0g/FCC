@@ -2,6 +2,7 @@ import React, {FC, useEffect} from 'react'
 import '../styles/AboutView.css'
 import './AboutMissionVisionView.css'
 import * as strings from '../../../data/strings.json'
+import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 
 const AboutMissionVisionView: FC = () => {
   useEffect(() => {
@@ -13,7 +14,12 @@ const AboutMissionVisionView: FC = () => {
 
   return (
     <div className='content-container'>
-      <h1 className='module-header'>FCC Mission and Vision</h1>
+      <div className='about-subtitle-container'>
+        <TitleAndBreadcrumb
+          title='Mission and Vision'
+          secondBreadcrumbTitle='About'
+        />
+      </div>
       <div className='about-content'>
         Mission: {strings.statements.mission}
         <br />

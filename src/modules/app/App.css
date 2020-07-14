@@ -18,6 +18,10 @@ body {
   text-size-adjust: 100%;
 }
 
+h1 {
+  color: white;
+}
+
 .site-layout-content {
   background: #1d1d1c;
   min-height: 100%;

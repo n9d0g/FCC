@@ -1,4 +1,5 @@
 import React, {FC, useEffect} from 'react'
+import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 
 const ConnectMinistriesView: FC = () => {
   useEffect(() => {
@@ -10,7 +11,12 @@ const ConnectMinistriesView: FC = () => {
 
   return (
     <div className='content-container'>
-      <h1 className='module-header'>MinistriesView</h1>
+      <div className='connect-subtitle-container'>
+        <TitleAndBreadcrumb
+          title='Our Ministries'
+          secondBreadcrumbTitle='Connect'
+        />
+      </div>
     </div>
   )
 }
