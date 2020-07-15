@@ -1,0 +1,15 @@
+.about-core-values-container {
+  position: relative;
+  padding-top: 16%;
+  padding-bottom: 12%;
+  background-color: #f7f4f0;
+  color: #1d1d1c;
+  text-align: center;
+}
+
+.about-core-values-narrow {
+  width: 80%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,7 +1,6 @@
 import React, {FC, useEffect} from 'react'
 import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 import './styles/SermonsView.css'
-import ReactAudioPlayer from 'react-audio-player'
 import SermonMediaPlayer from './components/SermonMediaPlayer'
 
 const SermonsView: FC = () => {
