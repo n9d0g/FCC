@@ -16,7 +16,7 @@ const TitleAndBreadcrumb: FC<TitleAndBreadcrumbProps> = ({
   // check if second breadcrumb is provided, if so link it to respective pages
   if (secondBreadcrumbTitle) {
     let breadcrumbLink
-    if (secondBreadcrumbTitle == 'About') breadcrumbLink = '/about'
+    if (secondBreadcrumbTitle === 'About') breadcrumbLink = '/about'
     else breadcrumbLink = '/connect'
 
     middleBreadcrumb = (

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import HomeButton from '../components/HomeButton'
 import './HomeMainView.css'
 
@@ -15,19 +14,24 @@ const HomeMainView = () => {
             <h2 className='title-big'>Work of Christ</h2>
           </div>
           <div className='home-welcome-buttons'>
-            <Link to='/about'>
-              <HomeButton text="I'm new here" />
-            </Link>
-            <Link to='/sermons'>
-              <HomeButton text='Sermons' />
-            </Link>
+            <HomeButton text="I'm new here" link='/about' isInverted={false} />
+            <HomeButton text='Sermons' link='/sermons' isInverted={true} />
           </div>
         </div>
       </div>
       <div className='home-welcome-invitation'>
         <div className='empty-box'></div>
         <div className='home-welcome-invitation-text'>
-          Join us via ZOOM on Sundays at 10:30am.{' '}
+          Join us via{' '}
+          <a
+            href='https://us04web.zoom.us/j/3926981154?pwd=d1BHRTB3eStxZFZIS3lyWHBieENvZz09&fbclid=IwAR3VMLAoFQ_suNQJU_16OoiOd_wb-uCCSOBU_WZsRqyufHXDk-FxkOapIEg'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='zoom-link'
+          >
+            ZOOM
+          </a>{' '}
+          on Sundays at 10:30am.{' '}
         </div>
       </div>
     </section>

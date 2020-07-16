@@ -6,3 +6,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.sermons-content-container {
+  padding-right: 36px;
+  padding-left: 36px;
+  width: 90%;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
