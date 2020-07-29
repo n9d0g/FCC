@@ -1,27 +1,20 @@
 import React, {FC} from 'react'
 import './CoreValueItem.css'
-import * as coreValue from '../../data/strings.json'
-// import {PlusCircleOutlined} from '@ant-design/icons'
+import {Collapse} from 'antd'
+const {Panel} = Collapse
 
 interface CoreValueItemProps {
-  coreValueNumber: number
+  header: string
+  description: string
 }
 
-const CoreValueItem: FC<CoreValueItemProps> = ({coreValueNumber}) => {
+const CoreValueItem: FC<CoreValueItemProps> = ({header, description}) => {
   return (
-    <div className='core-value-container'>
-      <a href='/' className='core-value-item'>
-        <div className='core-value-item-content'>
-          <h2 className='core-value-item-title'>
-            {coreValue['CMA-core-values']['core-1'].title}
-          </h2>
-          <div className='core-value-item-icon'></div>
-          <div className='core-value-description'>
-            {coreValue['CMA-core-values']['core-1'].description}
-          </div>
-        </div>
-      </a>
-    </div>
+    <Collapse accordion={true} bordered={false}>
+      <Panel header={header} key='1' className='core-value-header'>
+        <p className='core-value-description'>{description}</p>
+      </Panel>
+    </Collapse>
   )
 }
 
