@@ -20,6 +20,12 @@ const AboutValuesView: FC = () => {
           secondBreadcrumbTitle='About'
         />
       </div>
+      <div className='about-core-values-description-container'>
+        <div className='about-core-values-image'></div>
+        <div className='about-core-values-description'>
+          {coreValue.statements['about-values-description']}
+        </div>
+      </div>
       <section className='about-core-values-container'>
         <h2 className='about-core-values-title'>
           <a
@@ -30,7 +36,7 @@ const AboutValuesView: FC = () => {
           >
             CMA
           </a>
-          &nbsp; Core Values
+          &nbsp;Core Values
         </h2>
         <div className='about-core-values-narrow'>
           <div className='core-value-container'>

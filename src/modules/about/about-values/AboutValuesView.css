@@ -1,3 +1,29 @@
+.about-core-values-description-container {
+  position: relative;
+  padding-left: 8.33%;
+  z-index: 1;
+  width: 90%;
+}
+
+.about-core-values-image {
+  position: relative;
+  height: 80vh;
+  max-height: 100px;
+  min-height: 50px;
+}
+
+.about-core-values-description {
+  z-index: -900;
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+  min-height: 100px;
+  padding-bottom: 0;
+  background-color: #f7f4f0;
+  color: #292827;
+  padding: 32px 36px;
+}
+
 .about-core-values-container {
   position: relative;
   padding-top: 6%;

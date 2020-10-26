@@ -23,7 +23,9 @@ const AboutView: FC = () => {
         </div>
       </h1>
       <div className='about-content-container'>
-        <div className='about-content-picture'>picture here</div>
+        <div className='about-content-picture-container'>
+          <div className='about-content-picture'></div>
+        </div>
         <div className='about-content-list-pages-container'>
           <div className='about-content-list-pages'>
             <AboutList />
