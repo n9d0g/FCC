@@ -1,7 +1,5 @@
 import React, { FC } from 'react'
 import { Formik, Form } from 'formik'
-import GiveFormField from './GiveFormField'
-import GiveFormSubmit from './GiveFormSubmit'
 
 const GiveForm: FC = () => {
     return (
@@ -15,11 +13,6 @@ const GiveForm: FC = () => {
         >
             {() => (
                 <Form>
-                    <GiveFormField />
-                    <GiveFormField />
-                    <GiveFormField />
-                    <GiveFormField />
-                    <GiveFormSubmit />
                 </Form>
             )}
         </Formik>

@@ -1,27 +1,27 @@
 .home-mission {
-  display: block;
-  position: relative;
-  background-color: #292827;
-  padding-top: 14%;
-  padding-bottom: 12%;
+    display: block;
+    position: relative;
+    background-color: var(--desc-black);
+    padding-top: 14%;
+    padding-bottom: 12%;
 }
 
 .home-mission-text-container {
-  display: block;
-  padding-right: 36px;
-  padding-left: 36px;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: block;
+    padding-right: 36px;
+    padding-left: 36px;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .home-mission-text {
-  max-width: 920px;
-  margin-bottom: 0;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.7rem;
-  line-height: 1.4;
-  font-weight: 700;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
+    max-width: 920px;
+    margin-bottom: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    font-weight: 700;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
