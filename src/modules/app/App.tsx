@@ -9,13 +9,13 @@ import SermonsView from '../sermons/SermonsView'
 import EventsView from '../events/EventsView'
 import GiveView from '../give/GiveView'
 import FooterView from '../../components/footer/FooterView'
-
 import AboutMissionVisionView from '../about/about-mission-vision/AboutMissionVisionView'
 import AboutLeadershipView from '../about/about-leadership/AboutLeadershipView'
 import AboutValuesView from '../about/about-values/AboutValuesView'
 import ConnectMinistriesView from '../connect/connect-ministries/ConnectMinistriesView'
 import ConnectServicesView from '../connect/connect-services/ConnectServicesView'
 import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmallGroupsView'
+import PreFooterView from '../../components/pre-footer/PreFooterView'
 
 const App: FC = () => {
   return (
@@ -60,6 +60,7 @@ const App: FC = () => {
           <Route path='/events' exact component={EventsView} />
           <Route path='/give' exact component={GiveView} />
         </Switch>
+        <PreFooterView />
         <FooterView />
       </Router>
     </div>

@@ -1,7 +1,7 @@
 .about-core-values-description-container {
     position: relative;
     padding-left: 8.33%;
-    z-index: 1;
+    z-index: 0;
     width: 90%;
 }
 

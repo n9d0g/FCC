@@ -14,12 +14,10 @@ const AboutValuesView: FC = () => {
 
   return (
     <div className='content-container'>
-      <div className='about-subtitle-container'>
         <TitleAndBreadcrumb
           title='What We Believe'
           secondBreadcrumbTitle='About'
         />
-      </div>
       <div className='about-core-values-description-container'>
         <div className='about-core-values-image'></div>
         <div className='about-core-values-description'>

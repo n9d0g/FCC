@@ -1,11 +1,16 @@
 .title-breadcrumb-container {
     display: flex;
-    flex-direction: row;
-    padding-top: 50px;
     margin-bottom: 100px;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+    -webkit-box-align: end;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 36px;
+    padding-left: 36px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 90%;
+    width: 90%;
 }
 
 .title {

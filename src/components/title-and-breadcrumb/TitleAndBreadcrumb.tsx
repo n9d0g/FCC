@@ -30,7 +30,7 @@ const TitleAndBreadcrumb: FC<TitleAndBreadcrumbProps> = ({
   }
   return (
     <div className='title-breadcrumb-container'>
-      <h1 className='title'>{title}</h1>
+      <h1 className='title'>{title}</h1> 
       <ul className='breadcrumb'>
         <li className='breadcrumb-item'>
           <Link to='/' className='breadcrumb-link'>
