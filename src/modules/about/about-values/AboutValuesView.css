@@ -1,27 +1,63 @@
-.about-core-values-description-container {
-    position: relative;
-    padding-left: 8.33%;
+.title-container {
     z-index: 0;
+    padding-top: 75px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.title-picture-card-container {
+    position: relative;
+    z-index: 0;
+
+    /* calculated value? */
+    padding-left: 8%;
     width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.about-core-values-image {
-    position: relative;
-    height: 80vh;
-    max-height: 100px;
-    min-height: 50px;
+.title-picture-container {
+    max-height: 800px;
+
+    /* not working */
+    background-image: url(img/connect.jpg);
+    box-sizing: border-box;
 }
 
-.about-core-values-description {
-    z-index: -900;
+.title-picture {
+    height: 0%;
+    width: 797px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--secondary-brown);
+}
+
+.title-card-container {
+    /* temporary relative -> switch to absolute after image fix */
     position: relative;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
     width: 50%;
     max-width: 500px;
-    min-height: 100px;
+    min-height: 200px;
     padding-bottom: 0;
     background-color: var(--primary-white);
-    color: var(--desc-black);
+    color: var(--primary-black);
     padding: 32px 36px;
+}
+
+.title-card {
+    opacity: 1;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 0;
 }
 
 .about-core-values-container {

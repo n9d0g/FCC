@@ -1,92 +1,76 @@
-import React, {FC, useEffect} from 'react'
+import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 import './AboutValuesView.css'
 import CoreValueItem from '../../../components/core-value-item/CoreValueItem'
-import * as coreValue from '../../../data/strings.json'
+import * as statements from '../../../data/statements.json'
 
 const AboutValuesView: FC = () => {
-  useEffect(() => {
-    document.title = 'Values | FCC'
-    return () => {
-      console.log('unmount')
-    }
-  }, [])
+    useEffect(() => {
+        document.title = 'Values | FCC'
+        return () => {
+            console.log('unmount')
+        }
+    }, [])
 
-  return (
-    <div className='content-container'>
-        <TitleAndBreadcrumb
-          title='What We Believe'
-          secondBreadcrumbTitle='About'
-        />
-      <div className='about-core-values-description-container'>
-        <div className='about-core-values-image'></div>
-        <div className='about-core-values-description'>
-          {coreValue.statements['about-values-description']}
+    // map values into array
+    const jsonFile = require('../../../data/values.json')
+    var arr: any = []
+    Object.keys(jsonFile).forEach(function (key) {
+        arr.push(jsonFile[key])
+    })
+
+    return (
+        <div className="title-and-content-container">
+            <div className="title-container">
+                <TitleAndBreadcrumb
+                    title="What We Believe"
+                    secondBreadcrumbTitle="About"
+                />
+                <div className="title-picture-card-container">
+                    <div className="title-picture-container">
+                        <div className="title-picture"></div>
+                    </div>
+                    <div className="title-card-container">
+                        <p className="title-card">
+                            {statements['about-values-description']}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="content-container">
+                <section className="about-core-values-container">
+                    <h2 className="about-core-values-title">
+                        <a
+                            href="https://www.cmacan.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="CMA-text-link"
+                        >
+                            CMA
+                        </a>
+                        &nbsp;Core Values
+                    </h2>
+                    <div className="about-core-values-narrow">
+                        <div className="core-value-container">
+                            <ul>
+                                {arr.map(
+                                    (item: {
+                                        title: string
+                                        description: string
+                                    }) => (
+                                        <CoreValueItem
+                                            header={item.title}
+                                            description={item.description}
+                                        />
+                                    )
+                                )}
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-      </div>
-      <section className='about-core-values-container'>
-        <h2 className='about-core-values-title'>
-          <a
-            href='https://www.cmacan.org/'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='CMA-text-link'
-          >
-            CMA
-          </a>
-          &nbsp;Core Values
-        </h2>
-        <div className='about-core-values-narrow'>
-          <div className='core-value-container'>
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-1'].title}
-              description={coreValue['CMA-core-values']['core-1'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-2'].title}
-              description={coreValue['CMA-core-values']['core-2'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-3'].title}
-              description={coreValue['CMA-core-values']['core-3'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-4'].title}
-              description={coreValue['CMA-core-values']['core-4'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-5'].title}
-              description={coreValue['CMA-core-values']['core-5'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-6'].title}
-              description={coreValue['CMA-core-values']['core-6'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-7'].title}
-              description={coreValue['CMA-core-values']['core-7'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-8'].title}
-              description={coreValue['CMA-core-values']['core-8'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-9'].title}
-              description={coreValue['CMA-core-values']['core-9'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-10'].title}
-              description={coreValue['CMA-core-values']['core-10'].description}
-            />
-            <CoreValueItem
-              header={coreValue['CMA-core-values']['core-11'].title}
-              description={coreValue['CMA-core-values']['core-11'].description}
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-  )
+    )
 }
 
 export default AboutValuesView

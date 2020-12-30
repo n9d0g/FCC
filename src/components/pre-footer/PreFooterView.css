@@ -1,5 +1,4 @@
 .pre-footer-container {
-    display: block;
     box-sizing: border-box;
     padding-top: 0;
     padding-bottom: 0;
@@ -9,7 +8,6 @@
 }
 
 .pre-footer-card-container {
-    display: block;
     position: relative;
     top: -56px;
     z-index: 1;
