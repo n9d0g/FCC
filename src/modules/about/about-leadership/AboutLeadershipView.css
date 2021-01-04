@@ -1,0 +1,35 @@
+.title-description {
+    padding-right: 36px;
+    padding-left: 36px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-big-center {
+    opacity: 1;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    padding-bottom: 4%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.leadership-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 300ms ease 0s;
+}
