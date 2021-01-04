@@ -37,6 +37,11 @@ p {
     margin-inline-end: 0px;
 }
 
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .site-layout-content {
     background: var(--primary-black);
     min-height: 100%;

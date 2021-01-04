@@ -1,8 +1,8 @@
 import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
 import './AboutValuesView.css'
-import CoreValueItem from '../../../components/core-value-item/CoreValueItem'
 import * as statements from '../../../data/statements.json'
+import ValueStatement from '../../../components/value-statement/ValueStatement'
 
 const AboutValuesView: FC = () => {
     useEffect(() => {
@@ -39,7 +39,7 @@ const AboutValuesView: FC = () => {
             </div>
             <div className="content-container">
                 <section className="about-core-values-container">
-                    <h2 className="about-core-values-title">
+                    <h2 className="content-title">
                         <a
                             href="https://www.cmacan.org/"
                             target="_blank"
@@ -58,7 +58,7 @@ const AboutValuesView: FC = () => {
                                         title: string
                                         description: string
                                     }) => (
-                                        <CoreValueItem
+                                        <ValueStatement
                                             header={item.title}
                                             description={item.description}
                                         />
