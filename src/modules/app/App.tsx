@@ -1,6 +1,6 @@
 import './App.css'
-import React, {FC} from 'react'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import React, { FC } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HomeView from '../home/HomeView'
 import HeaderView from '../../components/header/HeaderView'
 import AboutView from '../about/AboutView'
@@ -18,53 +18,57 @@ import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmall
 import PreFooterView from '../../components/pre-footer/PreFooterView'
 
 const App: FC = () => {
-  return (
-    <div className='app'>
-      <Router>
-        <HeaderView />
-        <Switch>
-          <Route path='/' exact component={HomeView} />
+    return (
+        <div className="app">
+            <Router>
+                <HeaderView />
+                <Switch>
+                    <Route path="/" exact component={HomeView} />
 
-          {/*about section */}
-          <Route path='/about' exact component={AboutView} />
-          <Route path='/about/values' exact component={AboutValuesView} />
-          <Route
-            path='/about/mission-vision'
-            exact
-            component={AboutMissionVisionView}
-          />
-          <Route
-            path='/about/leadership'
-            exact
-            component={AboutLeadershipView}
-          />
+                    {/*about section */}
+                    <Route path="/about" exact component={AboutView} />
+                    <Route
+                        path="/about/values"
+                        exact
+                        component={AboutValuesView}
+                    />
+                    <Route
+                        path="/about/mission-vision"
+                        exact
+                        component={AboutMissionVisionView}
+                    />
+                    <Route
+                        path="/about/leadership"
+                        exact
+                        component={AboutLeadershipView}
+                    />
 
-          {/*connect section */}
-          <Route path='/connect' exact component={ConnectView} />
-          <Route
-            path='/connect/ministries'
-            exact
-            component={ConnectMinistriesView}
-          />
-          <Route
-            path='/connect/services'
-            exact
-            component={ConnectServicesView}
-          />
-          <Route
-            path='/connect/small-groups'
-            exact
-            component={ConnectSmallGroupsView}
-          />
-          <Route path='/sermons' exact component={SermonsView} />
-          <Route path='/events' exact component={EventsView} />
-          <Route path='/give' exact component={GiveView} />
-        </Switch>
-        <PreFooterView />
-        <FooterView />
-      </Router>
-    </div>
-  )
+                    {/*connect section */}
+                    <Route path="/connect" exact component={ConnectView} />
+                    <Route
+                        path="/connect/ministries"
+                        exact
+                        component={ConnectMinistriesView}
+                    />
+                    <Route
+                        path="/connect/services"
+                        exact
+                        component={ConnectServicesView}
+                    />
+                    <Route
+                        path="/connect/small-groups"
+                        exact
+                        component={ConnectSmallGroupsView}
+                    />
+                    <Route path="/sermons" exact component={SermonsView} />
+                    <Route path="/events" exact component={EventsView} />
+                    <Route path="/give" exact component={GiveView} />
+                </Switch>
+                <PreFooterView />
+                <FooterView />
+            </Router>
+        </div>
+    )
 }
 
 export default App

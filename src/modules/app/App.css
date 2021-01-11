@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
 
 body {
-    background-color: rgb(29, 29, 28);
+    background-color: var(--primary-black);
     box-sizing: border-box;
-    color: rgb(247, 244, 240);
+    color: var(--primary-white);
     display: block;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -20,6 +20,7 @@ body {
 
 h1 {
     color: white;
+    margin-top: 0;
 }
 
 h2 {
@@ -101,4 +102,78 @@ a {
     color: var(--primary-white);
     position: relative;
     box-sizing: border-box;
+}
+
+.landing-page-title-container {
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 0;
+    padding-right: 36px;
+    padding-left: 36px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.landing-page-wrapper {
+    margin-bottom: 48px;
+    margin-right: -24px;
+    margin-left: -24px;
+}
+
+.landing-page-title {
+    margin-bottom: 40px;
+    padding-right: 24px;
+    padding-left: 24px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 50%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
+.landing-page-title-text {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    margin-bottom: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--secondary-brown);
+}
+
+.landing-page-title-description-container {
+    margin-bottom: 40px;
+    padding-right: 24px;
+    padding-left: 24px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 50%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
+.landing-page-title-description {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    margin-bottom: 8px;
+    font-family: Montserrat, serif;
+    font-size: 2.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 0;
+    color: var(--primary-white);
 }

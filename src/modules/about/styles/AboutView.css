@@ -37,42 +37,65 @@
     color: var(--primary-white);
 }
 
-.about-content-container {
+.landing-page-content-container {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: stretch;
+    padding-top: 0;
+    padding-bottom: 8%;
+    padding-right: 36px;
+    padding-left: 36px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    position: relative;
     width: 90%;
     max-width: 1400px;
-    padding-bottom: 8%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.about-content-picture-container {
-    flex: 1;
+.landing-page-picture-container1 {
     margin-bottom: 40px;
     padding-right: 24px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
+    -webkit-box-flex: 1;
+    flex: 1;
     width: 50%;
     position: relative;
-    min-height: 1px;
-    text-align: center;
-    background-color: white;
-    color: black;
+    float: left;
+    min-height: 1;
 }
 
-.about-content-picture {
+.landing-page-picture-container2 {
+    background-image: url(../../../data/pictures/test.JPG);
     position: relative;
     height: 100%;
     max-width: 500px;
     min-height: 500px;
     margin-right: 8%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.about-content-list-pages-container {
+.landing-page-picture {
+    height: 0%;
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-brown);
+}
+
+.landing-page-list-pages-container {
     display: flex;
     flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end;
+    -webkit-box-align: stretch;
     flex-direction: column;
     justify-content: flex-end;
     align-items: stretch;
@@ -84,18 +107,9 @@
     min-height: 1px;
 }
 
-.about-content-list-pages {
+.landing-page-list-pages {
     max-width: 450px;
     padding-top: 30%;
-}
-
-.about-subtitle-container {
-    padding-left: 36px;
-    padding-right: 36px;
-    width: 90%;
-    max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .title-container {
@@ -168,4 +182,57 @@
     align-items: flex-end;
     text-align: center;
     font-family: Merriweather, serif;
+}
+
+.landing-page-jesus-container {
+    background-image: linear-gradient(
+            180deg,
+            rgba(29, 29, 28, 0.7),
+            rgba(29, 29, 28, 0.7)
+        ),
+        url(../../../data/pictures/renassance.jpg);
+    opacity: 1;
+    background-position: 0 0, 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll, fixed;
+    padding-top: 24%;
+    padding-bottom: 24%;
+    position: relative;
+}
+
+.landing-page-jesus-card-container {
+    width: 80%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.landing-page-jesus-card {
+    display: flex;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    border-top: 1px solid var(--primary-white);
+    background-color: transparent;
+    position: relative;
+    padding: 32px 36px;
+}
+
+.landing-page-jesus-card-text-container {
+    width: 50%;
+}
+
+.landing-page-jesus-card-text-verse {
+    margin-bottom: 12px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 0;
+    /* margin: 0.67em 0; */
 }
