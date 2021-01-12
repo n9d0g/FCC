@@ -11,7 +11,7 @@ const HomeView: FC = () => {
         <div>
             <HomeMainView />
             <HomeMissionView />
-            <HomeEventsView />
+            {/* <HomeEventsView /> */}
             <HomeSermonsView />
         </div>
     )

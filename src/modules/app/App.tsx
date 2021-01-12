@@ -61,7 +61,7 @@ const App: FC = () => {
                         component={ConnectSmallGroupsView}
                     />
                     <Route path="/sermons" exact component={SermonsView} />
-                    <Route path="/events" exact component={EventsView} />
+                    {/* <Route path="/events" exact component={EventsView} /> */}
                     <Route path="/give" exact component={GiveView} />
                 </Switch>
                 <PreFooterView />
