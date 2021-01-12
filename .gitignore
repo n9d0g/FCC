@@ -24,3 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 *.wav
 debug.log
+
+# sermons folder
+/src/data/sermons

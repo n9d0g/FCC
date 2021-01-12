@@ -6,7 +6,7 @@ import HeaderView from '../../components/header/HeaderView'
 import AboutView from '../about/AboutView'
 import ConnectView from '../connect/ConnectView'
 import SermonsView from '../sermons/SermonsView'
-import EventsView from '../events/EventsView'
+// import EventsView from '../events/EventsView'
 import GiveView from '../give/GiveView'
 import FooterView from '../../components/footer/FooterView'
 import AboutMissionVisionView from '../about/about-mission-vision/AboutMissionVisionView'
@@ -16,6 +16,7 @@ import ConnectMinistriesView from '../connect/connect-ministries/ConnectMinistri
 import ConnectServicesView from '../connect/connect-services/ConnectServicesView'
 import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmallGroupsView'
 import PreFooterView from '../../components/pre-footer/PreFooterView'
+import FeaturedSermon from '../sermons/featured-sermon/FeaturedSermon'
 
 const App: FC = () => {
     return (
@@ -61,6 +62,11 @@ const App: FC = () => {
                         component={ConnectSmallGroupsView}
                     />
                     <Route path="/sermons" exact component={SermonsView} />
+                    <Route
+                        path="/sermons/featured"
+                        exact
+                        component={FeaturedSermon}
+                    />
                     {/* <Route path="/events" exact component={EventsView} /> */}
                     <Route path="/give" exact component={GiveView} />
                 </Switch>
