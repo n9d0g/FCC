@@ -1,0 +1,130 @@
+.ministries-title-picture-container {
+    position: relative;
+    z-index: 1;
+    padding-left: 8.3%;
+    width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ministries-title-picture {
+    background-image: url(../../../data/pictures/YA/joint-night.jpg);
+    position: relative;
+    height: 80vh;
+    max-height: 750px;
+    min-height: 450px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ministries-title-description {
+    position: absolute;
+    left: 0;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    width: 50%;
+    max-width: 500px;
+    min-height: 200px;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    padding: 32px 36px 120px;
+}
+
+.ministries-title-description-text {
+    opacity: 1;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.ministries-pre-content-container {
+    margin-top: -7%;
+    padding-top: 10%;
+    padding-bottom: 6%;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    position: relative;
+}
+
+ministries-pre-content-title-container {
+    padding-right: 36px;
+    padding-left: 36px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ministries-pre-content-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: Merriweather, serif;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.ministries-content-container {
+    margin-top: -7%;
+    padding-top: 5%;
+    padding-bottom: 40%;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    position: relative;
+}
+
+.ministries-content-ministries-container {
+    margin-top: 48px;
+    margin-right: -24px;
+    margin-left: -24px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.ministries-content-ministry {
+    opacity: 1;
+    margin-bottom: 40px;
+    padding-right: 24px;
+    padding-left: 24px;
+    flex: 1 1;
+    width: 50%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
+.ministries-content-ministry-description-container {
+    opacity: 1;
+    margin-bottom: 40px;
+    padding-right: 24px;
+    padding-left: 24px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    float: left;
+    min-height: 1px;
+}
+
+.ministries-content-ministry-description-title {
+    margin-bottom: 12px;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.ministries-content-ministry-description-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
