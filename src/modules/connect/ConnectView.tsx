@@ -1,14 +1,11 @@
 import React, { FC, useEffect } from 'react'
-import ModuleListItem from '../../components/module-list-item/ModuleListItem'
+// import ModuleListItem from '../../components/module-list-item/ModuleListItem'
 import ConnectList from './connect-landingpage/ConnectList'
 import './styles/ConnectView.css'
 
 const ConnectView: FC = () => {
     useEffect(() => {
         document.title = 'Connect | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     return (

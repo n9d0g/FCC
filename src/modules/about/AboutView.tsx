@@ -5,9 +5,6 @@ import AboutList from './about-landingpage/AboutList'
 const AboutView: FC = () => {
     useEffect(() => {
         document.title = 'About | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     return (

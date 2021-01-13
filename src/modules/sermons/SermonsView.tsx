@@ -7,9 +7,6 @@ import './styles/SermonsView.css'
 const SermonsView: FC = () => {
     useEffect(() => {
         document.title = 'Sermons | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     return (

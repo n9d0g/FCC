@@ -7,9 +7,6 @@ import './AboutLeadershipView.css'
 const AboutLeadershipView: FC = () => {
     useEffect(() => {
         document.title = 'Leadership | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     return (

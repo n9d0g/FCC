@@ -8,9 +8,6 @@ import ValueStatement from '../../../components/value-statement/ValueStatement'
 const AboutMissionVisionView: FC = () => {
     useEffect(() => {
         document.title = 'Mission & Vision | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     // map statements into array

@@ -7,9 +7,6 @@ import ValueStatement from '../../../components/value-statement/ValueStatement'
 const AboutValuesView: FC = () => {
     useEffect(() => {
         document.title = 'Values | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     // map values into array
