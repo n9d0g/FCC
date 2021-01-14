@@ -3,18 +3,9 @@ import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAn
 import Ministry from '../components/Ministry'
 import './ConnectMinistriesView.css'
 
-// ministries:
-// 1. FCC YA
-// 2. FCC youth
-// 3. FCC children
-// 4. praise and worship ministry
-
 const ConnectMinistriesView: FC = () => {
     useEffect(() => {
         document.title = 'Ministries | FCC'
-        return () => {
-            console.log('unmount')
-        }
     }, [])
 
     return (
