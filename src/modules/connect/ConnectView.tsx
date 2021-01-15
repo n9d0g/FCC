@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from 'react'
 // import ModuleListItem from '../../components/module-list-item/ModuleListItem'
 import ConnectList from './connect-landingpage/ConnectList'
-import './styles/ConnectView.css'
+import './ConnectView.css'
 
 const ConnectView: FC = () => {
     useEffect(() => {

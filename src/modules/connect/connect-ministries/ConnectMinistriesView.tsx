@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
-import Ministry from '../components/Ministry'
+import Ministry from '../../../components/ministry-block/Ministry'
 import './ConnectMinistriesView.css'
 
 const ConnectMinistriesView: FC = () => {

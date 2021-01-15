@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
-import SmallGroup from '../components/SmallGroup'
+import SmallGroup from '../../../components/small-group-block/SmallGroup'
 import './ConnectSmallGroupsView.css'
 
 const ConnectSmallGroupsView: FC = () => {
