@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react'
-import './styles/AboutView.css'
+import './AboutView.css'
 import AboutList from './about-landingpage/AboutList'
 
 const AboutView: FC = () => {

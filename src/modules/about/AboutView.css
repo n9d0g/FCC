@@ -67,7 +67,7 @@
 }
 
 .landing-page-picture-container2 {
-    background-image: url(../../../data/pictures/test.JPG);
+    background-image: url(../../data/pictures/test.JPG);
     position: relative;
     height: 100%;
     max-width: 500px;
@@ -135,7 +135,7 @@
     max-height: 800px;
 
     /* not working */
-    background-image: url(../../../data/pictures/connect.jpg);
+    background-image: url(../../data/pictures/connect.jpg);
     box-sizing: border-box;
 }
 
@@ -190,7 +190,7 @@
             rgba(29, 29, 28, 0.7),
             rgba(29, 29, 28, 0.7)
         ),
-        url(../../../data/pictures/renassance.jpg);
+        url(../../data/pictures/renassance.jpg);
     opacity: 1;
     background-position: 0 0, 50% 50%;
     background-size: cover;

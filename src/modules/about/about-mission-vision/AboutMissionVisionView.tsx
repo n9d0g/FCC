@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react'
-import '../styles/AboutView.css'
+import '../AboutView.css'
 import './AboutMissionVisionView.css'
 import * as statements from '../../../data/statements.json'
 import TitleAndBreadcrumb from '../../../components/title-and-breadcrumb/TitleAndBreadcrumb'
