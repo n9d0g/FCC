@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeButton from '../../home/components/HomeButton'
+import HomeButton from '../../modules/home/components/HomeButton'
 
 const GiveOption = () => {
     return (

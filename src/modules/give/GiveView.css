@@ -35,7 +35,7 @@
 }
 
 .give-title-picture {
-    background-image: url(../../../data/pictures/connect.jpg);
+    background-image: url(../../data/pictures/connect.jpg);
     position: relative;
     height: 80vh;
     max-height: 750px;

@@ -1,7 +1,7 @@
 import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
-import GiveOption from './components/GiveOption'
-import './styles/GiveView.css'
+import GiveOption from '../../components/give-option/GiveOption'
+import './GiveView.css'
 
 const GiveView: FC = () => {
     useEffect(() => {
