@@ -24,10 +24,22 @@ const AboutLeadershipView: FC = () => {
             </div>
             <div className="dark-content-container">
                 <div className="leadership-grid">
-                    <HeadshotCard name="Roland Yumul" description="Elder" />
-                    <HeadshotCard name="Lolita Irong" description="Elder" />
-                    <HeadshotCard name="Bernard Bersamin" description="Elder" />
-                    <HeadshotCard name="Errol Rasco" description="Elder" />
+                    <HeadshotCard
+                        name="Roland Yumul"
+                        description="Elder - Chair"
+                    />
+                    <HeadshotCard
+                        name="Lolita Irong"
+                        description="Elder - 74 years old"
+                    />
+                    <HeadshotCard
+                        name="Bernard Bersamin"
+                        description="Elder - Closing Prayer"
+                    />
+                    <HeadshotCard
+                        name="Errol Rasco"
+                        description="Elder - Treasurer"
+                    />
                 </div>
             </div>
         </div>
