@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
-import './styles/EventsView.css'
+import './EventsView.css'
 
 const EventsView: FC = () => {
     useEffect(() => {
