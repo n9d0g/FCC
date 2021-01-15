@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
 import './HeaderNavBar.css'
-import logo from '../../../images/square-logo.png'
+import logo from '../../../data/pictures/logo/square-logo.png'
 import { Dropdown } from 'antd'
 import { CaretDownOutlined } from '@ant-design/icons'
 import AboutDropdown from '../components/dropdowns/AboutDropdown'
