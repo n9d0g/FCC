@@ -120,7 +120,7 @@
 }
 
 .sermon-list-tile-art {
-    background-image: url(../../../data/pictures/renassance.jpg);
+    background-image: url(../../data/pictures/renassance.jpg);
     position: absolute;
     left: 0;
     top: auto;
@@ -178,7 +178,7 @@
 }
 
 .sermon-title-featured-sermon-card-art {
-    background-image: url(../../../data/pictures/renassance.jpg);
+    background-image: url(../../data/pictures/renassance.jpg);
     position: relative;
     display: flex;
     min-height: 500px;

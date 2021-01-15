@@ -2,7 +2,7 @@ import React, { FC, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import SermonTile from '../../components/sermon-tile/SermonTile'
 import TitleAndBreadcrumb from '../../components/title-and-breadcrumb/TitleAndBreadcrumb'
-import './styles/SermonsView.css'
+import './SermonsView.css'
 
 const SermonsView: FC = () => {
     useEffect(() => {

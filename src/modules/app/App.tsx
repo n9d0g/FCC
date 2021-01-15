@@ -16,7 +16,7 @@ import ConnectMinistriesView from '../connect/connect-ministries/ConnectMinistri
 import ConnectServicesView from '../connect/connect-services/ConnectServicesView'
 import ConnectSmallGroupsView from '../connect/connect-small-groups/ConnectSmallGroupsView'
 import PreFooterView from '../../components/pre-footer/PreFooterView'
-import FeaturedSermon from '../sermons/featured-sermon/FeaturedSermon'
+import FeaturedSermon from '../../components/featured-sermon/FeaturedSermon'
 
 const App: FC = () => {
     return (
