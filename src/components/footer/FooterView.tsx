@@ -7,29 +7,29 @@ import FooterColumn from './components/FooterColumn'
 
 const about = [
     {
-        link: 'about/values',
+        link: '/about/values',
         value: 'Values',
     },
     {
-        link: 'about/mission-vision',
+        link: '/about/mission-vision',
         value: 'Mission and Vision',
     },
     {
-        link: 'about/leadership',
+        link: '/about/leadership',
         value: 'Leadership',
     },
 ]
 const connect = [
     {
-        link: 'connect/ministries',
+        link: '/connect/ministries',
         value: 'Ministries',
     },
     {
-        link: 'connect/small-groups',
+        link: '/connect/small-groups',
         value: 'Small Groups',
     },
     {
-        link: 'connect/services',
+        link: '/connect/services',
         value: 'Services',
     },
 ]
