@@ -11,7 +11,7 @@ const SermonsView: FC = () => {
 
     return (
         <section className="sermons-page-container">
-            <div className="sermons-title-container">
+            <div className="title-container">
                 <TitleAndBreadcrumb title="Sermons" />
                 <div className="sermons-title-featured-sermon">
                     <Link

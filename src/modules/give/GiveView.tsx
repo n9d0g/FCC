@@ -10,7 +10,7 @@ const GiveView: FC = () => {
 
     return (
         <section className="give-page-container">
-            <div className="give-title-container">
+            <div className="title-container">
                 <div className="give-title-spacing">
                     <TitleAndBreadcrumb title="Give" />
                 </div>
